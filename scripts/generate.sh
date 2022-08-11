@@ -52,7 +52,7 @@ OUTPUT_PATH="sdks/account_management_sdk/apiv1/client"
 
 patch $OPENAPI_FILENAME < $PATCH_FILE
 
-npx @openapitools/openapi-generator-cli generate -g typescript-axios -i \
+npx @openapitools/openapi-generator-cli generate -g python -i \
     "$OPENAPI_FILENAME" -o "$OUTPUT_PATH" \
     --package-name="${PACKAGE_NAME}" \
     --additional-properties=$additional_properties \
@@ -90,7 +90,7 @@ PACKAGE_NAME="smart_events_management_sdk"
 OUTPUT_PATH="sdks/smart_events_management_sdk/apiv1/client"
 
 rm -Rf $OUTPUT_PATH/model $OUTPUT_PATH/api
-npx @openapitools/openapi-generator-cli generate -g typescript-axios -i \
+npx @openapitools/openapi-generator-cli generate -g python -i \
     "$OPENAPI_FILENAME" -o "$OUTPUT_PATH" \
     --package-name="${PACKAGE_NAME}" \
     --additional-properties=$additional_properties \
