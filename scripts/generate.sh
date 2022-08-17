@@ -18,7 +18,10 @@ generate_sdk() {
     npx @openapitools/openapi-generator-cli generate -g python -i\
         $oas_file_name -o $output_path \
         --package-name="$package_name" \
-        --ignore-file-override=.openapi-generator-ignore
+        --ignore-file-override=.openapi-generator-ignore \
+        --template-dir .github/templates \
+        --package-name=$package_name
+
 }
 
 OPENAPI_FILENAME="openapi/kas-fleet-manager.yaml"
@@ -54,8 +57,8 @@ patch $OPENAPI_FILENAME < $PATCH_FILE
 
 npx @openapitools/openapi-generator-cli generate -g python -i \
     "$OPENAPI_FILENAME" -o "$OUTPUT_PATH" \
+    --template-dir .github/templates \
     --package-name="${PACKAGE_NAME}" \
-    --additional-properties=$additional_properties \
     --ignore-file-override=./packages/account-management-sdk/.openapi-generator-ignore 
 
 git checkout -- $OPENAPI_FILENAME
@@ -92,8 +95,8 @@ OUTPUT_PATH="sdks/smart_events_management_sdk/apiv1/client"
 rm -Rf $OUTPUT_PATH/model $OUTPUT_PATH/api
 npx @openapitools/openapi-generator-cli generate -g python -i \
     "$OPENAPI_FILENAME" -o "$OUTPUT_PATH" \
+    --template-dir .github/templates \
     --package-name="${PACKAGE_NAME}" \
-    --additional-properties=$additional_properties \
     --remove-operation-id-prefix \
     --ignore-file-override=.openapi-generator-ignore
 
