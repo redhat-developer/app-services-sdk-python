@@ -22,32 +22,32 @@ generate_sdk() {
 }
 
 OPENAPI_FILENAME="openapi/kas-fleet-manager.yaml"
-PACKAGE_NAME="kafka_mgmt_sdk"
+PACKAGE_NAME="rhoas_kafka_mgmt_sdk"
 OUTPUT_PATH="sdks/kafka_mgmt_sdk/apiv1/client"
 
 generate_sdk $OPENAPI_FILENAME $OUTPUT_PATH $PACKAGE_NAME
 
 OPENAPI_FILENAME="openapi/srs-fleet-manager.json"
-PACKAGE_NAME="registry_management_sdk"
+PACKAGE_NAME="rhoas_service_registry_mgmt_sdk"
 OUTPUT_PATH="sdks/registry_management_sdk/apiv1/client"
 
 generate_sdk $OPENAPI_FILENAME $OUTPUT_PATH $PACKAGE_NAME
 
 OPENAPI_FILENAME="openapi/connector_mgmt.yaml"
-PACKAGE_NAME="connector_management_sdk"
+PACKAGE_NAME="rhoas_connector_mgmt_sdk"
 OUTPUT_PATH="sdks/connector_management_sdk/apiv1/client"
 
 generate_sdk $OPENAPI_FILENAME $OUTPUT_PATH $PACKAGE_NAME
 
 OPENAPI_FILENAME="openapi/kafka-admin-rest.yaml"
-PACKAGE_NAME="kafka_instance_sdk"
+PACKAGE_NAME="rhoas_kafka_instance_sdk"
 OUTPUT_PATH="sdks/kafka_instance_sdk/apiv1/client"
 
 generate_sdk $OPENAPI_FILENAME $OUTPUT_PATH $PACKAGE_NAME
 
 OPENAPI_FILENAME="openapi/ams.json"
 PATCH_FILE="openapi/ams.patch" 
-PACKAGE_NAME="account_management_sdk"
+PACKAGE_NAME="rhoas_account_mgmt_sdk"
 OUTPUT_PATH="sdks/account_management_sdk/apiv1/client"
 
 patch $OPENAPI_FILENAME < $PATCH_FILE
@@ -80,13 +80,13 @@ sed -i '' 's/date-time/utc-date/' registry-instance.json
 cd ..
 
 OPENAPI_FILENAME="openapi/registry-instance.json"
-PACKAGE_NAME="registry_instance_sdk"
+PACKAGE_NAME="rhoas_registry_instance_sdk"
 OUTPUT_PATH="sdks/registry_instance_sdk/apiv1/client"
 
 generate_sdk $OPENAPI_FILENAME $OUTPUT_PATH $PACKAGE_NAME
 
 OPENAPI_FILENAME="openapi/smartevents_mgmt.yaml"
-PACKAGE_NAME="smart_events_management_sdk"
+PACKAGE_NAME="rhoas_smart_events_mgmt_sdk"
 OUTPUT_PATH="sdks/smart_events_management_sdk/apiv1/client"
 
 rm -Rf $OUTPUT_PATH/model $OUTPUT_PATH/api
