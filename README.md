@@ -34,3 +34,9 @@ $ python3 -m pip install ....
 ## Contributing
 
 Contributions are welcome. See [CONTRIBUTING](CONTRIBUTING.md) for details.
+
+## Development
+To get started with [poetry vist here](https://python-poetry.org/docs/#installation). 
+
+Here is a handy [cheat sheet for poetry](https://gist.github.com/CarlosDomingues/b88df15749af23a463148bd2c2b9b3fb).
+
