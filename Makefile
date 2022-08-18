@@ -6,6 +6,15 @@ generate:
 generate-errors:
 	./scripts/errors/generate-errors.sh
 
+.PHONY: build
+build:
+	@{ \
+		poetry build \
+		}
+	
+
 .PHONY: publish
 publish:
-	./scripts/publish.sh
+	@{ \
+		poetry publish ;\
+	}
