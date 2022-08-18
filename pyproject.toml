@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "dimakis_testies_sdks"
+version = "0.1.0"
+description = "A package which includes RHOAS SDKs"
+authors = ["dimakis <dimitri.saridakis@gmail.com>"]
+license = "Apache License"
+readme = "README.md"
+packages = [
+    { include = "sdks/connector_mgmt_sdk" },
+    { include = "sdks/kafka_instance_sdk"},
+    { include = "sdks/registry_mgmt_sdk"},
+    { include = "sdks/kafka_mgmt_sdk"},
+    { include = "sdks/registry_instance_sdk"},
+    { include = "sdks/smart_events_mgmt_sdk"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+urllib3 = "1.25.3"
+python-dateutil = "*"
+
+[tool.poetry.dev-dependencies]
+poetry = "^1.0"
+pytest-cov = "^2.8.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
