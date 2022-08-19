@@ -1,17 +1,17 @@
 [tool.poetry]
-name = "dimakis_testies_sdks"
+name = "dimakis_rhoas_sdks"
 version = "0.1.0"
 description = "A package which includes RHOAS SDKs"
 authors = ["dimakis <dimitri.saridakis@gmail.com>"]
 license = "Apache License"
 readme = "README.md"
 packages = [
-    { include = "sdks/connector_mgmt_sdk" },
-    { include = "sdks/kafka_instance_sdk"},
-    { include = "sdks/registry_mgmt_sdk"},
-    { include = "sdks/kafka_mgmt_sdk"},
-    { include = "sdks/registry_instance_sdk"},
-    { include = "sdks/smart_events_mgmt_sdk"},
+    { include = "dimakis_test_connector_mgmt_sdk", from = "sdks/connector_mgmt_sdk/" },
+    { include = "dimakis_test_kafka_instance_sdk", from = "sdks/kafka_instance_sdk/"},
+    { include = "dimakis_test_service_registry_mgmt_sdk", from = "sdks/registry_mgmt_sdk/"},
+    { include = "dimakis_test_kafka_mgmt_sdk", from = "sdks/kafka_mgmt_sdk/"},
+    { include = "dimakis_test_registry_instance_sdk", from = "sdks/registry_instance_sdk/"},
+    { include = "dimakis_test_smart_events_mgmt_sdk", from = "sdks/smart_events_mgmt_sdk/"},
 ]
 
 [tool.poetry.dependencies]
