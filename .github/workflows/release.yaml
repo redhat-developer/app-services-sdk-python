@@ -17,4 +17,4 @@ jobs:
       - name: Publish packages
         run: make publish
         env:
-          PIP_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }} # find auth token
+          PIP_AUTH_TOKEN: ${{ secrets.PYPI_AUTH_TOKEN }} # find auth token
