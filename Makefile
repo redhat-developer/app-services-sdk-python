@@ -9,7 +9,7 @@ generate-errors:
 .PHONY: build
 build:
 	@{ \
-		poetry build \
+		poetry build ;\
 		}
 	
 
