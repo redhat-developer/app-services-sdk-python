@@ -3,6 +3,17 @@ name: SDK Client Generator
 on:
   repository_dispatch:
     types: openapi-spec-change
+  workflow_dispatch:
+    inputs:
+      url: 
+        description: 'Type of SDK event to handle'     
+        required: true
+        type: choice
+        options:
+        - "https://raw.githubusercontent.com/bf2fc6cc711aee1a0c2a/kas-fleet-manager/main/openapi/kas-fleet-manager.yaml"
+        - "https://raw.githubusercontent.com/bf2fc6cc711aee1a0c2a/kas-fleet-manager/main/openapi/connector_mgmt.yaml"
+        - "https://raw.githubusercontent.com/bf2fc6cc711aee1a0c2a/srs-fleet-manager/main/core/src/main/resources/srs-fleet-manager.json"
+        - "https://raw.githubusercontent.com/5733d9e2be6485d52ffa08870cabdee0/sandbox/main/openapi/smartevents_mgmt.yaml"
   
 jobs:
   generate_sdk_clients:
@@ -18,12 +29,12 @@ jobs:
       uses: actions/setup-python@v1
       with:
         python-version: '3.9'
-    - name: Delete old generated giles 
-      run: rm -rf ./sdks
-    - name: Validate and generate SDK clients
-      run: make generate
-    - name: Build Python modules
-      run: make build
+    - name: Generate SDKs
+      if: github.event.inputs.url != ''
+      run: |
+        ./scripts/fetch_api.sh ${{ github.event.inputs.url }}
+        rm -rf ./sdks
+        make generate
     
    
 
