@@ -2,7 +2,7 @@
 name = "dimakis_rhoas_sdks"
 version = "0.1.0"
 description = "A package which includes RHOAS SDKs"
-authors = ["dimakis <dimitri.saridakis@gmail.com>"]
+authors = ["dimakis <dsaridak@redhat.com>"]
 license = "Apache License"
 readme = "README.md"
 packages = [
