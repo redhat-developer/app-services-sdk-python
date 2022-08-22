@@ -35,7 +35,7 @@ jobs:
       uses: EndBug/add-and-commit@v9.0.1
       with:
         add: ./sdks/*
-        commit-message: "chore(sdk): generate SDKs"
+        message: "chore(sdk): generate SDKs"
         push: true
 
 
