@@ -25,16 +25,17 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: '14'        
-    - name: Use Python 
-      uses: actions/setup-python@v1
-      with:
-        python-version: '3.9'
     - name: Generate SDKs
       if: github.event.inputs.url != ''
       run: |
         ./scripts/fetch_api.sh ${{ github.event.inputs.url }}
         rm -rf ./sdks
         make generate
-    
-   
+    - name: Add & Commit
+      uses: EndBug/add-and-commit@v9.0.1
+      with:
+        add: ./sdks/*
+        commit-message: "chore(sdk): generate SDKs"
+        push: true
+
 
