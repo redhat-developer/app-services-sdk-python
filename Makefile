@@ -22,4 +22,4 @@ build: install-setup
 
 .PHONY: publish
 publish: install-setup 
-	@poetry publish 
+	@twine upload dist/*

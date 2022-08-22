@@ -71,7 +71,7 @@ pycparser = "*"
 
 [[package]]
 name = "charset-normalizer"
-version = "2.1.0"
+version = "2.1.1"
 description = "The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet."
 category = "dev"
 optional = false
@@ -333,7 +333,7 @@ dev = ["tox", "pre-commit"]
 
 [[package]]
 name = "poetry"
-version = "1.1.14"
+version = "1.1.15"
 description = "Python dependency management and packaging made easy."
 category = "dev"
 optional = false
@@ -687,8 +687,8 @@ cffi = [
     {file = "cffi-1.15.1.tar.gz", hash = "sha256:d400bfb9a37b1351253cb402671cea7e89bdecc294e8016a707f6d1d8ac934f9"},
 ]
 charset-normalizer = [
-    {file = "charset-normalizer-2.1.0.tar.gz", hash = "sha256:575e708016ff3a5e3681541cb9d79312c416835686d054a23accb873b254f413"},
-    {file = "charset_normalizer-2.1.0-py3-none-any.whl", hash = "sha256:5189b6f22b01957427f35b6a08d9a0bc45b46d3788ef5a92e978433c7a35f8a5"},
+    {file = "charset-normalizer-2.1.1.tar.gz", hash = "sha256:5a3d016c7c547f69d6f81fb0db9449ce888b418b5b9952cc5e6e66843e9dd845"},
+    {file = "charset_normalizer-2.1.1-py3-none-any.whl", hash = "sha256:83e9a75d1911279afd89352c68b45348559d1fc0506b054b346651b5e7fee29f"},
 ]
 cleo = [
     {file = "cleo-0.8.1-py2.py3-none-any.whl", hash = "sha256:141cda6dc94a92343be626bb87a0b6c86ae291dfc732a57bf04310d4b4201753"},
@@ -897,8 +897,8 @@ pluggy = [
     {file = "pluggy-1.0.0.tar.gz", hash = "sha256:4224373bacce55f955a878bf9cfa763c1e360858e330072059e10bad68531159"},
 ]
 poetry = [
-    {file = "poetry-1.1.14-py2.py3-none-any.whl", hash = "sha256:fbd0b2536b730cd1d7a1fabb3a292a2cc423c5da3d59c4db44335a449f5acd9a"},
-    {file = "poetry-1.1.14.tar.gz", hash = "sha256:8b5a7676cda9b9e85c71743c672352cabcb6e2f647b6b88fa95e4f374bc8edce"},
+    {file = "poetry-1.1.15-py2.py3-none-any.whl", hash = "sha256:2f8f68bc02006386dd640d08e0ae483231501c6e727842a8a799c9ee376b98c2"},
+    {file = "poetry-1.1.15.tar.gz", hash = "sha256:a373848fd205f31b2f6bee6b87a201ea1e09ca573a2f40d0991539f564cedffd"},
 ]
 poetry-core = [
     {file = "poetry-core-1.0.8.tar.gz", hash = "sha256:951fc7c1f8d710a94cb49019ee3742125039fc659675912ea614ac2aa405b118"},
