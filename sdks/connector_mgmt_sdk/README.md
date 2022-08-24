@@ -14,7 +14,7 @@ Python >=3.6
 ## Installation & Usage
 ### pip install
 
-The package is hosted on [PyPI](https://pypi.org/project/rhoas-rhoas-sdks/), you can install directly using:
+The package is hosted on [PyPI](https://pypi.org/project/rhoas-sdks/), you can install directly using:
 
 ```sh
 pip install rhoas_connector_mgmt_sdk
