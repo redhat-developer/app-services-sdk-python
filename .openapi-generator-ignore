@@ -3,3 +3,6 @@
 **/api
 **/.openapi-generator-ignore
 **/.gitlab-ci.yml
+**/setup.cfg
+**/setup.py
+**/requirements.txt
