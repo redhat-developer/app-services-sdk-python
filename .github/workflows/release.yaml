@@ -25,5 +25,5 @@ jobs:
       - name: Publish distribution 📦 to Test PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
-          password: ${{ secrets.DIMAKIS_TEST_PYPI_API_TOKEN }}
+          password: ${{ secrets.RHOAS_TEST_PYPI_API_TOKEN }}
           repository_url: https://test.pypi.org/legacy/
