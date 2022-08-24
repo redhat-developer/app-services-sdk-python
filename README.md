@@ -1,6 +1,5 @@
 # RHOAS SDK for Python
 
-
 Python packages and API clients for Red Had OpenShift Application Services (RHOAS) 
 
 ## Prequisites
