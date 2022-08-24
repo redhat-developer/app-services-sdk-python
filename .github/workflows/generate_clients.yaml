@@ -2,7 +2,7 @@ name: SDK Client Generator
 
 on:
   repository_dispatch:
-    types: openapi-spec-test
+    types: openapi-spec-change
   workflow_dispatch:
     inputs:
       url: 
