@@ -12,10 +12,10 @@
 import sys
 import unittest
 
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.model.channel import Channel
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.model.channel import Channel
 globals()['Channel'] = Channel
-from dimakis_test_connector_mgmt_sdk.model.connector_type_all_of import ConnectorTypeAllOf
+from rhoas_connector_mgmt_sdk.model.connector_type_all_of import ConnectorTypeAllOf
 
 
 class TestConnectorTypeAllOf(unittest.TestCase):

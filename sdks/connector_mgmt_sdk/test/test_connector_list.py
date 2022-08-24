@@ -12,14 +12,14 @@
 import sys
 import unittest
 
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.model.connector import Connector
-from dimakis_test_connector_mgmt_sdk.model.connector_list_all_of import ConnectorListAllOf
-from dimakis_test_connector_mgmt_sdk.model.list import List
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.model.connector import Connector
+from rhoas_connector_mgmt_sdk.model.connector_list_all_of import ConnectorListAllOf
+from rhoas_connector_mgmt_sdk.model.list import List
 globals()['Connector'] = Connector
 globals()['ConnectorListAllOf'] = ConnectorListAllOf
 globals()['List'] = List
-from dimakis_test_connector_mgmt_sdk.model.connector_list import ConnectorList
+from rhoas_connector_mgmt_sdk.model.connector_list import ConnectorList
 
 
 class TestConnectorList(unittest.TestCase):

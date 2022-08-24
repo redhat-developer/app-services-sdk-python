@@ -11,14 +11,14 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_instance_sdk
-from dimakis_test_kafka_instance_sdk.model.list import List
-from dimakis_test_kafka_instance_sdk.model.record import Record
-from dimakis_test_kafka_instance_sdk.model.record_list_all_of import RecordListAllOf
+import rhoas_kafka_instance_sdk
+from rhoas_kafka_instance_sdk.model.list import List
+from rhoas_kafka_instance_sdk.model.record import Record
+from rhoas_kafka_instance_sdk.model.record_list_all_of import RecordListAllOf
 globals()['List'] = List
 globals()['Record'] = Record
 globals()['RecordListAllOf'] = RecordListAllOf
-from dimakis_test_kafka_instance_sdk.model.record_list import RecordList
+from rhoas_kafka_instance_sdk.model.record_list import RecordList
 
 
 class TestRecordList(unittest.TestCase):

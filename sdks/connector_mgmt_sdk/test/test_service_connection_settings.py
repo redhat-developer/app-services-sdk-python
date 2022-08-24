@@ -12,8 +12,8 @@
 import sys
 import unittest
 
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.model.service_connection_settings import ServiceConnectionSettings
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.model.service_connection_settings import ServiceConnectionSettings
 
 
 class TestServiceConnectionSettings(unittest.TestCase):

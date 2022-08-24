@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_instance_sdk
-from dimakis_test_kafka_instance_sdk.model.acl_binding_order_key import AclBindingOrderKey
+import rhoas_kafka_instance_sdk
+from rhoas_kafka_instance_sdk.model.acl_binding_order_key import AclBindingOrderKey
 
 
 class TestAclBindingOrderKey(unittest.TestCase):

@@ -1,4 +1,4 @@
-# dimakis_test_registry_instance_sdk.UsersApi
+# rhoas_registry_instance_sdk.UsersApi
 
 All URIs are relative to *http://localhost*
 
@@ -19,20 +19,20 @@ Returns information about the currently authenticated user.
 
 ```python
 import time
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.api import users_api
-from dimakis_test_registry_instance_sdk.model.user_info import UserInfo
-from dimakis_test_registry_instance_sdk.model.error import Error
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.api import users_api
+from rhoas_registry_instance_sdk.model.user_info import UserInfo
+from rhoas_registry_instance_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_registry_instance_sdk.Configuration(
+configuration = rhoas_registry_instance_sdk.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
+with rhoas_registry_instance_sdk.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = users_api.UsersApi(api_client)
 
@@ -41,7 +41,7 @@ with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
         # Get current user
         api_response = api_instance.get_current_user_info()
         pprint(api_response)
-    except dimakis_test_registry_instance_sdk.ApiException as e:
+    except rhoas_registry_instance_sdk.ApiException as e:
         print("Exception when calling UsersApi->get_current_user_info: %s\n" % e)
 ```
 

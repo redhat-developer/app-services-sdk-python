@@ -1,4 +1,4 @@
-# dimakis_test_connector_mgmt_sdk.ConnectorServiceApi
+# rhoas_connector_mgmt_sdk.ConnectorServiceApi
 
 All URIs are relative to *https://api.openshift.com*
 
@@ -19,19 +19,19 @@ Returns the version metadata
 
 ```python
 import time
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.api import connector_service_api
-from dimakis_test_connector_mgmt_sdk.model.version_metadata import VersionMetadata
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.api import connector_service_api
+from rhoas_connector_mgmt_sdk.model.version_metadata import VersionMetadata
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_connector_mgmt_sdk.Configuration(
+configuration = rhoas_connector_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_connector_mgmt_sdk.ApiClient() as api_client:
+with rhoas_connector_mgmt_sdk.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = connector_service_api.ConnectorServiceApi(api_client)
 
@@ -40,7 +40,7 @@ with dimakis_test_connector_mgmt_sdk.ApiClient() as api_client:
         # Returns the version metadata
         api_response = api_instance.get_version_metadata()
         pprint(api_response)
-    except dimakis_test_connector_mgmt_sdk.ApiException as e:
+    except rhoas_connector_mgmt_sdk.ApiException as e:
         print("Exception when calling ConnectorServiceApi->get_version_metadata: %s\n" % e)
 ```
 

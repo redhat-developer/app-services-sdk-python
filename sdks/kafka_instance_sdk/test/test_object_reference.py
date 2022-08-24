@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_instance_sdk
-from dimakis_test_kafka_instance_sdk.model.object_reference import ObjectReference
+import rhoas_kafka_instance_sdk
+from rhoas_kafka_instance_sdk.model.object_reference import ObjectReference
 
 
 class TestObjectReference(unittest.TestCase):

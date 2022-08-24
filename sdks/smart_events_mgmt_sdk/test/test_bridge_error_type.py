@@ -12,8 +12,8 @@
 import sys
 import unittest
 
-import dimakis_test_smart_events_mgmt_sdk
-from dimakis_test_smart_events_mgmt_sdk.model.bridge_error_type import BridgeErrorType
+import rhoas_smart_events_mgmt_sdk
+from rhoas_smart_events_mgmt_sdk.model.bridge_error_type import BridgeErrorType
 
 
 class TestBridgeErrorType(unittest.TestCase):

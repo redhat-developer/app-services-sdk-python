@@ -12,10 +12,10 @@
 import sys
 import unittest
 
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.model.properties import Properties
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.model.properties import Properties
 globals()['Properties'] = Properties
-from dimakis_test_registry_instance_sdk.model.editable_meta_data import EditableMetaData
+from rhoas_registry_instance_sdk.model.editable_meta_data import EditableMetaData
 
 
 class TestEditableMetaData(unittest.TestCase):

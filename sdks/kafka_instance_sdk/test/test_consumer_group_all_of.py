@@ -11,14 +11,14 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_instance_sdk
-from dimakis_test_kafka_instance_sdk.model.consumer import Consumer
-from dimakis_test_kafka_instance_sdk.model.consumer_group_metrics import ConsumerGroupMetrics
-from dimakis_test_kafka_instance_sdk.model.consumer_group_state import ConsumerGroupState
+import rhoas_kafka_instance_sdk
+from rhoas_kafka_instance_sdk.model.consumer import Consumer
+from rhoas_kafka_instance_sdk.model.consumer_group_metrics import ConsumerGroupMetrics
+from rhoas_kafka_instance_sdk.model.consumer_group_state import ConsumerGroupState
 globals()['Consumer'] = Consumer
 globals()['ConsumerGroupMetrics'] = ConsumerGroupMetrics
 globals()['ConsumerGroupState'] = ConsumerGroupState
-from dimakis_test_kafka_instance_sdk.model.consumer_group_all_of import ConsumerGroupAllOf
+from rhoas_kafka_instance_sdk.model.consumer_group_all_of import ConsumerGroupAllOf
 
 
 class TestConsumerGroupAllOf(unittest.TestCase):

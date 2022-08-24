@@ -12,10 +12,10 @@
 import sys
 import unittest
 
-import dimakis_test_smart_events_mgmt_sdk
-from dimakis_test_smart_events_mgmt_sdk.model.cloud_region_response import CloudRegionResponse
+import rhoas_smart_events_mgmt_sdk
+from rhoas_smart_events_mgmt_sdk.model.cloud_region_response import CloudRegionResponse
 globals()['CloudRegionResponse'] = CloudRegionResponse
-from dimakis_test_smart_events_mgmt_sdk.model.cloud_region_list_response import CloudRegionListResponse
+from rhoas_smart_events_mgmt_sdk.model.cloud_region_list_response import CloudRegionListResponse
 
 
 class TestCloudRegionListResponse(unittest.TestCase):

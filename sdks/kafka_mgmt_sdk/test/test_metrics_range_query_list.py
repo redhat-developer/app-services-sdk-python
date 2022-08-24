@@ -12,12 +12,12 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_mgmt_sdk
-from dimakis_test_kafka_mgmt_sdk.model.metrics_range_query_list_all_of import MetricsRangeQueryListAllOf
-from dimakis_test_kafka_mgmt_sdk.model.range_query import RangeQuery
+import rhoas_kafka_mgmt_sdk
+from rhoas_kafka_mgmt_sdk.model.metrics_range_query_list_all_of import MetricsRangeQueryListAllOf
+from rhoas_kafka_mgmt_sdk.model.range_query import RangeQuery
 globals()['MetricsRangeQueryListAllOf'] = MetricsRangeQueryListAllOf
 globals()['RangeQuery'] = RangeQuery
-from dimakis_test_kafka_mgmt_sdk.model.metrics_range_query_list import MetricsRangeQueryList
+from rhoas_kafka_mgmt_sdk.model.metrics_range_query_list import MetricsRangeQueryList
 
 
 class TestMetricsRangeQueryList(unittest.TestCase):

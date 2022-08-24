@@ -12,10 +12,10 @@
 import sys
 import unittest
 
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.model.rule_type import RuleType
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.model.rule_type import RuleType
 globals()['RuleType'] = RuleType
-from dimakis_test_registry_instance_sdk.model.rule import Rule
+from rhoas_registry_instance_sdk.model.rule import Rule
 
 
 class TestRule(unittest.TestCase):

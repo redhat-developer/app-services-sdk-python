@@ -1,4 +1,4 @@
-# dimakis-test-registry-instance-sdk
+# rhoas-registry-instance-sdk
 Apicurio Registry is a datastore for standard event schemas and API designs. Apicurio Registry enables developers to manage and share the structure of their data using a REST interface. For example, client applications can dynamically push or pull the latest updates to or from the registry without needing to redeploy. Apicurio Registry also enables developers to create rules that govern how registry content can evolve over time. For example, this includes rules for content validation and version compatibility.
 
 The Apicurio Registry REST API enables client applications to manage the artifacts in the registry. This API provides create, read, update, and delete operations for schema and API artifacts, rules, versions, and metadata. 
@@ -32,15 +32,15 @@ Python >=3.6
 ## Installation & Usage
 ### pip install
 
-The package is hosted on [PyPI](https://test.pypi.org/project//), you can install directly using:
+The package is hosted on [PyPI](https://pypi.org/project/rhoas-rhoas-sdks/), you can install directly using:
 
 ```sh
-pip install dimakis_test_registry_instance_sdk
+pip install rhoas_registry_instance_sdk
 ```
 
 Then import the package:
 ```python
-import dimakis_test_registry_instance_sdk
+import rhoas_registry_instance_sdk
 ```
 
 ## Getting Started
@@ -50,26 +50,26 @@ Please follow the [installation procedure](#installation--usage) and then run th
 ```python
 
 import time
-import dimakis_test_registry_instance_sdk
+import rhoas_registry_instance_sdk
 from pprint import pprint
-from dimakis_test_registry_instance_sdk.api import admin_api
-from dimakis_test_registry_instance_sdk.model.configuration_property import ConfigurationProperty
-from dimakis_test_registry_instance_sdk.model.error import Error
-from dimakis_test_registry_instance_sdk.model.log_configuration import LogConfiguration
-from dimakis_test_registry_instance_sdk.model.named_log_configuration import NamedLogConfiguration
-from dimakis_test_registry_instance_sdk.model.role_mapping import RoleMapping
-from dimakis_test_registry_instance_sdk.model.update_configuration_property import UpdateConfigurationProperty
-from dimakis_test_registry_instance_sdk.model.update_role import UpdateRole
+from rhoas_registry_instance_sdk.api import admin_api
+from rhoas_registry_instance_sdk.model.configuration_property import ConfigurationProperty
+from rhoas_registry_instance_sdk.model.error import Error
+from rhoas_registry_instance_sdk.model.log_configuration import LogConfiguration
+from rhoas_registry_instance_sdk.model.named_log_configuration import NamedLogConfiguration
+from rhoas_registry_instance_sdk.model.role_mapping import RoleMapping
+from rhoas_registry_instance_sdk.model.update_configuration_property import UpdateConfigurationProperty
+from rhoas_registry_instance_sdk.model.update_role import UpdateRole
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_registry_instance_sdk.Configuration(
+configuration = rhoas_registry_instance_sdk.Configuration(
     host = "http://localhost"
 )
 
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_registry_instance_sdk.ApiClient(configuration) as api_client:
+with rhoas_registry_instance_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
     role_mapping = RoleMapping(
@@ -81,7 +81,7 @@ with dimakis_test_registry_instance_sdk.ApiClient(configuration) as api_client:
     try:
         # Create a new role mapping
         api_instance.create_role_mapping(role_mapping)
-    except dimakis_test_registry_instance_sdk.ApiException as e:
+    except rhoas_registry_instance_sdk.ApiException as e:
         print("Exception when calling AdminApi->create_role_mapping: %s\n" % e)
 ```
 
@@ -199,20 +199,20 @@ apicurio@lists.jboss.org
 
 
 ## Notes for Large OpenAPI documents
-If the OpenAPI document is large, imports in dimakis_test_registry_instance_sdk.apis and dimakis_test_registry_instance_sdk.models may fail with a
+If the OpenAPI document is large, imports in rhoas_registry_instance_sdk.apis and rhoas_registry_instance_sdk.models may fail with a
 RecursionError indicating the maximum recursion limit has been exceeded. In that case, there are a couple of solutions:
 
 Solution 1:
 Use specific imports for apis and models like:
-- `from dimakis_test_registry_instance_sdk.api.default_api import DefaultApi`
-- `from dimakis_test_registry_instance_sdk.model.pet import Pet`
+- `from rhoas_registry_instance_sdk.api.default_api import DefaultApi`
+- `from rhoas_registry_instance_sdk.model.pet import Pet`
 
 Solution 2:
 Before importing the package, adjust the maximum recursion limit as shown below:
 ```
 import sys
 sys.setrecursionlimit(1500)
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.apis import *
-from dimakis_test_registry_instance_sdk.models import *
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.apis import *
+from rhoas_registry_instance_sdk.models import *
 ```

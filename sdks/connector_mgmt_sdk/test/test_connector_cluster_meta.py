@@ -12,12 +12,12 @@
 import sys
 import unittest
 
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.model.connector_cluster_request_meta import ConnectorClusterRequestMeta
-from dimakis_test_connector_mgmt_sdk.model.object_meta import ObjectMeta
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.model.connector_cluster_request_meta import ConnectorClusterRequestMeta
+from rhoas_connector_mgmt_sdk.model.object_meta import ObjectMeta
 globals()['ConnectorClusterRequestMeta'] = ConnectorClusterRequestMeta
 globals()['ObjectMeta'] = ObjectMeta
-from dimakis_test_connector_mgmt_sdk.model.connector_cluster_meta import ConnectorClusterMeta
+from rhoas_connector_mgmt_sdk.model.connector_cluster_meta import ConnectorClusterMeta
 
 
 class TestConnectorClusterMeta(unittest.TestCase):

@@ -12,8 +12,8 @@
 import sys
 import unittest
 
-import dimakis_test_service_registry_mgmt_sdk
-from dimakis_test_service_registry_mgmt_sdk.model.registry_instance_type_value import RegistryInstanceTypeValue
+import rhoas_service_registry_mgmt_sdk
+from rhoas_service_registry_mgmt_sdk.model.registry_instance_type_value import RegistryInstanceTypeValue
 
 
 class TestRegistryInstanceTypeValue(unittest.TestCase):

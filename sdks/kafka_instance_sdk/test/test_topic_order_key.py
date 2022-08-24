@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_instance_sdk
-from dimakis_test_kafka_instance_sdk.model.topic_order_key import TopicOrderKey
+import rhoas_kafka_instance_sdk
+from rhoas_kafka_instance_sdk.model.topic_order_key import TopicOrderKey
 
 
 class TestTopicOrderKey(unittest.TestCase):

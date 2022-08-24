@@ -12,10 +12,10 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_mgmt_sdk
-from dimakis_test_kafka_mgmt_sdk.model.region_capacity_list_item import RegionCapacityListItem
+import rhoas_kafka_mgmt_sdk
+from rhoas_kafka_mgmt_sdk.model.region_capacity_list_item import RegionCapacityListItem
 globals()['RegionCapacityListItem'] = RegionCapacityListItem
-from dimakis_test_kafka_mgmt_sdk.model.cloud_region import CloudRegion
+from rhoas_kafka_mgmt_sdk.model.cloud_region import CloudRegion
 
 
 class TestCloudRegion(unittest.TestCase):

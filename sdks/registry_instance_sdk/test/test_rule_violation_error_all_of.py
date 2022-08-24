@@ -12,10 +12,10 @@
 import sys
 import unittest
 
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.model.rule_violation_cause import RuleViolationCause
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.model.rule_violation_cause import RuleViolationCause
 globals()['RuleViolationCause'] = RuleViolationCause
-from dimakis_test_registry_instance_sdk.model.rule_violation_error_all_of import RuleViolationErrorAllOf
+from rhoas_registry_instance_sdk.model.rule_violation_error_all_of import RuleViolationErrorAllOf
 
 
 class TestRuleViolationErrorAllOf(unittest.TestCase):

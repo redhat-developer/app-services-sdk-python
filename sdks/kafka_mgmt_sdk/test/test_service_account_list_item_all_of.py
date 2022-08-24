@@ -12,8 +12,8 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_mgmt_sdk
-from dimakis_test_kafka_mgmt_sdk.model.service_account_list_item_all_of import ServiceAccountListItemAllOf
+import rhoas_kafka_mgmt_sdk
+from rhoas_kafka_mgmt_sdk.model.service_account_list_item_all_of import ServiceAccountListItemAllOf
 
 
 class TestServiceAccountListItemAllOf(unittest.TestCase):

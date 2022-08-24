@@ -12,8 +12,8 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_mgmt_sdk
-from dimakis_test_kafka_mgmt_sdk.model.sso_provider_all_of import SsoProviderAllOf
+import rhoas_kafka_mgmt_sdk
+from rhoas_kafka_mgmt_sdk.model.sso_provider_all_of import SsoProviderAllOf
 
 
 class TestSsoProviderAllOf(unittest.TestCase):

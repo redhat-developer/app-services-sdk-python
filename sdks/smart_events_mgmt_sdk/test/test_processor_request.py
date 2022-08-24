@@ -12,14 +12,14 @@
 import sys
 import unittest
 
-import dimakis_test_smart_events_mgmt_sdk
-from dimakis_test_smart_events_mgmt_sdk.model.action import Action
-from dimakis_test_smart_events_mgmt_sdk.model.base_filter import BaseFilter
-from dimakis_test_smart_events_mgmt_sdk.model.source import Source
+import rhoas_smart_events_mgmt_sdk
+from rhoas_smart_events_mgmt_sdk.model.action import Action
+from rhoas_smart_events_mgmt_sdk.model.base_filter import BaseFilter
+from rhoas_smart_events_mgmt_sdk.model.source import Source
 globals()['Action'] = Action
 globals()['BaseFilter'] = BaseFilter
 globals()['Source'] = Source
-from dimakis_test_smart_events_mgmt_sdk.model.processor_request import ProcessorRequest
+from rhoas_smart_events_mgmt_sdk.model.processor_request import ProcessorRequest
 
 
 class TestProcessorRequest(unittest.TestCase):

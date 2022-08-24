@@ -12,8 +12,8 @@
 import sys
 import unittest
 
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.model.if_exists import IfExists
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.model.if_exists import IfExists
 
 
 class TestIfExists(unittest.TestCase):

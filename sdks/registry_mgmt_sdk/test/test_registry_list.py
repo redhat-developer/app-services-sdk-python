@@ -12,14 +12,14 @@
 import sys
 import unittest
 
-import dimakis_test_service_registry_mgmt_sdk
-from dimakis_test_service_registry_mgmt_sdk.model.list import List
-from dimakis_test_service_registry_mgmt_sdk.model.registry import Registry
-from dimakis_test_service_registry_mgmt_sdk.model.registry_list_all_of import RegistryListAllOf
+import rhoas_service_registry_mgmt_sdk
+from rhoas_service_registry_mgmt_sdk.model.list import List
+from rhoas_service_registry_mgmt_sdk.model.registry import Registry
+from rhoas_service_registry_mgmt_sdk.model.registry_list_all_of import RegistryListAllOf
 globals()['List'] = List
 globals()['Registry'] = Registry
 globals()['RegistryListAllOf'] = RegistryListAllOf
-from dimakis_test_service_registry_mgmt_sdk.model.registry_list import RegistryList
+from rhoas_service_registry_mgmt_sdk.model.registry_list import RegistryList
 
 
 class TestRegistryList(unittest.TestCase):

@@ -11,12 +11,12 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_instance_sdk
-from dimakis_test_kafka_instance_sdk.model.object_reference import ObjectReference
-from dimakis_test_kafka_instance_sdk.model.record_all_of import RecordAllOf
+import rhoas_kafka_instance_sdk
+from rhoas_kafka_instance_sdk.model.object_reference import ObjectReference
+from rhoas_kafka_instance_sdk.model.record_all_of import RecordAllOf
 globals()['ObjectReference'] = ObjectReference
 globals()['RecordAllOf'] = RecordAllOf
-from dimakis_test_kafka_instance_sdk.model.record import Record
+from rhoas_kafka_instance_sdk.model.record import Record
 
 
 class TestRecord(unittest.TestCase):

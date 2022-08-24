@@ -11,12 +11,12 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_instance_sdk
-from dimakis_test_kafka_instance_sdk.model.error_all_of import ErrorAllOf
-from dimakis_test_kafka_instance_sdk.model.object_reference import ObjectReference
+import rhoas_kafka_instance_sdk
+from rhoas_kafka_instance_sdk.model.error_all_of import ErrorAllOf
+from rhoas_kafka_instance_sdk.model.object_reference import ObjectReference
 globals()['ErrorAllOf'] = ErrorAllOf
 globals()['ObjectReference'] = ObjectReference
-from dimakis_test_kafka_instance_sdk.model.error import Error
+from rhoas_kafka_instance_sdk.model.error import Error
 
 
 class TestError(unittest.TestCase):

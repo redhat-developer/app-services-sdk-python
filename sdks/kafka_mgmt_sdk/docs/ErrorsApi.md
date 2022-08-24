@@ -1,4 +1,4 @@
-# dimakis_test_kafka_mgmt_sdk.ErrorsApi
+# rhoas_kafka_mgmt_sdk.ErrorsApi
 
 All URIs are relative to *https://api.openshift.com*
 
@@ -20,19 +20,19 @@ Returns the error by Id
 
 ```python
 import time
-import dimakis_test_kafka_mgmt_sdk
-from dimakis_test_kafka_mgmt_sdk.api import errors_api
-from dimakis_test_kafka_mgmt_sdk.model.error import Error
+import rhoas_kafka_mgmt_sdk
+from rhoas_kafka_mgmt_sdk.api import errors_api
+from rhoas_kafka_mgmt_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
+configuration = rhoas_kafka_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_kafka_mgmt_sdk.ApiClient() as api_client:
+with rhoas_kafka_mgmt_sdk.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = errors_api.ErrorsApi(api_client)
     id = "id_example" # str | The ID of record
@@ -41,7 +41,7 @@ with dimakis_test_kafka_mgmt_sdk.ApiClient() as api_client:
     try:
         api_response = api_instance.get_error_by_id(id)
         pprint(api_response)
-    except dimakis_test_kafka_mgmt_sdk.ApiException as e:
+    except rhoas_kafka_mgmt_sdk.ApiException as e:
         print("Exception when calling ErrorsApi->get_error_by_id: %s\n" % e)
 ```
 
@@ -86,19 +86,19 @@ Returns the list of possible API errors
 
 ```python
 import time
-import dimakis_test_kafka_mgmt_sdk
-from dimakis_test_kafka_mgmt_sdk.api import errors_api
-from dimakis_test_kafka_mgmt_sdk.model.error_list import ErrorList
+import rhoas_kafka_mgmt_sdk
+from rhoas_kafka_mgmt_sdk.api import errors_api
+from rhoas_kafka_mgmt_sdk.model.error_list import ErrorList
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
+configuration = rhoas_kafka_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_kafka_mgmt_sdk.ApiClient() as api_client:
+with rhoas_kafka_mgmt_sdk.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = errors_api.ErrorsApi(api_client)
 
@@ -106,7 +106,7 @@ with dimakis_test_kafka_mgmt_sdk.ApiClient() as api_client:
     try:
         api_response = api_instance.get_errors()
         pprint(api_response)
-    except dimakis_test_kafka_mgmt_sdk.ApiException as e:
+    except rhoas_kafka_mgmt_sdk.ApiException as e:
         print("Exception when calling ErrorsApi->get_errors: %s\n" % e)
 ```
 

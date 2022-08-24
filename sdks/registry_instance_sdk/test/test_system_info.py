@@ -12,8 +12,8 @@
 import sys
 import unittest
 
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.model.system_info import SystemInfo
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.model.system_info import SystemInfo
 
 
 class TestSystemInfo(unittest.TestCase):

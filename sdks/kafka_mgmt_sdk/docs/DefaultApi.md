@@ -1,4 +1,4 @@
-# dimakis_test_kafka_mgmt_sdk.DefaultApi
+# rhoas_kafka_mgmt_sdk.DefaultApi
 
 All URIs are relative to *https://api.openshift.com*
 
@@ -31,15 +31,15 @@ Creates a Kafka request
 
 ```python
 import time
-import dimakis_test_kafka_mgmt_sdk
-from dimakis_test_kafka_mgmt_sdk.api import default_api
-from dimakis_test_kafka_mgmt_sdk.model.error import Error
-from dimakis_test_kafka_mgmt_sdk.model.kafka_request import KafkaRequest
-from dimakis_test_kafka_mgmt_sdk.model.kafka_request_payload import KafkaRequestPayload
+import rhoas_kafka_mgmt_sdk
+from rhoas_kafka_mgmt_sdk.api import default_api
+from rhoas_kafka_mgmt_sdk.model.kafka_request import KafkaRequest
+from rhoas_kafka_mgmt_sdk.model.kafka_request_payload import KafkaRequestPayload
+from rhoas_kafka_mgmt_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
+configuration = rhoas_kafka_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -49,12 +49,12 @@ configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
+configuration = rhoas_kafka_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
     _async = True # bool | Perform the action in an asynchronous manner
@@ -73,7 +73,7 @@ with dimakis_test_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.create_kafka(_async, kafka_request_payload)
         pprint(api_response)
-    except dimakis_test_kafka_mgmt_sdk.ApiException as e:
+    except rhoas_kafka_mgmt_sdk.ApiException as e:
         print("Exception when calling DefaultApi->create_kafka: %s\n" % e)
 ```
 
@@ -126,13 +126,13 @@ Deletes a Kafka request by ID
 
 ```python
 import time
-import dimakis_test_kafka_mgmt_sdk
-from dimakis_test_kafka_mgmt_sdk.api import default_api
-from dimakis_test_kafka_mgmt_sdk.model.error import Error
+import rhoas_kafka_mgmt_sdk
+from rhoas_kafka_mgmt_sdk.api import default_api
+from rhoas_kafka_mgmt_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
+configuration = rhoas_kafka_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -142,12 +142,12 @@ configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
+configuration = rhoas_kafka_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
     id = "id_example" # str | The ID of record
@@ -157,7 +157,7 @@ with dimakis_test_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.delete_kafka_by_id(id, _async)
         pprint(api_response)
-    except dimakis_test_kafka_mgmt_sdk.ApiException as e:
+    except rhoas_kafka_mgmt_sdk.ApiException as e:
         print("Exception when calling DefaultApi->delete_kafka_by_id: %s\n" % e)
 ```
 
@@ -209,13 +209,13 @@ Returns all metrics in scrapeable format for a given kafka id
 
 ```python
 import time
-import dimakis_test_kafka_mgmt_sdk
-from dimakis_test_kafka_mgmt_sdk.api import default_api
-from dimakis_test_kafka_mgmt_sdk.model.error import Error
+import rhoas_kafka_mgmt_sdk
+from rhoas_kafka_mgmt_sdk.api import default_api
+from rhoas_kafka_mgmt_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
+configuration = rhoas_kafka_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -225,12 +225,12 @@ configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
+configuration = rhoas_kafka_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
     id = "id_example" # str | The ID of record
@@ -239,7 +239,7 @@ with dimakis_test_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.federate_metrics(id)
         pprint(api_response)
-    except dimakis_test_kafka_mgmt_sdk.ApiException as e:
+    except rhoas_kafka_mgmt_sdk.ApiException as e:
         print("Exception when calling DefaultApi->federate_metrics: %s\n" % e)
 ```
 
@@ -289,14 +289,14 @@ Returns the list of supported regions of the supported cloud provider
 
 ```python
 import time
-import dimakis_test_kafka_mgmt_sdk
-from dimakis_test_kafka_mgmt_sdk.api import default_api
-from dimakis_test_kafka_mgmt_sdk.model.error import Error
-from dimakis_test_kafka_mgmt_sdk.model.cloud_region_list import CloudRegionList
+import rhoas_kafka_mgmt_sdk
+from rhoas_kafka_mgmt_sdk.api import default_api
+from rhoas_kafka_mgmt_sdk.model.error import Error
+from rhoas_kafka_mgmt_sdk.model.cloud_region_list import CloudRegionList
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
+configuration = rhoas_kafka_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -306,12 +306,12 @@ configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
+configuration = rhoas_kafka_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
     id = "id_example" # str | The ID of record
@@ -322,7 +322,7 @@ with dimakis_test_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.get_cloud_provider_regions(id)
         pprint(api_response)
-    except dimakis_test_kafka_mgmt_sdk.ApiException as e:
+    except rhoas_kafka_mgmt_sdk.ApiException as e:
         print("Exception when calling DefaultApi->get_cloud_provider_regions: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -330,7 +330,7 @@ with dimakis_test_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.get_cloud_provider_regions(id, page=page, size=size)
         pprint(api_response)
-    except dimakis_test_kafka_mgmt_sdk.ApiException as e:
+    except rhoas_kafka_mgmt_sdk.ApiException as e:
         print("Exception when calling DefaultApi->get_cloud_provider_regions: %s\n" % e)
 ```
 
@@ -380,14 +380,14 @@ Returns the list of supported cloud providers
 
 ```python
 import time
-import dimakis_test_kafka_mgmt_sdk
-from dimakis_test_kafka_mgmt_sdk.api import default_api
-from dimakis_test_kafka_mgmt_sdk.model.cloud_provider_list import CloudProviderList
-from dimakis_test_kafka_mgmt_sdk.model.error import Error
+import rhoas_kafka_mgmt_sdk
+from rhoas_kafka_mgmt_sdk.api import default_api
+from rhoas_kafka_mgmt_sdk.model.cloud_provider_list import CloudProviderList
+from rhoas_kafka_mgmt_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
+configuration = rhoas_kafka_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -397,12 +397,12 @@ configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
+configuration = rhoas_kafka_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
     page = "1" # str | Page index (optional)
@@ -413,7 +413,7 @@ with dimakis_test_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.get_cloud_providers(page=page, size=size)
         pprint(api_response)
-    except dimakis_test_kafka_mgmt_sdk.ApiException as e:
+    except rhoas_kafka_mgmt_sdk.ApiException as e:
         print("Exception when calling DefaultApi->get_cloud_providers: %s\n" % e)
 ```
 
@@ -462,14 +462,14 @@ Returns the list of supported Kafka instance types and sizes filtered by cloud p
 
 ```python
 import time
-import dimakis_test_kafka_mgmt_sdk
-from dimakis_test_kafka_mgmt_sdk.api import default_api
-from dimakis_test_kafka_mgmt_sdk.model.supported_kafka_instance_types_list import SupportedKafkaInstanceTypesList
-from dimakis_test_kafka_mgmt_sdk.model.error import Error
+import rhoas_kafka_mgmt_sdk
+from rhoas_kafka_mgmt_sdk.api import default_api
+from rhoas_kafka_mgmt_sdk.model.supported_kafka_instance_types_list import SupportedKafkaInstanceTypesList
+from rhoas_kafka_mgmt_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
+configuration = rhoas_kafka_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -479,12 +479,12 @@ configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
+configuration = rhoas_kafka_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
     cloud_provider = "cloud_provider_example" # str | ID of the supported cloud provider
@@ -494,7 +494,7 @@ with dimakis_test_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.get_instance_types_by_cloud_provider_and_region(cloud_provider, cloud_region)
         pprint(api_response)
-    except dimakis_test_kafka_mgmt_sdk.ApiException as e:
+    except rhoas_kafka_mgmt_sdk.ApiException as e:
         print("Exception when calling DefaultApi->get_instance_types_by_cloud_provider_and_region: %s\n" % e)
 ```
 
@@ -544,14 +544,14 @@ Returns a Kafka request by ID
 
 ```python
 import time
-import dimakis_test_kafka_mgmt_sdk
-from dimakis_test_kafka_mgmt_sdk.api import default_api
-from dimakis_test_kafka_mgmt_sdk.model.error import Error
-from dimakis_test_kafka_mgmt_sdk.model.kafka_request import KafkaRequest
+import rhoas_kafka_mgmt_sdk
+from rhoas_kafka_mgmt_sdk.api import default_api
+from rhoas_kafka_mgmt_sdk.model.kafka_request import KafkaRequest
+from rhoas_kafka_mgmt_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
+configuration = rhoas_kafka_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -561,12 +561,12 @@ configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
+configuration = rhoas_kafka_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
     id = "id_example" # str | The ID of record
@@ -575,7 +575,7 @@ with dimakis_test_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.get_kafka_by_id(id)
         pprint(api_response)
-    except dimakis_test_kafka_mgmt_sdk.ApiException as e:
+    except rhoas_kafka_mgmt_sdk.ApiException as e:
         print("Exception when calling DefaultApi->get_kafka_by_id: %s\n" % e)
 ```
 
@@ -625,14 +625,14 @@ Returns a list of Kafka requests
 
 ```python
 import time
-import dimakis_test_kafka_mgmt_sdk
-from dimakis_test_kafka_mgmt_sdk.api import default_api
-from dimakis_test_kafka_mgmt_sdk.model.error import Error
-from dimakis_test_kafka_mgmt_sdk.model.kafka_request_list import KafkaRequestList
+import rhoas_kafka_mgmt_sdk
+from rhoas_kafka_mgmt_sdk.api import default_api
+from rhoas_kafka_mgmt_sdk.model.error import Error
+from rhoas_kafka_mgmt_sdk.model.kafka_request_list import KafkaRequestList
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
+configuration = rhoas_kafka_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -642,12 +642,12 @@ configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
+configuration = rhoas_kafka_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
     page = "1" # str | Page index (optional)
@@ -660,7 +660,7 @@ with dimakis_test_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.get_kafkas(page=page, size=size, order_by=order_by, search=search)
         pprint(api_response)
-    except dimakis_test_kafka_mgmt_sdk.ApiException as e:
+    except rhoas_kafka_mgmt_sdk.ApiException as e:
         print("Exception when calling DefaultApi->get_kafkas: %s\n" % e)
 ```
 
@@ -713,14 +713,14 @@ Returns metrics with instant query by Kafka ID
 
 ```python
 import time
-import dimakis_test_kafka_mgmt_sdk
-from dimakis_test_kafka_mgmt_sdk.api import default_api
-from dimakis_test_kafka_mgmt_sdk.model.error import Error
-from dimakis_test_kafka_mgmt_sdk.model.metrics_instant_query_list import MetricsInstantQueryList
+import rhoas_kafka_mgmt_sdk
+from rhoas_kafka_mgmt_sdk.api import default_api
+from rhoas_kafka_mgmt_sdk.model.error import Error
+from rhoas_kafka_mgmt_sdk.model.metrics_instant_query_list import MetricsInstantQueryList
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
+configuration = rhoas_kafka_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -730,12 +730,12 @@ configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
+configuration = rhoas_kafka_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
     id = "id_example" # str | The ID of record
@@ -745,7 +745,7 @@ with dimakis_test_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.get_metrics_by_instant_query(id)
         pprint(api_response)
-    except dimakis_test_kafka_mgmt_sdk.ApiException as e:
+    except rhoas_kafka_mgmt_sdk.ApiException as e:
         print("Exception when calling DefaultApi->get_metrics_by_instant_query: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -753,7 +753,7 @@ with dimakis_test_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.get_metrics_by_instant_query(id, filters=filters)
         pprint(api_response)
-    except dimakis_test_kafka_mgmt_sdk.ApiException as e:
+    except rhoas_kafka_mgmt_sdk.ApiException as e:
         print("Exception when calling DefaultApi->get_metrics_by_instant_query: %s\n" % e)
 ```
 
@@ -802,14 +802,14 @@ Returns metrics with timeseries range query by Kafka ID
 
 ```python
 import time
-import dimakis_test_kafka_mgmt_sdk
-from dimakis_test_kafka_mgmt_sdk.api import default_api
-from dimakis_test_kafka_mgmt_sdk.model.error import Error
-from dimakis_test_kafka_mgmt_sdk.model.metrics_range_query_list import MetricsRangeQueryList
+import rhoas_kafka_mgmt_sdk
+from rhoas_kafka_mgmt_sdk.api import default_api
+from rhoas_kafka_mgmt_sdk.model.metrics_range_query_list import MetricsRangeQueryList
+from rhoas_kafka_mgmt_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
+configuration = rhoas_kafka_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -819,12 +819,12 @@ configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
+configuration = rhoas_kafka_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
     id = "id_example" # str | The ID of record
@@ -834,7 +834,7 @@ with dimakis_test_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.get_metrics_by_range_query(id, )
         pprint(api_response)
-    except dimakis_test_kafka_mgmt_sdk.ApiException as e:
+    except rhoas_kafka_mgmt_sdk.ApiException as e:
         print("Exception when calling DefaultApi->get_metrics_by_range_query: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -842,7 +842,7 @@ with dimakis_test_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.get_metrics_by_range_query(id, filters=filters)
         pprint(api_response)
-    except dimakis_test_kafka_mgmt_sdk.ApiException as e:
+    except rhoas_kafka_mgmt_sdk.ApiException as e:
         print("Exception when calling DefaultApi->get_metrics_by_range_query: %s\n" % e)
 ```
 
@@ -892,19 +892,19 @@ Returns the kafka Service Fleet Manager API version metadata
 
 ```python
 import time
-import dimakis_test_kafka_mgmt_sdk
-from dimakis_test_kafka_mgmt_sdk.api import default_api
-from dimakis_test_kafka_mgmt_sdk.model.version_metadata import VersionMetadata
+import rhoas_kafka_mgmt_sdk
+from rhoas_kafka_mgmt_sdk.api import default_api
+from rhoas_kafka_mgmt_sdk.model.version_metadata import VersionMetadata
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
+configuration = rhoas_kafka_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_kafka_mgmt_sdk.ApiClient() as api_client:
+with rhoas_kafka_mgmt_sdk.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -912,7 +912,7 @@ with dimakis_test_kafka_mgmt_sdk.ApiClient() as api_client:
     try:
         api_response = api_instance.get_version_metadata()
         pprint(api_response)
-    except dimakis_test_kafka_mgmt_sdk.ApiException as e:
+    except rhoas_kafka_mgmt_sdk.ApiException as e:
         print("Exception when calling DefaultApi->get_version_metadata: %s\n" % e)
 ```
 
@@ -955,15 +955,15 @@ Update a Kafka instance by id
 
 ```python
 import time
-import dimakis_test_kafka_mgmt_sdk
-from dimakis_test_kafka_mgmt_sdk.api import default_api
-from dimakis_test_kafka_mgmt_sdk.model.error import Error
-from dimakis_test_kafka_mgmt_sdk.model.kafka_request import KafkaRequest
-from dimakis_test_kafka_mgmt_sdk.model.kafka_update_request import KafkaUpdateRequest
+import rhoas_kafka_mgmt_sdk
+from rhoas_kafka_mgmt_sdk.api import default_api
+from rhoas_kafka_mgmt_sdk.model.kafka_request import KafkaRequest
+from rhoas_kafka_mgmt_sdk.model.error import Error
+from rhoas_kafka_mgmt_sdk.model.kafka_update_request import KafkaUpdateRequest
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
+configuration = rhoas_kafka_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -973,12 +973,12 @@ configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
+configuration = rhoas_kafka_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
     id = "id_example" # str | The ID of record
@@ -991,7 +991,7 @@ with dimakis_test_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.update_kafka_by_id(id, kafka_update_request)
         pprint(api_response)
-    except dimakis_test_kafka_mgmt_sdk.ApiException as e:
+    except rhoas_kafka_mgmt_sdk.ApiException as e:
         print("Exception when calling DefaultApi->update_kafka_by_id: %s\n" % e)
 ```
 

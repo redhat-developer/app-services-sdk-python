@@ -12,8 +12,8 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_mgmt_sdk
-from dimakis_test_kafka_mgmt_sdk.model.supported_kafka_size_bytes_value_item import SupportedKafkaSizeBytesValueItem
+import rhoas_kafka_mgmt_sdk
+from rhoas_kafka_mgmt_sdk.model.supported_kafka_size_bytes_value_item import SupportedKafkaSizeBytesValueItem
 
 
 class TestSupportedKafkaSizeBytesValueItem(unittest.TestCase):

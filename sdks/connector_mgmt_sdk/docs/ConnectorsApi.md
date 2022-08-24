@@ -1,4 +1,4 @@
-# dimakis_test_connector_mgmt_sdk.ConnectorsApi
+# rhoas_connector_mgmt_sdk.ConnectorsApi
 
 All URIs are relative to *https://api.openshift.com*
 
@@ -24,15 +24,15 @@ Create a new connector
 
 ```python
 import time
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.api import connectors_api
-from dimakis_test_connector_mgmt_sdk.model.error import Error
-from dimakis_test_connector_mgmt_sdk.model.connector_request import ConnectorRequest
-from dimakis_test_connector_mgmt_sdk.model.connector import Connector
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.api import connectors_api
+from rhoas_connector_mgmt_sdk.model.connector import Connector
+from rhoas_connector_mgmt_sdk.model.error import Error
+from rhoas_connector_mgmt_sdk.model.connector_request import ConnectorRequest
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_connector_mgmt_sdk.Configuration(
+configuration = rhoas_connector_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -42,12 +42,12 @@ configuration = dimakis_test_connector_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_connector_mgmt_sdk.Configuration(
+configuration = rhoas_connector_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_connector_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_connector_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = connectors_api.ConnectorsApi(api_client)
     _async = True # bool | Perform the action in an asynchronous manner
@@ -58,7 +58,7 @@ with dimakis_test_connector_mgmt_sdk.ApiClient(configuration) as api_client:
         # Create a new connector
         api_response = api_instance.create_connector(_async, connector_request)
         pprint(api_response)
-    except dimakis_test_connector_mgmt_sdk.ApiException as e:
+    except rhoas_connector_mgmt_sdk.ApiException as e:
         print("Exception when calling ConnectorsApi->create_connector: %s\n" % e)
 ```
 
@@ -109,13 +109,13 @@ Delete a connector
 
 ```python
 import time
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.api import connectors_api
-from dimakis_test_connector_mgmt_sdk.model.error import Error
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.api import connectors_api
+from rhoas_connector_mgmt_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_connector_mgmt_sdk.Configuration(
+configuration = rhoas_connector_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -125,12 +125,12 @@ configuration = dimakis_test_connector_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_connector_mgmt_sdk.Configuration(
+configuration = rhoas_connector_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_connector_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_connector_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = connectors_api.ConnectorsApi(api_client)
     id = "id_example" # str | The ID of record
@@ -140,7 +140,7 @@ with dimakis_test_connector_mgmt_sdk.ApiClient(configuration) as api_client:
         # Delete a connector
         api_response = api_instance.delete_connector(id)
         pprint(api_response)
-    except dimakis_test_connector_mgmt_sdk.ApiException as e:
+    except rhoas_connector_mgmt_sdk.ApiException as e:
         print("Exception when calling ConnectorsApi->delete_connector: %s\n" % e)
 ```
 
@@ -189,14 +189,14 @@ Get a connector
 
 ```python
 import time
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.api import connectors_api
-from dimakis_test_connector_mgmt_sdk.model.error import Error
-from dimakis_test_connector_mgmt_sdk.model.connector import Connector
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.api import connectors_api
+from rhoas_connector_mgmt_sdk.model.connector import Connector
+from rhoas_connector_mgmt_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_connector_mgmt_sdk.Configuration(
+configuration = rhoas_connector_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -206,12 +206,12 @@ configuration = dimakis_test_connector_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_connector_mgmt_sdk.Configuration(
+configuration = rhoas_connector_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_connector_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_connector_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = connectors_api.ConnectorsApi(api_client)
     id = "id_example" # str | The ID of record
@@ -221,7 +221,7 @@ with dimakis_test_connector_mgmt_sdk.ApiClient(configuration) as api_client:
         # Get a connector
         api_response = api_instance.get_connector(id)
         pprint(api_response)
-    except dimakis_test_connector_mgmt_sdk.ApiException as e:
+    except rhoas_connector_mgmt_sdk.ApiException as e:
         print("Exception when calling ConnectorsApi->get_connector: %s\n" % e)
 ```
 
@@ -271,14 +271,14 @@ Returns a list of connector types
 
 ```python
 import time
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.api import connectors_api
-from dimakis_test_connector_mgmt_sdk.model.error import Error
-from dimakis_test_connector_mgmt_sdk.model.connector_list import ConnectorList
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.api import connectors_api
+from rhoas_connector_mgmt_sdk.model.error import Error
+from rhoas_connector_mgmt_sdk.model.connector_list import ConnectorList
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_connector_mgmt_sdk.Configuration(
+configuration = rhoas_connector_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -288,12 +288,12 @@ configuration = dimakis_test_connector_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_connector_mgmt_sdk.Configuration(
+configuration = rhoas_connector_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_connector_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_connector_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = connectors_api.ConnectorsApi(api_client)
     page = "1" # str | Page index (optional)
@@ -307,7 +307,7 @@ with dimakis_test_connector_mgmt_sdk.ApiClient(configuration) as api_client:
         # Returns a list of connector types
         api_response = api_instance.list_connectors(page=page, size=size, order_by=order_by, search=search)
         pprint(api_response)
-    except dimakis_test_connector_mgmt_sdk.ApiException as e:
+    except rhoas_connector_mgmt_sdk.ApiException as e:
         print("Exception when calling ConnectorsApi->list_connectors: %s\n" % e)
 ```
 
@@ -358,15 +358,15 @@ Patch a connector
 
 ```python
 import time
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.api import connectors_api
-from dimakis_test_connector_mgmt_sdk.model.error import Error
-from dimakis_test_connector_mgmt_sdk.model.connector_request import ConnectorRequest
-from dimakis_test_connector_mgmt_sdk.model.connector import Connector
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.api import connectors_api
+from rhoas_connector_mgmt_sdk.model.connector import Connector
+from rhoas_connector_mgmt_sdk.model.error import Error
+from rhoas_connector_mgmt_sdk.model.connector_request import ConnectorRequest
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_connector_mgmt_sdk.Configuration(
+configuration = rhoas_connector_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -376,12 +376,12 @@ configuration = dimakis_test_connector_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_connector_mgmt_sdk.Configuration(
+configuration = rhoas_connector_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_connector_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_connector_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = connectors_api.ConnectorsApi(api_client)
     id = "id_example" # str | The ID of record
@@ -392,7 +392,7 @@ with dimakis_test_connector_mgmt_sdk.ApiClient(configuration) as api_client:
         # Patch a connector
         api_response = api_instance.patch_connector(id, body)
         pprint(api_response)
-    except dimakis_test_connector_mgmt_sdk.ApiException as e:
+    except rhoas_connector_mgmt_sdk.ApiException as e:
         print("Exception when calling ConnectorsApi->patch_connector: %s\n" % e)
 ```
 

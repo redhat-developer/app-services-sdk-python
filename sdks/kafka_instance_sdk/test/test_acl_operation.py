@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_instance_sdk
-from dimakis_test_kafka_instance_sdk.model.acl_operation import AclOperation
+import rhoas_kafka_instance_sdk
+from rhoas_kafka_instance_sdk.model.acl_operation import AclOperation
 
 
 class TestAclOperation(unittest.TestCase):

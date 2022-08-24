@@ -1,4 +1,4 @@
-# dimakis_test_registry_instance_sdk.VersionsApi
+# rhoas_registry_instance_sdk.VersionsApi
 
 All URIs are relative to *http://localhost*
 
@@ -23,22 +23,22 @@ Creates a new version of the artifact by uploading new content.  The configured 
 
 ```python
 import time
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.api import versions_api
-from dimakis_test_registry_instance_sdk.model.content_create_request import ContentCreateRequest
-from dimakis_test_registry_instance_sdk.model.rule_violation_error import RuleViolationError
-from dimakis_test_registry_instance_sdk.model.error import Error
-from dimakis_test_registry_instance_sdk.model.version_meta_data import VersionMetaData
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.api import versions_api
+from rhoas_registry_instance_sdk.model.content_create_request import ContentCreateRequest
+from rhoas_registry_instance_sdk.model.rule_violation_error import RuleViolationError
+from rhoas_registry_instance_sdk.model.error import Error
+from rhoas_registry_instance_sdk.model.version_meta_data import VersionMetaData
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_registry_instance_sdk.Configuration(
+configuration = rhoas_registry_instance_sdk.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
+with rhoas_registry_instance_sdk.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = versions_api.VersionsApi(api_client)
     group_id = "my-group" # str | The artifact group ID.  Must be a string provided by the client, representing the name of the grouping of artifacts.
@@ -55,7 +55,7 @@ with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
         # Create artifact version
         api_response = api_instance.create_artifact_version(group_id, artifact_id, body)
         pprint(api_response)
-    except dimakis_test_registry_instance_sdk.ApiException as e:
+    except rhoas_registry_instance_sdk.ApiException as e:
         print("Exception when calling VersionsApi->create_artifact_version: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -64,7 +64,7 @@ with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
         # Create artifact version
         api_response = api_instance.create_artifact_version(group_id, artifact_id, body, x_registry_version=x_registry_version, x_registry_name=x_registry_name, x_registry_description=x_registry_description, x_registry_description_encoded=x_registry_description_encoded, x_registry_name_encoded=x_registry_name_encoded)
         pprint(api_response)
-    except dimakis_test_registry_instance_sdk.ApiException as e:
+    except rhoas_registry_instance_sdk.ApiException as e:
         print("Exception when calling VersionsApi->create_artifact_version: %s\n" % e)
 ```
 
@@ -119,19 +119,19 @@ Retrieves a single version of the artifact content.  Both the `artifactId` and t
 
 ```python
 import time
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.api import versions_api
-from dimakis_test_registry_instance_sdk.model.error import Error
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.api import versions_api
+from rhoas_registry_instance_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_registry_instance_sdk.Configuration(
+configuration = rhoas_registry_instance_sdk.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
+with rhoas_registry_instance_sdk.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = versions_api.VersionsApi(api_client)
     group_id = "my-group" # str | The artifact group ID.  Must be a string provided by the client, representing the name of the grouping of artifacts.
@@ -144,7 +144,7 @@ with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
         # Get artifact version
         api_response = api_instance.get_artifact_version(group_id, artifact_id, version)
         pprint(api_response)
-    except dimakis_test_registry_instance_sdk.ApiException as e:
+    except rhoas_registry_instance_sdk.ApiException as e:
         print("Exception when calling VersionsApi->get_artifact_version: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -153,7 +153,7 @@ with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
         # Get artifact version
         api_response = api_instance.get_artifact_version(group_id, artifact_id, version, dereference=dereference)
         pprint(api_response)
-    except dimakis_test_registry_instance_sdk.ApiException as e:
+    except rhoas_registry_instance_sdk.ApiException as e:
         print("Exception when calling VersionsApi->get_artifact_version: %s\n" % e)
 ```
 
@@ -203,20 +203,20 @@ Retrieves a single version of the artifact content.  Both the `artifactId` and t
 
 ```python
 import time
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.api import versions_api
-from dimakis_test_registry_instance_sdk.model.error import Error
-from dimakis_test_registry_instance_sdk.model.artifact_reference import ArtifactReference
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.api import versions_api
+from rhoas_registry_instance_sdk.model.error import Error
+from rhoas_registry_instance_sdk.model.artifact_reference import ArtifactReference
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_registry_instance_sdk.Configuration(
+configuration = rhoas_registry_instance_sdk.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
+with rhoas_registry_instance_sdk.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = versions_api.VersionsApi(api_client)
     group_id = "my-group" # str | The artifact group ID.  Must be a string provided by the client, representing the name of the grouping of artifacts.
@@ -228,7 +228,7 @@ with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
         # Get artifact version
         api_response = api_instance.get_artifact_version_references(group_id, artifact_id, version)
         pprint(api_response)
-    except dimakis_test_registry_instance_sdk.ApiException as e:
+    except rhoas_registry_instance_sdk.ApiException as e:
         print("Exception when calling VersionsApi->get_artifact_version_references: %s\n" % e)
 ```
 
@@ -277,20 +277,20 @@ Returns a list of all versions of the artifact.  The result set is paged.  This 
 
 ```python
 import time
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.api import versions_api
-from dimakis_test_registry_instance_sdk.model.version_search_results import VersionSearchResults
-from dimakis_test_registry_instance_sdk.model.error import Error
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.api import versions_api
+from rhoas_registry_instance_sdk.model.version_search_results import VersionSearchResults
+from rhoas_registry_instance_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_registry_instance_sdk.Configuration(
+configuration = rhoas_registry_instance_sdk.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
+with rhoas_registry_instance_sdk.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = versions_api.VersionsApi(api_client)
     group_id = "my-group" # str | The artifact group ID.  Must be a string provided by the client, representing the name of the grouping of artifacts.
@@ -303,7 +303,7 @@ with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
         # List artifact versions
         api_response = api_instance.list_artifact_versions(group_id, artifact_id)
         pprint(api_response)
-    except dimakis_test_registry_instance_sdk.ApiException as e:
+    except rhoas_registry_instance_sdk.ApiException as e:
         print("Exception when calling VersionsApi->list_artifact_versions: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -312,7 +312,7 @@ with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
         # List artifact versions
         api_response = api_instance.list_artifact_versions(group_id, artifact_id, offset=offset, limit=limit)
         pprint(api_response)
-    except dimakis_test_registry_instance_sdk.ApiException as e:
+    except rhoas_registry_instance_sdk.ApiException as e:
         print("Exception when calling VersionsApi->list_artifact_versions: %s\n" % e)
 ```
 
@@ -362,20 +362,20 @@ Updates the state of a specific version of an artifact.  For example, you can us
 
 ```python
 import time
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.api import versions_api
-from dimakis_test_registry_instance_sdk.model.update_state import UpdateState
-from dimakis_test_registry_instance_sdk.model.error import Error
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.api import versions_api
+from rhoas_registry_instance_sdk.model.update_state import UpdateState
+from rhoas_registry_instance_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_registry_instance_sdk.Configuration(
+configuration = rhoas_registry_instance_sdk.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
+with rhoas_registry_instance_sdk.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = versions_api.VersionsApi(api_client)
     group_id = "my-group" # str | The artifact group ID.  Must be a string provided by the client, representing the name of the grouping of artifacts.
@@ -389,7 +389,7 @@ with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
     try:
         # Update artifact version state
         api_instance.update_artifact_version_state(group_id, artifact_id, version, update_state)
-    except dimakis_test_registry_instance_sdk.ApiException as e:
+    except rhoas_registry_instance_sdk.ApiException as e:
         print("Exception when calling VersionsApi->update_artifact_version_state: %s\n" % e)
 ```
 

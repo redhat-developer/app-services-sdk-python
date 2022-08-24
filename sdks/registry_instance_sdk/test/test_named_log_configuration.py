@@ -12,14 +12,14 @@
 import sys
 import unittest
 
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.model.log_configuration import LogConfiguration
-from dimakis_test_registry_instance_sdk.model.log_level import LogLevel
-from dimakis_test_registry_instance_sdk.model.named_log_configuration_all_of import NamedLogConfigurationAllOf
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.model.log_configuration import LogConfiguration
+from rhoas_registry_instance_sdk.model.log_level import LogLevel
+from rhoas_registry_instance_sdk.model.named_log_configuration_all_of import NamedLogConfigurationAllOf
 globals()['LogConfiguration'] = LogConfiguration
 globals()['LogLevel'] = LogLevel
 globals()['NamedLogConfigurationAllOf'] = NamedLogConfigurationAllOf
-from dimakis_test_registry_instance_sdk.model.named_log_configuration import NamedLogConfiguration
+from rhoas_registry_instance_sdk.model.named_log_configuration import NamedLogConfiguration
 
 
 class TestNamedLogConfiguration(unittest.TestCase):

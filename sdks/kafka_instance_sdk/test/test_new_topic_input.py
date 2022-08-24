@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_instance_sdk
-from dimakis_test_kafka_instance_sdk.model.topic_settings import TopicSettings
+import rhoas_kafka_instance_sdk
+from rhoas_kafka_instance_sdk.model.topic_settings import TopicSettings
 globals()['TopicSettings'] = TopicSettings
-from dimakis_test_kafka_instance_sdk.model.new_topic_input import NewTopicInput
+from rhoas_kafka_instance_sdk.model.new_topic_input import NewTopicInput
 
 
 class TestNewTopicInput(unittest.TestCase):

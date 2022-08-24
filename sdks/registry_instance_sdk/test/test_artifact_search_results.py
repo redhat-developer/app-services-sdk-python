@@ -12,10 +12,10 @@
 import sys
 import unittest
 
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.model.searched_artifact import SearchedArtifact
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.model.searched_artifact import SearchedArtifact
 globals()['SearchedArtifact'] = SearchedArtifact
-from dimakis_test_registry_instance_sdk.model.artifact_search_results import ArtifactSearchResults
+from rhoas_registry_instance_sdk.model.artifact_search_results import ArtifactSearchResults
 
 
 class TestArtifactSearchResults(unittest.TestCase):

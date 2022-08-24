@@ -1,4 +1,4 @@
-# dimakis_test_connector_mgmt_sdk.ConnectorNamespacesApi
+# rhoas_connector_mgmt_sdk.ConnectorNamespacesApi
 
 All URIs are relative to *https://api.openshift.com*
 
@@ -22,15 +22,15 @@ Create a new evaluation connector namespace
 
 ```python
 import time
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.api import connector_namespaces_api
-from dimakis_test_connector_mgmt_sdk.model.error import Error
-from dimakis_test_connector_mgmt_sdk.model.connector_namespace_eval_request import ConnectorNamespaceEvalRequest
-from dimakis_test_connector_mgmt_sdk.model.connector_namespace import ConnectorNamespace
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.api import connector_namespaces_api
+from rhoas_connector_mgmt_sdk.model.error import Error
+from rhoas_connector_mgmt_sdk.model.connector_namespace import ConnectorNamespace
+from rhoas_connector_mgmt_sdk.model.connector_namespace_eval_request import ConnectorNamespaceEvalRequest
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_connector_mgmt_sdk.Configuration(
+configuration = rhoas_connector_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -40,12 +40,12 @@ configuration = dimakis_test_connector_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_connector_mgmt_sdk.Configuration(
+configuration = rhoas_connector_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_connector_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_connector_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = connector_namespaces_api.ConnectorNamespacesApi(api_client)
     connector_namespace_eval_request = ConnectorNamespaceEvalRequest(None) # ConnectorNamespaceEvalRequest | Connector namespace data
@@ -55,7 +55,7 @@ with dimakis_test_connector_mgmt_sdk.ApiClient(configuration) as api_client:
         # Create a new short lived evaluation connector namespace
         api_response = api_instance.create_evaluation_namespace(connector_namespace_eval_request)
         pprint(api_response)
-    except dimakis_test_connector_mgmt_sdk.ApiException as e:
+    except rhoas_connector_mgmt_sdk.ApiException as e:
         print("Exception when calling ConnectorNamespacesApi->create_evaluation_namespace: %s\n" % e)
 ```
 
@@ -105,14 +105,14 @@ Get a connector namespace
 
 ```python
 import time
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.api import connector_namespaces_api
-from dimakis_test_connector_mgmt_sdk.model.error import Error
-from dimakis_test_connector_mgmt_sdk.model.connector_namespace import ConnectorNamespace
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.api import connector_namespaces_api
+from rhoas_connector_mgmt_sdk.model.error import Error
+from rhoas_connector_mgmt_sdk.model.connector_namespace import ConnectorNamespace
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_connector_mgmt_sdk.Configuration(
+configuration = rhoas_connector_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -122,12 +122,12 @@ configuration = dimakis_test_connector_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_connector_mgmt_sdk.Configuration(
+configuration = rhoas_connector_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_connector_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_connector_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = connector_namespaces_api.ConnectorNamespacesApi(api_client)
     connector_namespace_id = "connector_namespace_id_example" # str | The id of the connector namespace
@@ -137,7 +137,7 @@ with dimakis_test_connector_mgmt_sdk.ApiClient(configuration) as api_client:
         # Get a connector namespace
         api_response = api_instance.get_connector_namespace(connector_namespace_id)
         pprint(api_response)
-    except dimakis_test_connector_mgmt_sdk.ApiException as e:
+    except rhoas_connector_mgmt_sdk.ApiException as e:
         print("Exception when calling ConnectorNamespacesApi->get_connector_namespace: %s\n" % e)
 ```
 
@@ -186,14 +186,14 @@ Returns a list of connector namespaces
 
 ```python
 import time
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.api import connector_namespaces_api
-from dimakis_test_connector_mgmt_sdk.model.error import Error
-from dimakis_test_connector_mgmt_sdk.model.connector_namespace_list import ConnectorNamespaceList
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.api import connector_namespaces_api
+from rhoas_connector_mgmt_sdk.model.error import Error
+from rhoas_connector_mgmt_sdk.model.connector_namespace_list import ConnectorNamespaceList
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_connector_mgmt_sdk.Configuration(
+configuration = rhoas_connector_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -203,12 +203,12 @@ configuration = dimakis_test_connector_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_connector_mgmt_sdk.Configuration(
+configuration = rhoas_connector_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_connector_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_connector_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = connector_namespaces_api.ConnectorNamespacesApi(api_client)
     page = "1" # str | Page index (optional)
@@ -222,7 +222,7 @@ with dimakis_test_connector_mgmt_sdk.ApiClient(configuration) as api_client:
         # Returns a list of connector namespaces
         api_response = api_instance.list_connector_namespaces(page=page, size=size, order_by=order_by, search=search)
         pprint(api_response)
-    except dimakis_test_connector_mgmt_sdk.ApiException as e:
+    except rhoas_connector_mgmt_sdk.ApiException as e:
         print("Exception when calling ConnectorNamespacesApi->list_connector_namespaces: %s\n" % e)
 ```
 

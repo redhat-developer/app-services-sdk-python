@@ -11,8 +11,8 @@
 
 import unittest
 
-import dimakis_test_kafka_mgmt_sdk
-from dimakis_test_kafka_mgmt_sdk.api.default_api import DefaultApi  # noqa: E501
+import rhoas_kafka_mgmt_sdk
+from rhoas_kafka_mgmt_sdk.api.default_api import DefaultApi  # noqa: E501
 
 
 class TestDefaultApi(unittest.TestCase):

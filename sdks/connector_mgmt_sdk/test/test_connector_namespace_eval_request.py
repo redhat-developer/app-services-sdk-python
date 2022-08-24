@@ -12,10 +12,10 @@
 import sys
 import unittest
 
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.model.connector_namespace_request_meta import ConnectorNamespaceRequestMeta
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.model.connector_namespace_request_meta import ConnectorNamespaceRequestMeta
 globals()['ConnectorNamespaceRequestMeta'] = ConnectorNamespaceRequestMeta
-from dimakis_test_connector_mgmt_sdk.model.connector_namespace_eval_request import ConnectorNamespaceEvalRequest
+from rhoas_connector_mgmt_sdk.model.connector_namespace_eval_request import ConnectorNamespaceEvalRequest
 
 
 class TestConnectorNamespaceEvalRequest(unittest.TestCase):

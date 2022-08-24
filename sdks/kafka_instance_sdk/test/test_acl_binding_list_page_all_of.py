@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_instance_sdk
-from dimakis_test_kafka_instance_sdk.model.acl_binding import AclBinding
+import rhoas_kafka_instance_sdk
+from rhoas_kafka_instance_sdk.model.acl_binding import AclBinding
 globals()['AclBinding'] = AclBinding
-from dimakis_test_kafka_instance_sdk.model.acl_binding_list_page_all_of import AclBindingListPageAllOf
+from rhoas_kafka_instance_sdk.model.acl_binding_list_page_all_of import AclBindingListPageAllOf
 
 
 class TestAclBindingListPageAllOf(unittest.TestCase):

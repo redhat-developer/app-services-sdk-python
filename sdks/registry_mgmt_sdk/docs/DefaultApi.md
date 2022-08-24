@@ -1,4 +1,4 @@
-# dimakis_test_service_registry_mgmt_sdk.DefaultApi
+# rhoas_service_registry_mgmt_sdk.DefaultApi
 
 All URIs are relative to *https://api.openshift.com*
 
@@ -20,14 +20,14 @@ Get the service status
 
 ```python
 import time
-import dimakis_test_service_registry_mgmt_sdk
-from dimakis_test_service_registry_mgmt_sdk.api import default_api
-from dimakis_test_service_registry_mgmt_sdk.model.service_status import ServiceStatus
-from dimakis_test_service_registry_mgmt_sdk.model.error import Error
+import rhoas_service_registry_mgmt_sdk
+from rhoas_service_registry_mgmt_sdk.api import default_api
+from rhoas_service_registry_mgmt_sdk.model.error import Error
+from rhoas_service_registry_mgmt_sdk.model.service_status import ServiceStatus
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_service_registry_mgmt_sdk.Configuration(
+configuration = rhoas_service_registry_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -37,12 +37,12 @@ configuration = dimakis_test_service_registry_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_service_registry_mgmt_sdk.Configuration(
+configuration = rhoas_service_registry_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_service_registry_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_service_registry_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -50,7 +50,7 @@ with dimakis_test_service_registry_mgmt_sdk.ApiClient(configuration) as api_clie
     try:
         api_response = api_instance.get_service_status()
         pprint(api_response)
-    except dimakis_test_service_registry_mgmt_sdk.ApiException as e:
+    except rhoas_service_registry_mgmt_sdk.ApiException as e:
         print("Exception when calling DefaultApi->get_service_status: %s\n" % e)
 ```
 

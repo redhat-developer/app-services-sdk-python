@@ -11,12 +11,12 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_instance_sdk
-from dimakis_test_kafka_instance_sdk.model.config_entry import ConfigEntry
-from dimakis_test_kafka_instance_sdk.model.partition import Partition
+import rhoas_kafka_instance_sdk
+from rhoas_kafka_instance_sdk.model.config_entry import ConfigEntry
+from rhoas_kafka_instance_sdk.model.partition import Partition
 globals()['ConfigEntry'] = ConfigEntry
 globals()['Partition'] = Partition
-from dimakis_test_kafka_instance_sdk.model.topic_all_of import TopicAllOf
+from rhoas_kafka_instance_sdk.model.topic_all_of import TopicAllOf
 
 
 class TestTopicAllOf(unittest.TestCase):

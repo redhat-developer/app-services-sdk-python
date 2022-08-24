@@ -12,8 +12,8 @@
 import sys
 import unittest
 
-import dimakis_test_smart_events_mgmt_sdk
-from dimakis_test_smart_events_mgmt_sdk.model.managed_resource_status import ManagedResourceStatus
+import rhoas_smart_events_mgmt_sdk
+from rhoas_smart_events_mgmt_sdk.model.managed_resource_status import ManagedResourceStatus
 
 
 class TestManagedResourceStatus(unittest.TestCase):

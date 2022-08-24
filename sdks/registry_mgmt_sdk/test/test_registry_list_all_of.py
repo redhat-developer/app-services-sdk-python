@@ -12,10 +12,10 @@
 import sys
 import unittest
 
-import dimakis_test_service_registry_mgmt_sdk
-from dimakis_test_service_registry_mgmt_sdk.model.registry import Registry
+import rhoas_service_registry_mgmt_sdk
+from rhoas_service_registry_mgmt_sdk.model.registry import Registry
 globals()['Registry'] = Registry
-from dimakis_test_service_registry_mgmt_sdk.model.registry_list_all_of import RegistryListAllOf
+from rhoas_service_registry_mgmt_sdk.model.registry_list_all_of import RegistryListAllOf
 
 
 class TestRegistryListAllOf(unittest.TestCase):

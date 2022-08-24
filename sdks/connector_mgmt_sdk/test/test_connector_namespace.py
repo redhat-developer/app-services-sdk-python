@@ -12,20 +12,20 @@
 import sys
 import unittest
 
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.model.connector_namespace_all_of import ConnectorNamespaceAllOf
-from dimakis_test_connector_mgmt_sdk.model.connector_namespace_meta import ConnectorNamespaceMeta
-from dimakis_test_connector_mgmt_sdk.model.connector_namespace_quota import ConnectorNamespaceQuota
-from dimakis_test_connector_mgmt_sdk.model.connector_namespace_status import ConnectorNamespaceStatus
-from dimakis_test_connector_mgmt_sdk.model.connector_namespace_tenant import ConnectorNamespaceTenant
-from dimakis_test_connector_mgmt_sdk.model.object_reference import ObjectReference
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.model.connector_namespace_all_of import ConnectorNamespaceAllOf
+from rhoas_connector_mgmt_sdk.model.connector_namespace_meta import ConnectorNamespaceMeta
+from rhoas_connector_mgmt_sdk.model.connector_namespace_quota import ConnectorNamespaceQuota
+from rhoas_connector_mgmt_sdk.model.connector_namespace_status import ConnectorNamespaceStatus
+from rhoas_connector_mgmt_sdk.model.connector_namespace_tenant import ConnectorNamespaceTenant
+from rhoas_connector_mgmt_sdk.model.object_reference import ObjectReference
 globals()['ConnectorNamespaceAllOf'] = ConnectorNamespaceAllOf
 globals()['ConnectorNamespaceMeta'] = ConnectorNamespaceMeta
 globals()['ConnectorNamespaceQuota'] = ConnectorNamespaceQuota
 globals()['ConnectorNamespaceStatus'] = ConnectorNamespaceStatus
 globals()['ConnectorNamespaceTenant'] = ConnectorNamespaceTenant
 globals()['ObjectReference'] = ObjectReference
-from dimakis_test_connector_mgmt_sdk.model.connector_namespace import ConnectorNamespace
+from rhoas_connector_mgmt_sdk.model.connector_namespace import ConnectorNamespace
 
 
 class TestConnectorNamespace(unittest.TestCase):

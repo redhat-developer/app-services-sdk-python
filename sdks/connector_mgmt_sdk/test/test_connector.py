@@ -12,17 +12,17 @@
 import sys
 import unittest
 
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.model.channel import Channel
-from dimakis_test_connector_mgmt_sdk.model.connector_configuration import ConnectorConfiguration
-from dimakis_test_connector_mgmt_sdk.model.connector_desired_state import ConnectorDesiredState
-from dimakis_test_connector_mgmt_sdk.model.connector_meta import ConnectorMeta
-from dimakis_test_connector_mgmt_sdk.model.connector_status import ConnectorStatus
-from dimakis_test_connector_mgmt_sdk.model.connector_status_status import ConnectorStatusStatus
-from dimakis_test_connector_mgmt_sdk.model.kafka_connection_settings import KafkaConnectionSettings
-from dimakis_test_connector_mgmt_sdk.model.object_reference import ObjectReference
-from dimakis_test_connector_mgmt_sdk.model.schema_registry_connection_settings import SchemaRegistryConnectionSettings
-from dimakis_test_connector_mgmt_sdk.model.service_account import ServiceAccount
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.model.channel import Channel
+from rhoas_connector_mgmt_sdk.model.connector_configuration import ConnectorConfiguration
+from rhoas_connector_mgmt_sdk.model.connector_desired_state import ConnectorDesiredState
+from rhoas_connector_mgmt_sdk.model.connector_meta import ConnectorMeta
+from rhoas_connector_mgmt_sdk.model.connector_status import ConnectorStatus
+from rhoas_connector_mgmt_sdk.model.connector_status_status import ConnectorStatusStatus
+from rhoas_connector_mgmt_sdk.model.kafka_connection_settings import KafkaConnectionSettings
+from rhoas_connector_mgmt_sdk.model.object_reference import ObjectReference
+from rhoas_connector_mgmt_sdk.model.schema_registry_connection_settings import SchemaRegistryConnectionSettings
+from rhoas_connector_mgmt_sdk.model.service_account import ServiceAccount
 globals()['Channel'] = Channel
 globals()['ConnectorConfiguration'] = ConnectorConfiguration
 globals()['ConnectorDesiredState'] = ConnectorDesiredState
@@ -33,7 +33,7 @@ globals()['KafkaConnectionSettings'] = KafkaConnectionSettings
 globals()['ObjectReference'] = ObjectReference
 globals()['SchemaRegistryConnectionSettings'] = SchemaRegistryConnectionSettings
 globals()['ServiceAccount'] = ServiceAccount
-from dimakis_test_connector_mgmt_sdk.model.connector import Connector
+from rhoas_connector_mgmt_sdk.model.connector import Connector
 
 
 class TestConnector(unittest.TestCase):

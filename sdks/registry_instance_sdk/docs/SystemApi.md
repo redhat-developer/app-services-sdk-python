@@ -1,4 +1,4 @@
-# dimakis_test_registry_instance_sdk.SystemApi
+# rhoas_registry_instance_sdk.SystemApi
 
 All URIs are relative to *http://localhost*
 
@@ -20,20 +20,20 @@ This operation retrieves the list of limitations on used resources, that are app
 
 ```python
 import time
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.api import system_api
-from dimakis_test_registry_instance_sdk.model.limits import Limits
-from dimakis_test_registry_instance_sdk.model.error import Error
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.api import system_api
+from rhoas_registry_instance_sdk.model.limits import Limits
+from rhoas_registry_instance_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_registry_instance_sdk.Configuration(
+configuration = rhoas_registry_instance_sdk.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
+with rhoas_registry_instance_sdk.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = system_api.SystemApi(api_client)
 
@@ -42,7 +42,7 @@ with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
         # Get resource limits information
         api_response = api_instance.get_resource_limits()
         pprint(api_response)
-    except dimakis_test_registry_instance_sdk.ApiException as e:
+    except rhoas_registry_instance_sdk.ApiException as e:
         print("Exception when calling SystemApi->get_resource_limits: %s\n" % e)
 ```
 
@@ -85,20 +85,20 @@ This operation retrieves information about the running registry system, such as 
 
 ```python
 import time
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.api import system_api
-from dimakis_test_registry_instance_sdk.model.system_info import SystemInfo
-from dimakis_test_registry_instance_sdk.model.error import Error
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.api import system_api
+from rhoas_registry_instance_sdk.model.error import Error
+from rhoas_registry_instance_sdk.model.system_info import SystemInfo
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_registry_instance_sdk.Configuration(
+configuration = rhoas_registry_instance_sdk.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
+with rhoas_registry_instance_sdk.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = system_api.SystemApi(api_client)
 
@@ -107,7 +107,7 @@ with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
         # Get system information
         api_response = api_instance.get_system_info()
         pprint(api_response)
-    except dimakis_test_registry_instance_sdk.ApiException as e:
+    except rhoas_registry_instance_sdk.ApiException as e:
         print("Exception when calling SystemApi->get_system_info: %s\n" % e)
 ```
 

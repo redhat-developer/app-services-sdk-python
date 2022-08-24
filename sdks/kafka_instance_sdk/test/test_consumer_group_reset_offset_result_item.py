@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_instance_sdk
-from dimakis_test_kafka_instance_sdk.model.consumer_group_reset_offset_result_item import ConsumerGroupResetOffsetResultItem
+import rhoas_kafka_instance_sdk
+from rhoas_kafka_instance_sdk.model.consumer_group_reset_offset_result_item import ConsumerGroupResetOffsetResultItem
 
 
 class TestConsumerGroupResetOffsetResultItem(unittest.TestCase):

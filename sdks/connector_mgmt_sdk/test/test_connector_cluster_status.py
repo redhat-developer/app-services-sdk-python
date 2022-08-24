@@ -12,10 +12,10 @@
 import sys
 import unittest
 
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.model.connector_cluster_status_status import ConnectorClusterStatusStatus
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.model.connector_cluster_status_status import ConnectorClusterStatusStatus
 globals()['ConnectorClusterStatusStatus'] = ConnectorClusterStatusStatus
-from dimakis_test_connector_mgmt_sdk.model.connector_cluster_status import ConnectorClusterStatus
+from rhoas_connector_mgmt_sdk.model.connector_cluster_status import ConnectorClusterStatus
 
 
 class TestConnectorClusterStatus(unittest.TestCase):

@@ -11,8 +11,8 @@
 
 import unittest
 
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.api.artifact_rules_api import ArtifactRulesApi  # noqa: E501
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.api.artifact_rules_api import ArtifactRulesApi  # noqa: E501
 
 
 class TestArtifactRulesApi(unittest.TestCase):

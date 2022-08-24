@@ -1,4 +1,4 @@
-# dimakis_test_smart_events_mgmt_sdk.BridgesApi
+# rhoas_smart_events_mgmt_sdk.BridgesApi
 
 All URIs are relative to *https://api.stage.openshift.com*
 
@@ -24,15 +24,15 @@ Create a Bridge instance for the authenticated user.
 
 ```python
 import time
-import dimakis_test_smart_events_mgmt_sdk
-from dimakis_test_smart_events_mgmt_sdk.api import bridges_api
-from dimakis_test_smart_events_mgmt_sdk.model.bridge_response import BridgeResponse
-from dimakis_test_smart_events_mgmt_sdk.model.errors_list import ErrorsList
-from dimakis_test_smart_events_mgmt_sdk.model.bridge_request import BridgeRequest
+import rhoas_smart_events_mgmt_sdk
+from rhoas_smart_events_mgmt_sdk.api import bridges_api
+from rhoas_smart_events_mgmt_sdk.model.bridge_response import BridgeResponse
+from rhoas_smart_events_mgmt_sdk.model.bridge_request import BridgeRequest
+from rhoas_smart_events_mgmt_sdk.model.errors_list import ErrorsList
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.stage.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
+configuration = rhoas_smart_events_mgmt_sdk.Configuration(
     host = "https://api.stage.openshift.com"
 )
 
@@ -42,12 +42,12 @@ configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: bearer
-configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
+configuration = rhoas_smart_events_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = bridges_api.BridgesApi(api_client)
     bridge_request = BridgeRequest(
@@ -66,7 +66,7 @@ with dimakis_test_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
         # Create a Bridge instance
         api_response = api_instance.bridges_api_create_bridge(bridge_request=bridge_request)
         pprint(api_response)
-    except dimakis_test_smart_events_mgmt_sdk.ApiException as e:
+    except rhoas_smart_events_mgmt_sdk.ApiException as e:
         print("Exception when calling BridgesApi->bridges_api_create_bridge: %s\n" % e)
 ```
 
@@ -116,13 +116,13 @@ Delete a Bridge instance of the authenticated user by ID.
 
 ```python
 import time
-import dimakis_test_smart_events_mgmt_sdk
-from dimakis_test_smart_events_mgmt_sdk.api import bridges_api
-from dimakis_test_smart_events_mgmt_sdk.model.errors_list import ErrorsList
+import rhoas_smart_events_mgmt_sdk
+from rhoas_smart_events_mgmt_sdk.api import bridges_api
+from rhoas_smart_events_mgmt_sdk.model.errors_list import ErrorsList
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.stage.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
+configuration = rhoas_smart_events_mgmt_sdk.Configuration(
     host = "https://api.stage.openshift.com"
 )
 
@@ -132,12 +132,12 @@ configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: bearer
-configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
+configuration = rhoas_smart_events_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = bridges_api.BridgesApi(api_client)
     bridge_id = "bridgeId_example" # str | 
@@ -146,7 +146,7 @@ with dimakis_test_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
     try:
         # Delete a Bridge instance
         api_instance.bridges_api_delete_bridge(bridge_id)
-    except dimakis_test_smart_events_mgmt_sdk.ApiException as e:
+    except rhoas_smart_events_mgmt_sdk.ApiException as e:
         print("Exception when calling BridgesApi->bridges_api_delete_bridge: %s\n" % e)
 ```
 
@@ -197,14 +197,14 @@ Get a Bridge instance of the authenticated user by ID.
 
 ```python
 import time
-import dimakis_test_smart_events_mgmt_sdk
-from dimakis_test_smart_events_mgmt_sdk.api import bridges_api
-from dimakis_test_smart_events_mgmt_sdk.model.bridge_response import BridgeResponse
-from dimakis_test_smart_events_mgmt_sdk.model.errors_list import ErrorsList
+import rhoas_smart_events_mgmt_sdk
+from rhoas_smart_events_mgmt_sdk.api import bridges_api
+from rhoas_smart_events_mgmt_sdk.model.bridge_response import BridgeResponse
+from rhoas_smart_events_mgmt_sdk.model.errors_list import ErrorsList
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.stage.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
+configuration = rhoas_smart_events_mgmt_sdk.Configuration(
     host = "https://api.stage.openshift.com"
 )
 
@@ -214,12 +214,12 @@ configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: bearer
-configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
+configuration = rhoas_smart_events_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = bridges_api.BridgesApi(api_client)
     bridge_id = "bridgeId_example" # str | 
@@ -229,7 +229,7 @@ with dimakis_test_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
         # Get a Bridge instance
         api_response = api_instance.bridges_api_get_bridge(bridge_id)
         pprint(api_response)
-    except dimakis_test_smart_events_mgmt_sdk.ApiException as e:
+    except rhoas_smart_events_mgmt_sdk.ApiException as e:
         print("Exception when calling BridgesApi->bridges_api_get_bridge: %s\n" % e)
 ```
 
@@ -280,15 +280,15 @@ Get the list of Bridge instances for the authenticated user.
 
 ```python
 import time
-import dimakis_test_smart_events_mgmt_sdk
-from dimakis_test_smart_events_mgmt_sdk.api import bridges_api
-from dimakis_test_smart_events_mgmt_sdk.model.errors_list import ErrorsList
-from dimakis_test_smart_events_mgmt_sdk.model.bridge_list_response import BridgeListResponse
-from dimakis_test_smart_events_mgmt_sdk.model.managed_resource_status import ManagedResourceStatus
+import rhoas_smart_events_mgmt_sdk
+from rhoas_smart_events_mgmt_sdk.api import bridges_api
+from rhoas_smart_events_mgmt_sdk.model.bridge_list_response import BridgeListResponse
+from rhoas_smart_events_mgmt_sdk.model.managed_resource_status import ManagedResourceStatus
+from rhoas_smart_events_mgmt_sdk.model.errors_list import ErrorsList
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.stage.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
+configuration = rhoas_smart_events_mgmt_sdk.Configuration(
     host = "https://api.stage.openshift.com"
 )
 
@@ -298,12 +298,12 @@ configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: bearer
-configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
+configuration = rhoas_smart_events_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = bridges_api.BridgesApi(api_client)
     name = "name_example" # str |  (optional)
@@ -319,7 +319,7 @@ with dimakis_test_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
         # Get the list of Bridge instances
         api_response = api_instance.bridges_api_get_bridges(name=name, page=page, size=size, status=status)
         pprint(api_response)
-    except dimakis_test_smart_events_mgmt_sdk.ApiException as e:
+    except rhoas_smart_events_mgmt_sdk.ApiException as e:
         print("Exception when calling BridgesApi->bridges_api_get_bridges: %s\n" % e)
 ```
 
@@ -373,15 +373,15 @@ Update a Bridge instance for the authenticated user.
 
 ```python
 import time
-import dimakis_test_smart_events_mgmt_sdk
-from dimakis_test_smart_events_mgmt_sdk.api import bridges_api
-from dimakis_test_smart_events_mgmt_sdk.model.bridge_response import BridgeResponse
-from dimakis_test_smart_events_mgmt_sdk.model.errors_list import ErrorsList
-from dimakis_test_smart_events_mgmt_sdk.model.bridge_request import BridgeRequest
+import rhoas_smart_events_mgmt_sdk
+from rhoas_smart_events_mgmt_sdk.api import bridges_api
+from rhoas_smart_events_mgmt_sdk.model.bridge_response import BridgeResponse
+from rhoas_smart_events_mgmt_sdk.model.bridge_request import BridgeRequest
+from rhoas_smart_events_mgmt_sdk.model.errors_list import ErrorsList
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.stage.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
+configuration = rhoas_smart_events_mgmt_sdk.Configuration(
     host = "https://api.stage.openshift.com"
 )
 
@@ -391,12 +391,12 @@ configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: bearer
-configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
+configuration = rhoas_smart_events_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = bridges_api.BridgesApi(api_client)
     bridge_id = "bridgeId_example" # str | 
@@ -415,7 +415,7 @@ with dimakis_test_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
         # Update a Bridge instance
         api_response = api_instance.bridges_api_update_bridge(bridge_id)
         pprint(api_response)
-    except dimakis_test_smart_events_mgmt_sdk.ApiException as e:
+    except rhoas_smart_events_mgmt_sdk.ApiException as e:
         print("Exception when calling BridgesApi->bridges_api_update_bridge: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -424,7 +424,7 @@ with dimakis_test_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
         # Update a Bridge instance
         api_response = api_instance.bridges_api_update_bridge(bridge_id, bridge_request=bridge_request)
         pprint(api_response)
-    except dimakis_test_smart_events_mgmt_sdk.ApiException as e:
+    except rhoas_smart_events_mgmt_sdk.ApiException as e:
         print("Exception when calling BridgesApi->bridges_api_update_bridge: %s\n" % e)
 ```
 

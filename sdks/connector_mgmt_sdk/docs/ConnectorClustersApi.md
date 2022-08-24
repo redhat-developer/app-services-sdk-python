@@ -1,4 +1,4 @@
-# dimakis_test_connector_mgmt_sdk.ConnectorClustersApi
+# rhoas_connector_mgmt_sdk.ConnectorClustersApi
 
 All URIs are relative to *https://api.openshift.com*
 
@@ -26,15 +26,15 @@ Create a new connector cluster
 
 ```python
 import time
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.api import connector_clusters_api
-from dimakis_test_connector_mgmt_sdk.model.error import Error
-from dimakis_test_connector_mgmt_sdk.model.connector_cluster import ConnectorCluster
-from dimakis_test_connector_mgmt_sdk.model.connector_cluster_request import ConnectorClusterRequest
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.api import connector_clusters_api
+from rhoas_connector_mgmt_sdk.model.connector_cluster import ConnectorCluster
+from rhoas_connector_mgmt_sdk.model.connector_cluster_request import ConnectorClusterRequest
+from rhoas_connector_mgmt_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_connector_mgmt_sdk.Configuration(
+configuration = rhoas_connector_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -44,12 +44,12 @@ configuration = dimakis_test_connector_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_connector_mgmt_sdk.Configuration(
+configuration = rhoas_connector_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_connector_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_connector_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = connector_clusters_api.ConnectorClustersApi(api_client)
     _async = True # bool | Perform the action in an asynchronous manner
@@ -60,7 +60,7 @@ with dimakis_test_connector_mgmt_sdk.ApiClient(configuration) as api_client:
         # Create a new connector cluster
         api_response = api_instance.create_connector_cluster(_async, connector_cluster_request)
         pprint(api_response)
-    except dimakis_test_connector_mgmt_sdk.ApiException as e:
+    except rhoas_connector_mgmt_sdk.ApiException as e:
         print("Exception when calling ConnectorClustersApi->create_connector_cluster: %s\n" % e)
 ```
 
@@ -111,13 +111,13 @@ Delete a connector cluster
 
 ```python
 import time
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.api import connector_clusters_api
-from dimakis_test_connector_mgmt_sdk.model.error import Error
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.api import connector_clusters_api
+from rhoas_connector_mgmt_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_connector_mgmt_sdk.Configuration(
+configuration = rhoas_connector_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -127,12 +127,12 @@ configuration = dimakis_test_connector_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_connector_mgmt_sdk.Configuration(
+configuration = rhoas_connector_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_connector_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_connector_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = connector_clusters_api.ConnectorClustersApi(api_client)
     connector_cluster_id = "connector_cluster_id_example" # str | The id of the connector cluster
@@ -142,7 +142,7 @@ with dimakis_test_connector_mgmt_sdk.ApiClient(configuration) as api_client:
         # Delete a connector cluster
         api_response = api_instance.delete_connector_cluster(connector_cluster_id)
         pprint(api_response)
-    except dimakis_test_connector_mgmt_sdk.ApiException as e:
+    except rhoas_connector_mgmt_sdk.ApiException as e:
         print("Exception when calling ConnectorClustersApi->delete_connector_cluster: %s\n" % e)
 ```
 
@@ -191,14 +191,14 @@ Get a connector cluster
 
 ```python
 import time
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.api import connector_clusters_api
-from dimakis_test_connector_mgmt_sdk.model.error import Error
-from dimakis_test_connector_mgmt_sdk.model.connector_cluster import ConnectorCluster
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.api import connector_clusters_api
+from rhoas_connector_mgmt_sdk.model.connector_cluster import ConnectorCluster
+from rhoas_connector_mgmt_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_connector_mgmt_sdk.Configuration(
+configuration = rhoas_connector_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -208,12 +208,12 @@ configuration = dimakis_test_connector_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_connector_mgmt_sdk.Configuration(
+configuration = rhoas_connector_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_connector_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_connector_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = connector_clusters_api.ConnectorClustersApi(api_client)
     connector_cluster_id = "connector_cluster_id_example" # str | The id of the connector cluster
@@ -223,7 +223,7 @@ with dimakis_test_connector_mgmt_sdk.ApiClient(configuration) as api_client:
         # Get a connector cluster
         api_response = api_instance.get_connector_cluster(connector_cluster_id)
         pprint(api_response)
-    except dimakis_test_connector_mgmt_sdk.ApiException as e:
+    except rhoas_connector_mgmt_sdk.ApiException as e:
         print("Exception when calling ConnectorClustersApi->get_connector_cluster: %s\n" % e)
 ```
 
@@ -273,14 +273,14 @@ Get a connector cluster's addon parameters
 
 ```python
 import time
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.api import connector_clusters_api
-from dimakis_test_connector_mgmt_sdk.model.error import Error
-from dimakis_test_connector_mgmt_sdk.model.addon_parameter_list import AddonParameterList
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.api import connector_clusters_api
+from rhoas_connector_mgmt_sdk.model.addon_parameter_list import AddonParameterList
+from rhoas_connector_mgmt_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_connector_mgmt_sdk.Configuration(
+configuration = rhoas_connector_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -290,12 +290,12 @@ configuration = dimakis_test_connector_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_connector_mgmt_sdk.Configuration(
+configuration = rhoas_connector_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_connector_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_connector_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = connector_clusters_api.ConnectorClustersApi(api_client)
     connector_cluster_id = "connector_cluster_id_example" # str | The id of the connector cluster
@@ -306,7 +306,7 @@ with dimakis_test_connector_mgmt_sdk.ApiClient(configuration) as api_client:
         # Get a connector cluster's addon parameters
         api_response = api_instance.get_connector_cluster_addon_parameters(connector_cluster_id)
         pprint(api_response)
-    except dimakis_test_connector_mgmt_sdk.ApiException as e:
+    except rhoas_connector_mgmt_sdk.ApiException as e:
         print("Exception when calling ConnectorClustersApi->get_connector_cluster_addon_parameters: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -315,7 +315,7 @@ with dimakis_test_connector_mgmt_sdk.ApiClient(configuration) as api_client:
         # Get a connector cluster's addon parameters
         api_response = api_instance.get_connector_cluster_addon_parameters(connector_cluster_id, reset_credentials=reset_credentials)
         pprint(api_response)
-    except dimakis_test_connector_mgmt_sdk.ApiException as e:
+    except rhoas_connector_mgmt_sdk.ApiException as e:
         print("Exception when calling ConnectorClustersApi->get_connector_cluster_addon_parameters: %s\n" % e)
 ```
 
@@ -366,14 +366,14 @@ Get a connector cluster's namespaces
 
 ```python
 import time
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.api import connector_clusters_api
-from dimakis_test_connector_mgmt_sdk.model.error import Error
-from dimakis_test_connector_mgmt_sdk.model.connector_namespace_list import ConnectorNamespaceList
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.api import connector_clusters_api
+from rhoas_connector_mgmt_sdk.model.error import Error
+from rhoas_connector_mgmt_sdk.model.connector_namespace_list import ConnectorNamespaceList
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_connector_mgmt_sdk.Configuration(
+configuration = rhoas_connector_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -383,12 +383,12 @@ configuration = dimakis_test_connector_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_connector_mgmt_sdk.Configuration(
+configuration = rhoas_connector_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_connector_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_connector_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = connector_clusters_api.ConnectorClustersApi(api_client)
     connector_cluster_id = "connector_cluster_id_example" # str | The id of the connector cluster
@@ -402,7 +402,7 @@ with dimakis_test_connector_mgmt_sdk.ApiClient(configuration) as api_client:
         # Get a connector cluster's namespaces
         api_response = api_instance.get_connector_cluster_namespaces(connector_cluster_id)
         pprint(api_response)
-    except dimakis_test_connector_mgmt_sdk.ApiException as e:
+    except rhoas_connector_mgmt_sdk.ApiException as e:
         print("Exception when calling ConnectorClustersApi->get_connector_cluster_namespaces: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -411,7 +411,7 @@ with dimakis_test_connector_mgmt_sdk.ApiClient(configuration) as api_client:
         # Get a connector cluster's namespaces
         api_response = api_instance.get_connector_cluster_namespaces(connector_cluster_id, page=page, size=size, order_by=order_by, search=search)
         pprint(api_response)
-    except dimakis_test_connector_mgmt_sdk.ApiException as e:
+    except rhoas_connector_mgmt_sdk.ApiException as e:
         print("Exception when calling ConnectorClustersApi->get_connector_cluster_namespaces: %s\n" % e)
 ```
 
@@ -464,14 +464,14 @@ Returns a list of connector clusters
 
 ```python
 import time
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.api import connector_clusters_api
-from dimakis_test_connector_mgmt_sdk.model.error import Error
-from dimakis_test_connector_mgmt_sdk.model.connector_cluster_list import ConnectorClusterList
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.api import connector_clusters_api
+from rhoas_connector_mgmt_sdk.model.error import Error
+from rhoas_connector_mgmt_sdk.model.connector_cluster_list import ConnectorClusterList
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_connector_mgmt_sdk.Configuration(
+configuration = rhoas_connector_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -481,12 +481,12 @@ configuration = dimakis_test_connector_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_connector_mgmt_sdk.Configuration(
+configuration = rhoas_connector_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_connector_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_connector_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = connector_clusters_api.ConnectorClustersApi(api_client)
     page = "1" # str | Page index (optional)
@@ -500,7 +500,7 @@ with dimakis_test_connector_mgmt_sdk.ApiClient(configuration) as api_client:
         # Returns a list of connector clusters
         api_response = api_instance.list_connector_clusters(page=page, size=size, order_by=order_by, search=search)
         pprint(api_response)
-    except dimakis_test_connector_mgmt_sdk.ApiException as e:
+    except rhoas_connector_mgmt_sdk.ApiException as e:
         print("Exception when calling ConnectorClustersApi->list_connector_clusters: %s\n" % e)
 ```
 
@@ -551,14 +551,14 @@ udpate a connector cluster
 
 ```python
 import time
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.api import connector_clusters_api
-from dimakis_test_connector_mgmt_sdk.model.error import Error
-from dimakis_test_connector_mgmt_sdk.model.connector_cluster_request import ConnectorClusterRequest
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.api import connector_clusters_api
+from rhoas_connector_mgmt_sdk.model.connector_cluster_request import ConnectorClusterRequest
+from rhoas_connector_mgmt_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_connector_mgmt_sdk.Configuration(
+configuration = rhoas_connector_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -568,12 +568,12 @@ configuration = dimakis_test_connector_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_connector_mgmt_sdk.Configuration(
+configuration = rhoas_connector_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_connector_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_connector_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = connector_clusters_api.ConnectorClustersApi(api_client)
     connector_cluster_id = "connector_cluster_id_example" # str | The id of the connector cluster
@@ -583,7 +583,7 @@ with dimakis_test_connector_mgmt_sdk.ApiClient(configuration) as api_client:
     try:
         # udpate a connector cluster
         api_instance.update_connector_cluster_by_id(connector_cluster_id, connector_cluster_request)
-    except dimakis_test_connector_mgmt_sdk.ApiException as e:
+    except rhoas_connector_mgmt_sdk.ApiException as e:
         print("Exception when calling ConnectorClustersApi->update_connector_cluster_by_id: %s\n" % e)
 ```
 

@@ -12,10 +12,10 @@
 import sys
 import unittest
 
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.model.connector_type import ConnectorType
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.model.connector_type import ConnectorType
 globals()['ConnectorType'] = ConnectorType
-from dimakis_test_connector_mgmt_sdk.model.connector_type_list_all_of import ConnectorTypeListAllOf
+from rhoas_connector_mgmt_sdk.model.connector_type_list_all_of import ConnectorTypeListAllOf
 
 
 class TestConnectorTypeListAllOf(unittest.TestCase):

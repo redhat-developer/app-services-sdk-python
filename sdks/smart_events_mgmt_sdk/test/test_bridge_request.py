@@ -12,10 +12,10 @@
 import sys
 import unittest
 
-import dimakis_test_smart_events_mgmt_sdk
-from dimakis_test_smart_events_mgmt_sdk.model.action import Action
+import rhoas_smart_events_mgmt_sdk
+from rhoas_smart_events_mgmt_sdk.model.action import Action
 globals()['Action'] = Action
-from dimakis_test_smart_events_mgmt_sdk.model.bridge_request import BridgeRequest
+from rhoas_smart_events_mgmt_sdk.model.bridge_request import BridgeRequest
 
 
 class TestBridgeRequest(unittest.TestCase):

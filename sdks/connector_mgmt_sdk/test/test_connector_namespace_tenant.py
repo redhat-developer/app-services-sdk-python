@@ -12,10 +12,10 @@
 import sys
 import unittest
 
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.model.connector_namespace_tenant_kind import ConnectorNamespaceTenantKind
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.model.connector_namespace_tenant_kind import ConnectorNamespaceTenantKind
 globals()['ConnectorNamespaceTenantKind'] = ConnectorNamespaceTenantKind
-from dimakis_test_connector_mgmt_sdk.model.connector_namespace_tenant import ConnectorNamespaceTenant
+from rhoas_connector_mgmt_sdk.model.connector_namespace_tenant import ConnectorNamespaceTenant
 
 
 class TestConnectorNamespaceTenant(unittest.TestCase):

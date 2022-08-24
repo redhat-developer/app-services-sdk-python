@@ -12,14 +12,14 @@
 import sys
 import unittest
 
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.model.artifact_state import ArtifactState
-from dimakis_test_registry_instance_sdk.model.artifact_type import ArtifactType
-from dimakis_test_registry_instance_sdk.model.properties import Properties
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.model.artifact_state import ArtifactState
+from rhoas_registry_instance_sdk.model.artifact_type import ArtifactType
+from rhoas_registry_instance_sdk.model.properties import Properties
 globals()['ArtifactState'] = ArtifactState
 globals()['ArtifactType'] = ArtifactType
 globals()['Properties'] = Properties
-from dimakis_test_registry_instance_sdk.model.version_meta_data import VersionMetaData
+from rhoas_registry_instance_sdk.model.version_meta_data import VersionMetaData
 
 
 class TestVersionMetaData(unittest.TestCase):

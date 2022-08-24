@@ -11,8 +11,8 @@
 
 import unittest
 
-import dimakis_test_service_registry_mgmt_sdk
-from dimakis_test_service_registry_mgmt_sdk.api.registries_api import RegistriesApi  # noqa: E501
+import rhoas_service_registry_mgmt_sdk
+from rhoas_service_registry_mgmt_sdk.api.registries_api import RegistriesApi  # noqa: E501
 
 
 class TestRegistriesApi(unittest.TestCase):

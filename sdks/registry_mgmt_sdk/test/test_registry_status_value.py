@@ -12,8 +12,8 @@
 import sys
 import unittest
 
-import dimakis_test_service_registry_mgmt_sdk
-from dimakis_test_service_registry_mgmt_sdk.model.registry_status_value import RegistryStatusValue
+import rhoas_service_registry_mgmt_sdk
+from rhoas_service_registry_mgmt_sdk.model.registry_status_value import RegistryStatusValue
 
 
 class TestRegistryStatusValue(unittest.TestCase):

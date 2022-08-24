@@ -12,10 +12,10 @@
 import sys
 import unittest
 
-import dimakis_test_smart_events_mgmt_sdk
-from dimakis_test_smart_events_mgmt_sdk.model.bridge_response import BridgeResponse
+import rhoas_smart_events_mgmt_sdk
+from rhoas_smart_events_mgmt_sdk.model.bridge_response import BridgeResponse
 globals()['BridgeResponse'] = BridgeResponse
-from dimakis_test_smart_events_mgmt_sdk.model.bridge_list_response import BridgeListResponse
+from rhoas_smart_events_mgmt_sdk.model.bridge_list_response import BridgeListResponse
 
 
 class TestBridgeListResponse(unittest.TestCase):

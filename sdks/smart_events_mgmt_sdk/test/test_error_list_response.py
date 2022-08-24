@@ -12,10 +12,10 @@
 import sys
 import unittest
 
-import dimakis_test_smart_events_mgmt_sdk
-from dimakis_test_smart_events_mgmt_sdk.model.error import Error
+import rhoas_smart_events_mgmt_sdk
+from rhoas_smart_events_mgmt_sdk.model.error import Error
 globals()['Error'] = Error
-from dimakis_test_smart_events_mgmt_sdk.model.error_list_response import ErrorListResponse
+from rhoas_smart_events_mgmt_sdk.model.error_list_response import ErrorListResponse
 
 
 class TestErrorListResponse(unittest.TestCase):

@@ -11,14 +11,14 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_instance_sdk
-from dimakis_test_kafka_instance_sdk.model.consumer_group_reset_offset_result_all_of import ConsumerGroupResetOffsetResultAllOf
-from dimakis_test_kafka_instance_sdk.model.consumer_group_reset_offset_result_item import ConsumerGroupResetOffsetResultItem
-from dimakis_test_kafka_instance_sdk.model.list import List
+import rhoas_kafka_instance_sdk
+from rhoas_kafka_instance_sdk.model.consumer_group_reset_offset_result_all_of import ConsumerGroupResetOffsetResultAllOf
+from rhoas_kafka_instance_sdk.model.consumer_group_reset_offset_result_item import ConsumerGroupResetOffsetResultItem
+from rhoas_kafka_instance_sdk.model.list import List
 globals()['ConsumerGroupResetOffsetResultAllOf'] = ConsumerGroupResetOffsetResultAllOf
 globals()['ConsumerGroupResetOffsetResultItem'] = ConsumerGroupResetOffsetResultItem
 globals()['List'] = List
-from dimakis_test_kafka_instance_sdk.model.consumer_group_reset_offset_result import ConsumerGroupResetOffsetResult
+from rhoas_kafka_instance_sdk.model.consumer_group_reset_offset_result import ConsumerGroupResetOffsetResult
 
 
 class TestConsumerGroupResetOffsetResult(unittest.TestCase):

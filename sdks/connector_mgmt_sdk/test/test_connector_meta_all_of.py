@@ -12,8 +12,8 @@
 import sys
 import unittest
 
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.model.connector_meta_all_of import ConnectorMetaAllOf
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.model.connector_meta_all_of import ConnectorMetaAllOf
 
 
 class TestConnectorMetaAllOf(unittest.TestCase):

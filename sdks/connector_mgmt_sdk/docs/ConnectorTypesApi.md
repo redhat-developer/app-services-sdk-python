@@ -1,4 +1,4 @@
-# dimakis_test_connector_mgmt_sdk.ConnectorTypesApi
+# rhoas_connector_mgmt_sdk.ConnectorTypesApi
 
 All URIs are relative to *https://api.openshift.com*
 
@@ -21,14 +21,14 @@ Get a connector type by id
 
 ```python
 import time
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.api import connector_types_api
-from dimakis_test_connector_mgmt_sdk.model.error import Error
-from dimakis_test_connector_mgmt_sdk.model.connector_type import ConnectorType
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.api import connector_types_api
+from rhoas_connector_mgmt_sdk.model.error import Error
+from rhoas_connector_mgmt_sdk.model.connector_type import ConnectorType
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_connector_mgmt_sdk.Configuration(
+configuration = rhoas_connector_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -38,12 +38,12 @@ configuration = dimakis_test_connector_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_connector_mgmt_sdk.Configuration(
+configuration = rhoas_connector_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_connector_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_connector_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = connector_types_api.ConnectorTypesApi(api_client)
     connector_type_id = "connector_type_id_example" # str | The id of the connector type
@@ -53,7 +53,7 @@ with dimakis_test_connector_mgmt_sdk.ApiClient(configuration) as api_client:
         # Get a connector type by id
         api_response = api_instance.get_connector_type_by_id(connector_type_id)
         pprint(api_response)
-    except dimakis_test_connector_mgmt_sdk.ApiException as e:
+    except rhoas_connector_mgmt_sdk.ApiException as e:
         print("Exception when calling ConnectorTypesApi->get_connector_type_by_id: %s\n" % e)
 ```
 
@@ -103,14 +103,14 @@ Returns a list of connector types
 
 ```python
 import time
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.api import connector_types_api
-from dimakis_test_connector_mgmt_sdk.model.error import Error
-from dimakis_test_connector_mgmt_sdk.model.connector_type_list import ConnectorTypeList
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.api import connector_types_api
+from rhoas_connector_mgmt_sdk.model.connector_type_list import ConnectorTypeList
+from rhoas_connector_mgmt_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_connector_mgmt_sdk.Configuration(
+configuration = rhoas_connector_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -120,12 +120,12 @@ configuration = dimakis_test_connector_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_connector_mgmt_sdk.Configuration(
+configuration = rhoas_connector_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_connector_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_connector_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = connector_types_api.ConnectorTypesApi(api_client)
     page = "1" # str | Page index (optional)
@@ -139,7 +139,7 @@ with dimakis_test_connector_mgmt_sdk.ApiClient(configuration) as api_client:
         # Returns a list of connector types
         api_response = api_instance.get_connector_types(page=page, size=size, order_by=order_by, search=search)
         pprint(api_response)
-    except dimakis_test_connector_mgmt_sdk.ApiException as e:
+    except rhoas_connector_mgmt_sdk.ApiException as e:
         print("Exception when calling ConnectorTypesApi->get_connector_types: %s\n" % e)
 ```
 

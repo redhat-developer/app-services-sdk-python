@@ -12,14 +12,14 @@
 import sys
 import unittest
 
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.model.kafka_connection_settings import KafkaConnectionSettings
-from dimakis_test_connector_mgmt_sdk.model.schema_registry_connection_settings import SchemaRegistryConnectionSettings
-from dimakis_test_connector_mgmt_sdk.model.service_account import ServiceAccount
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.model.kafka_connection_settings import KafkaConnectionSettings
+from rhoas_connector_mgmt_sdk.model.schema_registry_connection_settings import SchemaRegistryConnectionSettings
+from rhoas_connector_mgmt_sdk.model.service_account import ServiceAccount
 globals()['KafkaConnectionSettings'] = KafkaConnectionSettings
 globals()['SchemaRegistryConnectionSettings'] = SchemaRegistryConnectionSettings
 globals()['ServiceAccount'] = ServiceAccount
-from dimakis_test_connector_mgmt_sdk.model.connector_configuration import ConnectorConfiguration
+from rhoas_connector_mgmt_sdk.model.connector_configuration import ConnectorConfiguration
 
 
 class TestConnectorConfiguration(unittest.TestCase):

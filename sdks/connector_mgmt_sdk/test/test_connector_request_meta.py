@@ -12,12 +12,12 @@
 import sys
 import unittest
 
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.model.channel import Channel
-from dimakis_test_connector_mgmt_sdk.model.connector_desired_state import ConnectorDesiredState
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.model.channel import Channel
+from rhoas_connector_mgmt_sdk.model.connector_desired_state import ConnectorDesiredState
 globals()['Channel'] = Channel
 globals()['ConnectorDesiredState'] = ConnectorDesiredState
-from dimakis_test_connector_mgmt_sdk.model.connector_request_meta import ConnectorRequestMeta
+from rhoas_connector_mgmt_sdk.model.connector_request_meta import ConnectorRequestMeta
 
 
 class TestConnectorRequestMeta(unittest.TestCase):

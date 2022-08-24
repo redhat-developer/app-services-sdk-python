@@ -12,8 +12,8 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_mgmt_sdk
-from dimakis_test_kafka_mgmt_sdk.model.kafka_update_request import KafkaUpdateRequest
+import rhoas_kafka_mgmt_sdk
+from rhoas_kafka_mgmt_sdk.model.kafka_update_request import KafkaUpdateRequest
 
 
 class TestKafkaUpdateRequest(unittest.TestCase):

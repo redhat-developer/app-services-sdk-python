@@ -11,12 +11,12 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_instance_sdk
-from dimakis_test_kafka_instance_sdk.model.offset_type import OffsetType
-from dimakis_test_kafka_instance_sdk.model.topics_to_reset_offset import TopicsToResetOffset
+import rhoas_kafka_instance_sdk
+from rhoas_kafka_instance_sdk.model.offset_type import OffsetType
+from rhoas_kafka_instance_sdk.model.topics_to_reset_offset import TopicsToResetOffset
 globals()['OffsetType'] = OffsetType
 globals()['TopicsToResetOffset'] = TopicsToResetOffset
-from dimakis_test_kafka_instance_sdk.model.consumer_group_reset_offset_parameters import ConsumerGroupResetOffsetParameters
+from rhoas_kafka_instance_sdk.model.consumer_group_reset_offset_parameters import ConsumerGroupResetOffsetParameters
 
 
 class TestConsumerGroupResetOffsetParameters(unittest.TestCase):

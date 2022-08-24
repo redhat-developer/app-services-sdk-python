@@ -11,8 +11,8 @@
 
 import unittest
 
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.api.connector_types_api import ConnectorTypesApi  # noqa: E501
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.api.connector_types_api import ConnectorTypesApi  # noqa: E501
 
 
 class TestConnectorTypesApi(unittest.TestCase):

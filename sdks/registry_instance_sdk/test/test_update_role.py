@@ -12,10 +12,10 @@
 import sys
 import unittest
 
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.model.role_type import RoleType
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.model.role_type import RoleType
 globals()['RoleType'] = RoleType
-from dimakis_test_registry_instance_sdk.model.update_role import UpdateRole
+from rhoas_registry_instance_sdk.model.update_role import UpdateRole
 
 
 class TestUpdateRole(unittest.TestCase):

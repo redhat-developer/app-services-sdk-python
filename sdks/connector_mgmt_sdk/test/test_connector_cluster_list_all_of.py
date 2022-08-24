@@ -12,10 +12,10 @@
 import sys
 import unittest
 
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.model.connector_cluster import ConnectorCluster
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.model.connector_cluster import ConnectorCluster
 globals()['ConnectorCluster'] = ConnectorCluster
-from dimakis_test_connector_mgmt_sdk.model.connector_cluster_list_all_of import ConnectorClusterListAllOf
+from rhoas_connector_mgmt_sdk.model.connector_cluster_list_all_of import ConnectorClusterListAllOf
 
 
 class TestConnectorClusterListAllOf(unittest.TestCase):

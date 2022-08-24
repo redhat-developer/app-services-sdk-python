@@ -12,12 +12,12 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_mgmt_sdk
-from dimakis_test_kafka_mgmt_sdk.model.instant_query import InstantQuery
-from dimakis_test_kafka_mgmt_sdk.model.metrics_instant_query_list_all_of import MetricsInstantQueryListAllOf
+import rhoas_kafka_mgmt_sdk
+from rhoas_kafka_mgmt_sdk.model.instant_query import InstantQuery
+from rhoas_kafka_mgmt_sdk.model.metrics_instant_query_list_all_of import MetricsInstantQueryListAllOf
 globals()['InstantQuery'] = InstantQuery
 globals()['MetricsInstantQueryListAllOf'] = MetricsInstantQueryListAllOf
-from dimakis_test_kafka_mgmt_sdk.model.metrics_instant_query_list import MetricsInstantQueryList
+from rhoas_kafka_mgmt_sdk.model.metrics_instant_query_list import MetricsInstantQueryList
 
 
 class TestMetricsInstantQueryList(unittest.TestCase):

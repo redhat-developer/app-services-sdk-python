@@ -12,16 +12,16 @@
 import sys
 import unittest
 
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.model.artifact_reference import ArtifactReference
-from dimakis_test_registry_instance_sdk.model.artifact_state import ArtifactState
-from dimakis_test_registry_instance_sdk.model.artifact_type import ArtifactType
-from dimakis_test_registry_instance_sdk.model.properties import Properties
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.model.artifact_reference import ArtifactReference
+from rhoas_registry_instance_sdk.model.artifact_state import ArtifactState
+from rhoas_registry_instance_sdk.model.artifact_type import ArtifactType
+from rhoas_registry_instance_sdk.model.properties import Properties
 globals()['ArtifactReference'] = ArtifactReference
 globals()['ArtifactState'] = ArtifactState
 globals()['ArtifactType'] = ArtifactType
 globals()['Properties'] = Properties
-from dimakis_test_registry_instance_sdk.model.artifact_meta_data import ArtifactMetaData
+from rhoas_registry_instance_sdk.model.artifact_meta_data import ArtifactMetaData
 
 
 class TestArtifactMetaData(unittest.TestCase):

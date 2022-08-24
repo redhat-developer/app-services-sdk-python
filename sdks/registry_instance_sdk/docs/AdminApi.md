@@ -1,4 +1,4 @@
-# dimakis_test_registry_instance_sdk.AdminApi
+# rhoas_registry_instance_sdk.AdminApi
 
 All URIs are relative to *http://localhost*
 
@@ -33,20 +33,20 @@ Creates a new mapping between a user/principal and a role.  This operation can f
 
 ```python
 import time
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.api import admin_api
-from dimakis_test_registry_instance_sdk.model.role_mapping import RoleMapping
-from dimakis_test_registry_instance_sdk.model.error import Error
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.api import admin_api
+from rhoas_registry_instance_sdk.model.role_mapping import RoleMapping
+from rhoas_registry_instance_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_registry_instance_sdk.Configuration(
+configuration = rhoas_registry_instance_sdk.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
+with rhoas_registry_instance_sdk.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
     role_mapping = RoleMapping(
@@ -59,7 +59,7 @@ with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
     try:
         # Create a new role mapping
         api_instance.create_role_mapping(role_mapping)
-    except dimakis_test_registry_instance_sdk.ApiException as e:
+    except rhoas_registry_instance_sdk.ApiException as e:
         print("Exception when calling AdminApi->create_role_mapping: %s\n" % e)
 ```
 
@@ -105,19 +105,19 @@ Deletes a single role mapping, effectively denying access to a user/principal.  
 
 ```python
 import time
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.api import admin_api
-from dimakis_test_registry_instance_sdk.model.error import Error
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.api import admin_api
+from rhoas_registry_instance_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_registry_instance_sdk.Configuration(
+configuration = rhoas_registry_instance_sdk.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
+with rhoas_registry_instance_sdk.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
     principal_id = "principalId_example" # str | Unique id of a principal (typically either a user or service account).
@@ -126,7 +126,7 @@ with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
     try:
         # Delete a role mapping
         api_instance.delete_role_mapping(principal_id)
-    except dimakis_test_registry_instance_sdk.ApiException as e:
+    except rhoas_registry_instance_sdk.ApiException as e:
         print("Exception when calling AdminApi->delete_role_mapping: %s\n" % e)
 ```
 
@@ -173,19 +173,19 @@ Exports registry data as a ZIP archive.
 
 ```python
 import time
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.api import admin_api
-from dimakis_test_registry_instance_sdk.model.error import Error
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.api import admin_api
+from rhoas_registry_instance_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_registry_instance_sdk.Configuration(
+configuration = rhoas_registry_instance_sdk.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
+with rhoas_registry_instance_sdk.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
     for_browser = True # bool | Indicates if the operation is done for a browser.  If true, the response will be a JSON payload with a property called `href`.  This `href` will be a single-use, naked download link suitable for use by a web browser to download the content. (optional)
@@ -196,7 +196,7 @@ with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
         # Export registry data
         api_response = api_instance.export_data(for_browser=for_browser)
         pprint(api_response)
-    except dimakis_test_registry_instance_sdk.ApiException as e:
+    except rhoas_registry_instance_sdk.ApiException as e:
         print("Exception when calling AdminApi->export_data: %s\n" % e)
 ```
 
@@ -242,20 +242,20 @@ Returns the value of a single configuration property.  This operation may fail f
 
 ```python
 import time
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.api import admin_api
-from dimakis_test_registry_instance_sdk.model.configuration_property import ConfigurationProperty
-from dimakis_test_registry_instance_sdk.model.error import Error
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.api import admin_api
+from rhoas_registry_instance_sdk.model.configuration_property import ConfigurationProperty
+from rhoas_registry_instance_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_registry_instance_sdk.Configuration(
+configuration = rhoas_registry_instance_sdk.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
+with rhoas_registry_instance_sdk.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
     property_name = "propertyName_example" # str | The name of a configuration property.
@@ -265,7 +265,7 @@ with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
         # Get the value of a configuration property
         api_response = api_instance.get_config_property(property_name)
         pprint(api_response)
-    except dimakis_test_registry_instance_sdk.ApiException as e:
+    except rhoas_registry_instance_sdk.ApiException as e:
         print("Exception when calling AdminApi->get_config_property: %s\n" % e)
 ```
 
@@ -312,20 +312,20 @@ Returns the configured logger configuration for the provided logger name, if no 
 
 ```python
 import time
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.api import admin_api
-from dimakis_test_registry_instance_sdk.model.error import Error
-from dimakis_test_registry_instance_sdk.model.named_log_configuration import NamedLogConfiguration
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.api import admin_api
+from rhoas_registry_instance_sdk.model.named_log_configuration import NamedLogConfiguration
+from rhoas_registry_instance_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_registry_instance_sdk.Configuration(
+configuration = rhoas_registry_instance_sdk.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
+with rhoas_registry_instance_sdk.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
     logger = "logger_example" # str | The name of a single logger.
@@ -335,7 +335,7 @@ with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
         # Get a single logger configuration
         api_response = api_instance.get_log_configuration(logger)
         pprint(api_response)
-    except dimakis_test_registry_instance_sdk.ApiException as e:
+    except rhoas_registry_instance_sdk.ApiException as e:
         print("Exception when calling AdminApi->get_log_configuration: %s\n" % e)
 ```
 
@@ -381,20 +381,20 @@ Gets the details of a single role mapping (by principalId).  This operation can 
 
 ```python
 import time
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.api import admin_api
-from dimakis_test_registry_instance_sdk.model.role_mapping import RoleMapping
-from dimakis_test_registry_instance_sdk.model.error import Error
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.api import admin_api
+from rhoas_registry_instance_sdk.model.role_mapping import RoleMapping
+from rhoas_registry_instance_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_registry_instance_sdk.Configuration(
+configuration = rhoas_registry_instance_sdk.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
+with rhoas_registry_instance_sdk.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
     principal_id = "principalId_example" # str | Unique id of a principal (typically either a user or service account).
@@ -404,7 +404,7 @@ with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
         # Return a single role mapping
         api_response = api_instance.get_role_mapping(principal_id)
         pprint(api_response)
-    except dimakis_test_registry_instance_sdk.ApiException as e:
+    except rhoas_registry_instance_sdk.ApiException as e:
         print("Exception when calling AdminApi->get_role_mapping: %s\n" % e)
 ```
 
@@ -451,19 +451,19 @@ Imports registry data that was previously exported using the `/admin/export` ope
 
 ```python
 import time
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.api import admin_api
-from dimakis_test_registry_instance_sdk.model.error import Error
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.api import admin_api
+from rhoas_registry_instance_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_registry_instance_sdk.Configuration(
+configuration = rhoas_registry_instance_sdk.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
+with rhoas_registry_instance_sdk.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
     body = open('/path/to/file', 'rb') # file_type | The ZIP file representing the previously exported registry data.
@@ -474,7 +474,7 @@ with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
     try:
         # Import registry data
         api_instance.import_data(body)
-    except dimakis_test_registry_instance_sdk.ApiException as e:
+    except rhoas_registry_instance_sdk.ApiException as e:
         print("Exception when calling AdminApi->import_data: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -482,7 +482,7 @@ with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
     try:
         # Import registry data
         api_instance.import_data(body, x_registry_preserve_global_id=x_registry_preserve_global_id, x_registry_preserve_content_id=x_registry_preserve_content_id)
-    except dimakis_test_registry_instance_sdk.ApiException as e:
+    except rhoas_registry_instance_sdk.ApiException as e:
         print("Exception when calling AdminApi->import_data: %s\n" % e)
 ```
 
@@ -530,20 +530,20 @@ Returns a list of all configuration properties that have been set.  The list is 
 
 ```python
 import time
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.api import admin_api
-from dimakis_test_registry_instance_sdk.model.configuration_property import ConfigurationProperty
-from dimakis_test_registry_instance_sdk.model.error import Error
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.api import admin_api
+from rhoas_registry_instance_sdk.model.configuration_property import ConfigurationProperty
+from rhoas_registry_instance_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_registry_instance_sdk.Configuration(
+configuration = rhoas_registry_instance_sdk.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
+with rhoas_registry_instance_sdk.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
 
@@ -552,7 +552,7 @@ with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
         # List all configuration properties
         api_response = api_instance.list_config_properties()
         pprint(api_response)
-    except dimakis_test_registry_instance_sdk.ApiException as e:
+    except rhoas_registry_instance_sdk.ApiException as e:
         print("Exception when calling AdminApi->list_config_properties: %s\n" % e)
 ```
 
@@ -595,20 +595,20 @@ List all of the configured logging levels.  These override the default logging c
 
 ```python
 import time
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.api import admin_api
-from dimakis_test_registry_instance_sdk.model.error import Error
-from dimakis_test_registry_instance_sdk.model.named_log_configuration import NamedLogConfiguration
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.api import admin_api
+from rhoas_registry_instance_sdk.model.named_log_configuration import NamedLogConfiguration
+from rhoas_registry_instance_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_registry_instance_sdk.Configuration(
+configuration = rhoas_registry_instance_sdk.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
+with rhoas_registry_instance_sdk.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
 
@@ -617,7 +617,7 @@ with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
         # List logging configurations
         api_response = api_instance.list_log_configurations()
         pprint(api_response)
-    except dimakis_test_registry_instance_sdk.ApiException as e:
+    except rhoas_registry_instance_sdk.ApiException as e:
         print("Exception when calling AdminApi->list_log_configurations: %s\n" % e)
 ```
 
@@ -660,20 +660,20 @@ Gets a list of all role mappings configured in the registry (if any).  This oper
 
 ```python
 import time
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.api import admin_api
-from dimakis_test_registry_instance_sdk.model.role_mapping import RoleMapping
-from dimakis_test_registry_instance_sdk.model.error import Error
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.api import admin_api
+from rhoas_registry_instance_sdk.model.role_mapping import RoleMapping
+from rhoas_registry_instance_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_registry_instance_sdk.Configuration(
+configuration = rhoas_registry_instance_sdk.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
+with rhoas_registry_instance_sdk.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
 
@@ -682,7 +682,7 @@ with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
         # List all role mappings
         api_response = api_instance.list_role_mappings()
         pprint(api_response)
-    except dimakis_test_registry_instance_sdk.ApiException as e:
+    except rhoas_registry_instance_sdk.ApiException as e:
         print("Exception when calling AdminApi->list_role_mappings: %s\n" % e)
 ```
 
@@ -725,20 +725,20 @@ Removes the configured logger configuration (if any) for the given logger.
 
 ```python
 import time
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.api import admin_api
-from dimakis_test_registry_instance_sdk.model.error import Error
-from dimakis_test_registry_instance_sdk.model.named_log_configuration import NamedLogConfiguration
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.api import admin_api
+from rhoas_registry_instance_sdk.model.named_log_configuration import NamedLogConfiguration
+from rhoas_registry_instance_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_registry_instance_sdk.Configuration(
+configuration = rhoas_registry_instance_sdk.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
+with rhoas_registry_instance_sdk.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
     logger = "logger_example" # str | The name of a single logger.
@@ -748,7 +748,7 @@ with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
         # Removes logger configuration
         api_response = api_instance.remove_log_configuration(logger)
         pprint(api_response)
-    except dimakis_test_registry_instance_sdk.ApiException as e:
+    except rhoas_registry_instance_sdk.ApiException as e:
         print("Exception when calling AdminApi->remove_log_configuration: %s\n" % e)
 ```
 
@@ -794,19 +794,19 @@ Resets the value of a single configuration property.  This will return the prope
 
 ```python
 import time
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.api import admin_api
-from dimakis_test_registry_instance_sdk.model.error import Error
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.api import admin_api
+from rhoas_registry_instance_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_registry_instance_sdk.Configuration(
+configuration = rhoas_registry_instance_sdk.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
+with rhoas_registry_instance_sdk.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
     property_name = "propertyName_example" # str | The name of a configuration property.
@@ -815,7 +815,7 @@ with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
     try:
         # Reset a configuration property
         api_instance.reset_config_property(property_name)
-    except dimakis_test_registry_instance_sdk.ApiException as e:
+    except rhoas_registry_instance_sdk.ApiException as e:
         print("Exception when calling AdminApi->reset_config_property: %s\n" % e)
 ```
 
@@ -862,21 +862,21 @@ Configures the logger referenced by the provided logger name with the given conf
 
 ```python
 import time
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.api import admin_api
-from dimakis_test_registry_instance_sdk.model.log_configuration import LogConfiguration
-from dimakis_test_registry_instance_sdk.model.error import Error
-from dimakis_test_registry_instance_sdk.model.named_log_configuration import NamedLogConfiguration
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.api import admin_api
+from rhoas_registry_instance_sdk.model.named_log_configuration import NamedLogConfiguration
+from rhoas_registry_instance_sdk.model.error import Error
+from rhoas_registry_instance_sdk.model.log_configuration import LogConfiguration
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_registry_instance_sdk.Configuration(
+configuration = rhoas_registry_instance_sdk.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
+with rhoas_registry_instance_sdk.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
     logger = "logger_example" # str | The name of a single logger.
@@ -889,7 +889,7 @@ with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
         # Set a logger's configuration
         api_response = api_instance.set_log_configuration(logger, log_configuration)
         pprint(api_response)
-    except dimakis_test_registry_instance_sdk.ApiException as e:
+    except rhoas_registry_instance_sdk.ApiException as e:
         print("Exception when calling AdminApi->set_log_configuration: %s\n" % e)
 ```
 
@@ -936,20 +936,20 @@ Updates the value of a single configuration property.  This operation may fail f
 
 ```python
 import time
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.api import admin_api
-from dimakis_test_registry_instance_sdk.model.error import Error
-from dimakis_test_registry_instance_sdk.model.update_configuration_property import UpdateConfigurationProperty
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.api import admin_api
+from rhoas_registry_instance_sdk.model.update_configuration_property import UpdateConfigurationProperty
+from rhoas_registry_instance_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_registry_instance_sdk.Configuration(
+configuration = rhoas_registry_instance_sdk.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
+with rhoas_registry_instance_sdk.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
     property_name = "propertyName_example" # str | The name of a configuration property.
@@ -961,7 +961,7 @@ with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
     try:
         # Update a configuration property
         api_instance.update_config_property(property_name, update_configuration_property)
-    except dimakis_test_registry_instance_sdk.ApiException as e:
+    except rhoas_registry_instance_sdk.ApiException as e:
         print("Exception when calling AdminApi->update_config_property: %s\n" % e)
 ```
 
@@ -1009,20 +1009,20 @@ Updates a single role mapping for one user/principal.  This operation can fail f
 
 ```python
 import time
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.api import admin_api
-from dimakis_test_registry_instance_sdk.model.update_role import UpdateRole
-from dimakis_test_registry_instance_sdk.model.error import Error
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.api import admin_api
+from rhoas_registry_instance_sdk.model.update_role import UpdateRole
+from rhoas_registry_instance_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_registry_instance_sdk.Configuration(
+configuration = rhoas_registry_instance_sdk.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
+with rhoas_registry_instance_sdk.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = admin_api.AdminApi(api_client)
     principal_id = "principalId_example" # str | Unique id of a principal (typically either a user or service account).
@@ -1034,7 +1034,7 @@ with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
     try:
         # Update a role mapping
         api_instance.update_role_mapping(principal_id, update_role)
-    except dimakis_test_registry_instance_sdk.ApiException as e:
+    except rhoas_registry_instance_sdk.ApiException as e:
         print("Exception when calling AdminApi->update_role_mapping: %s\n" % e)
 ```
 

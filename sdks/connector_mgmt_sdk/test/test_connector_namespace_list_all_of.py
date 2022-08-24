@@ -12,10 +12,10 @@
 import sys
 import unittest
 
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.model.connector_namespace import ConnectorNamespace
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.model.connector_namespace import ConnectorNamespace
 globals()['ConnectorNamespace'] = ConnectorNamespace
-from dimakis_test_connector_mgmt_sdk.model.connector_namespace_list_all_of import ConnectorNamespaceListAllOf
+from rhoas_connector_mgmt_sdk.model.connector_namespace_list_all_of import ConnectorNamespaceListAllOf
 
 
 class TestConnectorNamespaceListAllOf(unittest.TestCase):

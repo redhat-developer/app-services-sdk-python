@@ -12,8 +12,8 @@
 import sys
 import unittest
 
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.model.rule_violation_cause import RuleViolationCause
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.model.rule_violation_cause import RuleViolationCause
 
 
 class TestRuleViolationCause(unittest.TestCase):

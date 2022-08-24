@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_instance_sdk
-from dimakis_test_kafka_instance_sdk.model.node import Node
+import rhoas_kafka_instance_sdk
+from rhoas_kafka_instance_sdk.model.node import Node
 globals()['Node'] = Node
-from dimakis_test_kafka_instance_sdk.model.partition_leader import PartitionLeader
+from rhoas_kafka_instance_sdk.model.partition_leader import PartitionLeader
 
 
 class TestPartitionLeader(unittest.TestCase):

@@ -11,14 +11,14 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_instance_sdk
-from dimakis_test_kafka_instance_sdk.model.consumer_group import ConsumerGroup
-from dimakis_test_kafka_instance_sdk.model.consumer_group_list_all_of import ConsumerGroupListAllOf
-from dimakis_test_kafka_instance_sdk.model.list_deprecated import ListDeprecated
+import rhoas_kafka_instance_sdk
+from rhoas_kafka_instance_sdk.model.consumer_group import ConsumerGroup
+from rhoas_kafka_instance_sdk.model.consumer_group_list_all_of import ConsumerGroupListAllOf
+from rhoas_kafka_instance_sdk.model.list_deprecated import ListDeprecated
 globals()['ConsumerGroup'] = ConsumerGroup
 globals()['ConsumerGroupListAllOf'] = ConsumerGroupListAllOf
 globals()['ListDeprecated'] = ListDeprecated
-from dimakis_test_kafka_instance_sdk.model.consumer_group_list import ConsumerGroupList
+from rhoas_kafka_instance_sdk.model.consumer_group_list import ConsumerGroupList
 
 
 class TestConsumerGroupList(unittest.TestCase):

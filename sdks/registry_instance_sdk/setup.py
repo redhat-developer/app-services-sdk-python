@@ -11,7 +11,7 @@
 
 from setuptools import setup, find_packages  # noqa: H301
 
-NAME = "dimakis-test-registry-instance-sdk"
+NAME = "rhoas-registry-instance-sdk"
 VERSION = "1.0.0"
 # To install the library, run the following
 #

@@ -12,8 +12,8 @@
 import sys
 import unittest
 
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.model.connector_desired_state import ConnectorDesiredState
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.model.connector_desired_state import ConnectorDesiredState
 
 
 class TestConnectorDesiredState(unittest.TestCase):

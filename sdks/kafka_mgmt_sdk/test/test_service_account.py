@@ -12,12 +12,12 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_mgmt_sdk
-from dimakis_test_kafka_mgmt_sdk.model.object_reference import ObjectReference
-from dimakis_test_kafka_mgmt_sdk.model.service_account_all_of import ServiceAccountAllOf
+import rhoas_kafka_mgmt_sdk
+from rhoas_kafka_mgmt_sdk.model.object_reference import ObjectReference
+from rhoas_kafka_mgmt_sdk.model.service_account_all_of import ServiceAccountAllOf
 globals()['ObjectReference'] = ObjectReference
 globals()['ServiceAccountAllOf'] = ServiceAccountAllOf
-from dimakis_test_kafka_mgmt_sdk.model.service_account import ServiceAccount
+from rhoas_kafka_mgmt_sdk.model.service_account import ServiceAccount
 
 
 class TestServiceAccount(unittest.TestCase):

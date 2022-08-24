@@ -1,4 +1,4 @@
-# dimakis_test_service_registry_mgmt_sdk.ErrorsApi
+# rhoas_service_registry_mgmt_sdk.ErrorsApi
 
 All URIs are relative to *https://api.openshift.com*
 
@@ -20,19 +20,19 @@ Get information about a specific error type
 
 ```python
 import time
-import dimakis_test_service_registry_mgmt_sdk
-from dimakis_test_service_registry_mgmt_sdk.api import errors_api
-from dimakis_test_service_registry_mgmt_sdk.model.error import Error
+import rhoas_service_registry_mgmt_sdk
+from rhoas_service_registry_mgmt_sdk.api import errors_api
+from rhoas_service_registry_mgmt_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_service_registry_mgmt_sdk.Configuration(
+configuration = rhoas_service_registry_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_service_registry_mgmt_sdk.ApiClient() as api_client:
+with rhoas_service_registry_mgmt_sdk.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = errors_api.ErrorsApi(api_client)
     id = 1 # int | A unique identifier for an error type.
@@ -41,7 +41,7 @@ with dimakis_test_service_registry_mgmt_sdk.ApiClient() as api_client:
     try:
         api_response = api_instance.get_error(id)
         pprint(api_response)
-    except dimakis_test_service_registry_mgmt_sdk.ApiException as e:
+    except rhoas_service_registry_mgmt_sdk.ApiException as e:
         print("Exception when calling ErrorsApi->get_error: %s\n" % e)
 ```
 
@@ -88,20 +88,20 @@ Get the list of all errors
 
 ```python
 import time
-import dimakis_test_service_registry_mgmt_sdk
-from dimakis_test_service_registry_mgmt_sdk.api import errors_api
-from dimakis_test_service_registry_mgmt_sdk.model.error_list import ErrorList
-from dimakis_test_service_registry_mgmt_sdk.model.error import Error
+import rhoas_service_registry_mgmt_sdk
+from rhoas_service_registry_mgmt_sdk.api import errors_api
+from rhoas_service_registry_mgmt_sdk.model.error_list import ErrorList
+from rhoas_service_registry_mgmt_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_service_registry_mgmt_sdk.Configuration(
+configuration = rhoas_service_registry_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_service_registry_mgmt_sdk.ApiClient() as api_client:
+with rhoas_service_registry_mgmt_sdk.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = errors_api.ErrorsApi(api_client)
     page = 0 # int | Page index. (optional)
@@ -112,7 +112,7 @@ with dimakis_test_service_registry_mgmt_sdk.ApiClient() as api_client:
     try:
         api_response = api_instance.get_errors(page=page, size=size)
         pprint(api_response)
-    except dimakis_test_service_registry_mgmt_sdk.ApiException as e:
+    except rhoas_service_registry_mgmt_sdk.ApiException as e:
         print("Exception when calling ErrorsApi->get_errors: %s\n" % e)
 ```
 

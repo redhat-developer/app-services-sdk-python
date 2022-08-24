@@ -1,4 +1,4 @@
-# dimakis_test_smart_events_mgmt_sdk.CloudProvidersApi
+# rhoas_smart_events_mgmt_sdk.CloudProvidersApi
 
 All URIs are relative to *https://api.stage.openshift.com*
 
@@ -21,20 +21,20 @@ Get details of the Cloud Provider specified by id.
 
 ```python
 import time
-import dimakis_test_smart_events_mgmt_sdk
-from dimakis_test_smart_events_mgmt_sdk.api import cloud_providers_api
-from dimakis_test_smart_events_mgmt_sdk.model.errors_list import ErrorsList
-from dimakis_test_smart_events_mgmt_sdk.model.cloud_provider_list_response import CloudProviderListResponse
+import rhoas_smart_events_mgmt_sdk
+from rhoas_smart_events_mgmt_sdk.api import cloud_providers_api
+from rhoas_smart_events_mgmt_sdk.model.errors_list import ErrorsList
+from rhoas_smart_events_mgmt_sdk.model.cloud_provider_list_response import CloudProviderListResponse
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.stage.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
+configuration = rhoas_smart_events_mgmt_sdk.Configuration(
     host = "https://api.stage.openshift.com"
 )
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_smart_events_mgmt_sdk.ApiClient() as api_client:
+with rhoas_smart_events_mgmt_sdk.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = cloud_providers_api.CloudProvidersApi(api_client)
     id = "id_example" # str | 
@@ -44,7 +44,7 @@ with dimakis_test_smart_events_mgmt_sdk.ApiClient() as api_client:
         # Get Cloud Provider.
         api_response = api_instance.cloud_provider_api_get_cloud_provider(id)
         pprint(api_response)
-    except dimakis_test_smart_events_mgmt_sdk.ApiException as e:
+    except rhoas_smart_events_mgmt_sdk.ApiException as e:
         print("Exception when calling CloudProvidersApi->cloud_provider_api_get_cloud_provider: %s\n" % e)
 ```
 
@@ -92,20 +92,20 @@ Returns the list of supported Regions of the specified Cloud Provider.
 
 ```python
 import time
-import dimakis_test_smart_events_mgmt_sdk
-from dimakis_test_smart_events_mgmt_sdk.api import cloud_providers_api
-from dimakis_test_smart_events_mgmt_sdk.model.errors_list import ErrorsList
-from dimakis_test_smart_events_mgmt_sdk.model.cloud_region_list_response import CloudRegionListResponse
+import rhoas_smart_events_mgmt_sdk
+from rhoas_smart_events_mgmt_sdk.api import cloud_providers_api
+from rhoas_smart_events_mgmt_sdk.model.cloud_region_list_response import CloudRegionListResponse
+from rhoas_smart_events_mgmt_sdk.model.errors_list import ErrorsList
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.stage.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
+configuration = rhoas_smart_events_mgmt_sdk.Configuration(
     host = "https://api.stage.openshift.com"
 )
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_smart_events_mgmt_sdk.ApiClient() as api_client:
+with rhoas_smart_events_mgmt_sdk.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = cloud_providers_api.CloudProvidersApi(api_client)
     id = "id_example" # str | 
@@ -117,7 +117,7 @@ with dimakis_test_smart_events_mgmt_sdk.ApiClient() as api_client:
         # List Supported Cloud Regions.
         api_response = api_instance.cloud_provider_api_list_cloud_provider_regions(id)
         pprint(api_response)
-    except dimakis_test_smart_events_mgmt_sdk.ApiException as e:
+    except rhoas_smart_events_mgmt_sdk.ApiException as e:
         print("Exception when calling CloudProvidersApi->cloud_provider_api_list_cloud_provider_regions: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -126,7 +126,7 @@ with dimakis_test_smart_events_mgmt_sdk.ApiClient() as api_client:
         # List Supported Cloud Regions.
         api_response = api_instance.cloud_provider_api_list_cloud_provider_regions(id, page=page, size=size)
         pprint(api_response)
-    except dimakis_test_smart_events_mgmt_sdk.ApiException as e:
+    except rhoas_smart_events_mgmt_sdk.ApiException as e:
         print("Exception when calling CloudProvidersApi->cloud_provider_api_list_cloud_provider_regions: %s\n" % e)
 ```
 
@@ -175,20 +175,20 @@ Returns the list of supported Cloud Providers.
 
 ```python
 import time
-import dimakis_test_smart_events_mgmt_sdk
-from dimakis_test_smart_events_mgmt_sdk.api import cloud_providers_api
-from dimakis_test_smart_events_mgmt_sdk.model.errors_list import ErrorsList
-from dimakis_test_smart_events_mgmt_sdk.model.cloud_provider_list_response import CloudProviderListResponse
+import rhoas_smart_events_mgmt_sdk
+from rhoas_smart_events_mgmt_sdk.api import cloud_providers_api
+from rhoas_smart_events_mgmt_sdk.model.errors_list import ErrorsList
+from rhoas_smart_events_mgmt_sdk.model.cloud_provider_list_response import CloudProviderListResponse
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.stage.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
+configuration = rhoas_smart_events_mgmt_sdk.Configuration(
     host = "https://api.stage.openshift.com"
 )
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_smart_events_mgmt_sdk.ApiClient() as api_client:
+with rhoas_smart_events_mgmt_sdk.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = cloud_providers_api.CloudProvidersApi(api_client)
     page = 0 # int |  (optional) if omitted the server will use the default value of 0
@@ -200,7 +200,7 @@ with dimakis_test_smart_events_mgmt_sdk.ApiClient() as api_client:
         # List Supported Cloud Providers.
         api_response = api_instance.cloud_provider_api_list_cloud_providers(page=page, size=size)
         pprint(api_response)
-    except dimakis_test_smart_events_mgmt_sdk.ApiException as e:
+    except rhoas_smart_events_mgmt_sdk.ApiException as e:
         print("Exception when calling CloudProvidersApi->cloud_provider_api_list_cloud_providers: %s\n" % e)
 ```
 

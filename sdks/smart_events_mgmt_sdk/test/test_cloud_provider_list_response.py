@@ -12,10 +12,10 @@
 import sys
 import unittest
 
-import dimakis_test_smart_events_mgmt_sdk
-from dimakis_test_smart_events_mgmt_sdk.model.cloud_provider_response import CloudProviderResponse
+import rhoas_smart_events_mgmt_sdk
+from rhoas_smart_events_mgmt_sdk.model.cloud_provider_response import CloudProviderResponse
 globals()['CloudProviderResponse'] = CloudProviderResponse
-from dimakis_test_smart_events_mgmt_sdk.model.cloud_provider_list_response import CloudProviderListResponse
+from rhoas_smart_events_mgmt_sdk.model.cloud_provider_list_response import CloudProviderListResponse
 
 
 class TestCloudProviderListResponse(unittest.TestCase):

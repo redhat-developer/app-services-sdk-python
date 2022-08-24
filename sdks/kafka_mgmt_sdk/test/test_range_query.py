@@ -12,10 +12,10 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_mgmt_sdk
-from dimakis_test_kafka_mgmt_sdk.model.values import Values
+import rhoas_kafka_mgmt_sdk
+from rhoas_kafka_mgmt_sdk.model.values import Values
 globals()['Values'] = Values
-from dimakis_test_kafka_mgmt_sdk.model.range_query import RangeQuery
+from rhoas_kafka_mgmt_sdk.model.range_query import RangeQuery
 
 
 class TestRangeQuery(unittest.TestCase):

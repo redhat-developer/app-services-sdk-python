@@ -12,10 +12,10 @@
 import sys
 import unittest
 
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.model.log_level import LogLevel
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.model.log_level import LogLevel
 globals()['LogLevel'] = LogLevel
-from dimakis_test_registry_instance_sdk.model.log_configuration import LogConfiguration
+from rhoas_registry_instance_sdk.model.log_configuration import LogConfiguration
 
 
 class TestLogConfiguration(unittest.TestCase):

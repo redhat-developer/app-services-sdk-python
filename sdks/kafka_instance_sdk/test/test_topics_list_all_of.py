@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_instance_sdk
-from dimakis_test_kafka_instance_sdk.model.topic import Topic
+import rhoas_kafka_instance_sdk
+from rhoas_kafka_instance_sdk.model.topic import Topic
 globals()['Topic'] = Topic
-from dimakis_test_kafka_instance_sdk.model.topics_list_all_of import TopicsListAllOf
+from rhoas_kafka_instance_sdk.model.topics_list_all_of import TopicsListAllOf
 
 
 class TestTopicsListAllOf(unittest.TestCase):

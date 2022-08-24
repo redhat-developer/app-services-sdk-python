@@ -1,4 +1,4 @@
-# dimakis_test_service_registry_mgmt_sdk.RegistriesApi
+# rhoas_service_registry_mgmt_sdk.RegistriesApi
 
 All URIs are relative to *https://api.openshift.com*
 
@@ -23,15 +23,15 @@ Create a new Registry instance
 
 ```python
 import time
-import dimakis_test_service_registry_mgmt_sdk
-from dimakis_test_service_registry_mgmt_sdk.api import registries_api
-from dimakis_test_service_registry_mgmt_sdk.model.registry_create import RegistryCreate
-from dimakis_test_service_registry_mgmt_sdk.model.error import Error
-from dimakis_test_service_registry_mgmt_sdk.model.registry import Registry
+import rhoas_service_registry_mgmt_sdk
+from rhoas_service_registry_mgmt_sdk.api import registries_api
+from rhoas_service_registry_mgmt_sdk.model.registry_create import RegistryCreate
+from rhoas_service_registry_mgmt_sdk.model.error import Error
+from rhoas_service_registry_mgmt_sdk.model.registry import Registry
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_service_registry_mgmt_sdk.Configuration(
+configuration = rhoas_service_registry_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -41,12 +41,12 @@ configuration = dimakis_test_service_registry_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_service_registry_mgmt_sdk.Configuration(
+configuration = rhoas_service_registry_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_service_registry_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_service_registry_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = registries_api.RegistriesApi(api_client)
     registry_create = RegistryCreate(
@@ -58,7 +58,7 @@ with dimakis_test_service_registry_mgmt_sdk.ApiClient(configuration) as api_clie
     try:
         api_response = api_instance.create_registry(registry_create)
         pprint(api_response)
-    except dimakis_test_service_registry_mgmt_sdk.ApiException as e:
+    except rhoas_service_registry_mgmt_sdk.ApiException as e:
         print("Exception when calling RegistriesApi->create_registry: %s\n" % e)
 ```
 
@@ -107,13 +107,13 @@ Deletes an existing `Registry` instance and all of the data that it stores. Impo
 
 ```python
 import time
-import dimakis_test_service_registry_mgmt_sdk
-from dimakis_test_service_registry_mgmt_sdk.api import registries_api
-from dimakis_test_service_registry_mgmt_sdk.model.error import Error
+import rhoas_service_registry_mgmt_sdk
+from rhoas_service_registry_mgmt_sdk.api import registries_api
+from rhoas_service_registry_mgmt_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_service_registry_mgmt_sdk.Configuration(
+configuration = rhoas_service_registry_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -123,12 +123,12 @@ configuration = dimakis_test_service_registry_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_service_registry_mgmt_sdk.Configuration(
+configuration = rhoas_service_registry_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_service_registry_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_service_registry_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = registries_api.RegistriesApi(api_client)
     id = "id_example" # str | A unique identifier for a `Registry` instance.
@@ -137,7 +137,7 @@ with dimakis_test_service_registry_mgmt_sdk.ApiClient(configuration) as api_clie
     try:
         # Delete a Registry instance
         api_instance.delete_registry(id)
-    except dimakis_test_service_registry_mgmt_sdk.ApiException as e:
+    except rhoas_service_registry_mgmt_sdk.ApiException as e:
         print("Exception when calling RegistriesApi->delete_registry: %s\n" % e)
 ```
 
@@ -186,14 +186,14 @@ Get the list of all Registry instances
 
 ```python
 import time
-import dimakis_test_service_registry_mgmt_sdk
-from dimakis_test_service_registry_mgmt_sdk.api import registries_api
-from dimakis_test_service_registry_mgmt_sdk.model.error import Error
-from dimakis_test_service_registry_mgmt_sdk.model.registry_list import RegistryList
+import rhoas_service_registry_mgmt_sdk
+from rhoas_service_registry_mgmt_sdk.api import registries_api
+from rhoas_service_registry_mgmt_sdk.model.registry_list import RegistryList
+from rhoas_service_registry_mgmt_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_service_registry_mgmt_sdk.Configuration(
+configuration = rhoas_service_registry_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -203,12 +203,12 @@ configuration = dimakis_test_service_registry_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_service_registry_mgmt_sdk.Configuration(
+configuration = rhoas_service_registry_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_service_registry_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_service_registry_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = registries_api.RegistriesApi(api_client)
     page = 0 # int | Page index. (optional)
@@ -221,7 +221,7 @@ with dimakis_test_service_registry_mgmt_sdk.ApiClient(configuration) as api_clie
     try:
         api_response = api_instance.get_registries(page=page, size=size, order_by=order_by, search=search)
         pprint(api_response)
-    except dimakis_test_service_registry_mgmt_sdk.ApiException as e:
+    except rhoas_service_registry_mgmt_sdk.ApiException as e:
         print("Exception when calling RegistriesApi->get_registries: %s\n" % e)
 ```
 
@@ -273,14 +273,14 @@ Gets the details of a single instance of a `Registry`.
 
 ```python
 import time
-import dimakis_test_service_registry_mgmt_sdk
-from dimakis_test_service_registry_mgmt_sdk.api import registries_api
-from dimakis_test_service_registry_mgmt_sdk.model.error import Error
-from dimakis_test_service_registry_mgmt_sdk.model.registry import Registry
+import rhoas_service_registry_mgmt_sdk
+from rhoas_service_registry_mgmt_sdk.api import registries_api
+from rhoas_service_registry_mgmt_sdk.model.error import Error
+from rhoas_service_registry_mgmt_sdk.model.registry import Registry
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_service_registry_mgmt_sdk.Configuration(
+configuration = rhoas_service_registry_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -290,12 +290,12 @@ configuration = dimakis_test_service_registry_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_service_registry_mgmt_sdk.Configuration(
+configuration = rhoas_service_registry_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_service_registry_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_service_registry_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = registries_api.RegistriesApi(api_client)
     id = "id_example" # str | A unique identifier for a `Registry` instance.
@@ -305,7 +305,7 @@ with dimakis_test_service_registry_mgmt_sdk.ApiClient(configuration) as api_clie
         # Get a Registry instance
         api_response = api_instance.get_registry(id)
         pprint(api_response)
-    except dimakis_test_service_registry_mgmt_sdk.ApiException as e:
+    except rhoas_service_registry_mgmt_sdk.ApiException as e:
         print("Exception when calling RegistriesApi->get_registry: %s\n" % e)
 ```
 

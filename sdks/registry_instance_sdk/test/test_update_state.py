@@ -12,10 +12,10 @@
 import sys
 import unittest
 
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.model.artifact_state import ArtifactState
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.model.artifact_state import ArtifactState
 globals()['ArtifactState'] = ArtifactState
-from dimakis_test_registry_instance_sdk.model.update_state import UpdateState
+from rhoas_registry_instance_sdk.model.update_state import UpdateState
 
 
 class TestUpdateState(unittest.TestCase):

@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_instance_sdk
-from dimakis_test_kafka_instance_sdk.model.list import List
+import rhoas_kafka_instance_sdk
+from rhoas_kafka_instance_sdk.model.list import List
 
 
 class TestList(unittest.TestCase):

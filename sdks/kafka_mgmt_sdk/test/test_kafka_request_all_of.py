@@ -12,10 +12,10 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_mgmt_sdk
-from dimakis_test_kafka_mgmt_sdk.model.supported_kafka_size_bytes_value_item import SupportedKafkaSizeBytesValueItem
+import rhoas_kafka_mgmt_sdk
+from rhoas_kafka_mgmt_sdk.model.supported_kafka_size_bytes_value_item import SupportedKafkaSizeBytesValueItem
 globals()['SupportedKafkaSizeBytesValueItem'] = SupportedKafkaSizeBytesValueItem
-from dimakis_test_kafka_mgmt_sdk.model.kafka_request_all_of import KafkaRequestAllOf
+from rhoas_kafka_mgmt_sdk.model.kafka_request_all_of import KafkaRequestAllOf
 
 
 class TestKafkaRequestAllOf(unittest.TestCase):

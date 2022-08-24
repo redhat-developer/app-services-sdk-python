@@ -11,20 +11,20 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_instance_sdk
-from dimakis_test_kafka_instance_sdk.model.acl_binding_all_of import AclBindingAllOf
-from dimakis_test_kafka_instance_sdk.model.acl_operation import AclOperation
-from dimakis_test_kafka_instance_sdk.model.acl_pattern_type import AclPatternType
-from dimakis_test_kafka_instance_sdk.model.acl_permission_type import AclPermissionType
-from dimakis_test_kafka_instance_sdk.model.acl_resource_type import AclResourceType
-from dimakis_test_kafka_instance_sdk.model.object_reference import ObjectReference
+import rhoas_kafka_instance_sdk
+from rhoas_kafka_instance_sdk.model.acl_binding_all_of import AclBindingAllOf
+from rhoas_kafka_instance_sdk.model.acl_operation import AclOperation
+from rhoas_kafka_instance_sdk.model.acl_pattern_type import AclPatternType
+from rhoas_kafka_instance_sdk.model.acl_permission_type import AclPermissionType
+from rhoas_kafka_instance_sdk.model.acl_resource_type import AclResourceType
+from rhoas_kafka_instance_sdk.model.object_reference import ObjectReference
 globals()['AclBindingAllOf'] = AclBindingAllOf
 globals()['AclOperation'] = AclOperation
 globals()['AclPatternType'] = AclPatternType
 globals()['AclPermissionType'] = AclPermissionType
 globals()['AclResourceType'] = AclResourceType
 globals()['ObjectReference'] = ObjectReference
-from dimakis_test_kafka_instance_sdk.model.acl_binding import AclBinding
+from rhoas_kafka_instance_sdk.model.acl_binding import AclBinding
 
 
 class TestAclBinding(unittest.TestCase):

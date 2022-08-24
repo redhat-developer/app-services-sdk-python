@@ -11,16 +11,16 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_instance_sdk
-from dimakis_test_kafka_instance_sdk.model.acl_operation import AclOperation
-from dimakis_test_kafka_instance_sdk.model.acl_pattern_type import AclPatternType
-from dimakis_test_kafka_instance_sdk.model.acl_permission_type import AclPermissionType
-from dimakis_test_kafka_instance_sdk.model.acl_resource_type import AclResourceType
+import rhoas_kafka_instance_sdk
+from rhoas_kafka_instance_sdk.model.acl_operation import AclOperation
+from rhoas_kafka_instance_sdk.model.acl_pattern_type import AclPatternType
+from rhoas_kafka_instance_sdk.model.acl_permission_type import AclPermissionType
+from rhoas_kafka_instance_sdk.model.acl_resource_type import AclResourceType
 globals()['AclOperation'] = AclOperation
 globals()['AclPatternType'] = AclPatternType
 globals()['AclPermissionType'] = AclPermissionType
 globals()['AclResourceType'] = AclResourceType
-from dimakis_test_kafka_instance_sdk.model.acl_binding_all_of import AclBindingAllOf
+from rhoas_kafka_instance_sdk.model.acl_binding_all_of import AclBindingAllOf
 
 
 class TestAclBindingAllOf(unittest.TestCase):

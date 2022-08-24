@@ -1,4 +1,4 @@
-# dimakis_test_smart_events_mgmt_sdk.ProcessorsApi
+# rhoas_smart_events_mgmt_sdk.ProcessorsApi
 
 All URIs are relative to *https://api.stage.openshift.com*
 
@@ -24,15 +24,15 @@ Create a Processor of a Bridge instance for the authenticated user.
 
 ```python
 import time
-import dimakis_test_smart_events_mgmt_sdk
-from dimakis_test_smart_events_mgmt_sdk.api import processors_api
-from dimakis_test_smart_events_mgmt_sdk.model.processor_response import ProcessorResponse
-from dimakis_test_smart_events_mgmt_sdk.model.errors_list import ErrorsList
-from dimakis_test_smart_events_mgmt_sdk.model.processor_request import ProcessorRequest
+import rhoas_smart_events_mgmt_sdk
+from rhoas_smart_events_mgmt_sdk.api import processors_api
+from rhoas_smart_events_mgmt_sdk.model.errors_list import ErrorsList
+from rhoas_smart_events_mgmt_sdk.model.processor_request import ProcessorRequest
+from rhoas_smart_events_mgmt_sdk.model.processor_response import ProcessorResponse
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.stage.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
+configuration = rhoas_smart_events_mgmt_sdk.Configuration(
     host = "https://api.stage.openshift.com"
 )
 
@@ -42,12 +42,12 @@ configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: bearer
-configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
+configuration = rhoas_smart_events_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = processors_api.ProcessorsApi(api_client)
     bridge_id = "bridgeId_example" # str | 
@@ -75,7 +75,7 @@ with dimakis_test_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
         # Create a Processor of a Bridge instance
         api_response = api_instance.processors_api_add_processor_to_bridge(bridge_id)
         pprint(api_response)
-    except dimakis_test_smart_events_mgmt_sdk.ApiException as e:
+    except rhoas_smart_events_mgmt_sdk.ApiException as e:
         print("Exception when calling ProcessorsApi->processors_api_add_processor_to_bridge: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -84,7 +84,7 @@ with dimakis_test_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
         # Create a Processor of a Bridge instance
         api_response = api_instance.processors_api_add_processor_to_bridge(bridge_id, processor_request=processor_request)
         pprint(api_response)
-    except dimakis_test_smart_events_mgmt_sdk.ApiException as e:
+    except rhoas_smart_events_mgmt_sdk.ApiException as e:
         print("Exception when calling ProcessorsApi->processors_api_add_processor_to_bridge: %s\n" % e)
 ```
 
@@ -136,13 +136,13 @@ Delete a Processor of a Bridge instance for the authenticated user.
 
 ```python
 import time
-import dimakis_test_smart_events_mgmt_sdk
-from dimakis_test_smart_events_mgmt_sdk.api import processors_api
-from dimakis_test_smart_events_mgmt_sdk.model.errors_list import ErrorsList
+import rhoas_smart_events_mgmt_sdk
+from rhoas_smart_events_mgmt_sdk.api import processors_api
+from rhoas_smart_events_mgmt_sdk.model.errors_list import ErrorsList
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.stage.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
+configuration = rhoas_smart_events_mgmt_sdk.Configuration(
     host = "https://api.stage.openshift.com"
 )
 
@@ -152,12 +152,12 @@ configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: bearer
-configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
+configuration = rhoas_smart_events_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = processors_api.ProcessorsApi(api_client)
     bridge_id = "bridgeId_example" # str | 
@@ -167,7 +167,7 @@ with dimakis_test_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
     try:
         # Delete a Processor of a Bridge instance
         api_instance.processors_api_delete_processor(bridge_id, processor_id)
-    except dimakis_test_smart_events_mgmt_sdk.ApiException as e:
+    except rhoas_smart_events_mgmt_sdk.ApiException as e:
         print("Exception when calling ProcessorsApi->processors_api_delete_processor: %s\n" % e)
 ```
 
@@ -219,14 +219,14 @@ Get a Processor of a Bridge instance for the authenticated user.
 
 ```python
 import time
-import dimakis_test_smart_events_mgmt_sdk
-from dimakis_test_smart_events_mgmt_sdk.api import processors_api
-from dimakis_test_smart_events_mgmt_sdk.model.processor_response import ProcessorResponse
-from dimakis_test_smart_events_mgmt_sdk.model.errors_list import ErrorsList
+import rhoas_smart_events_mgmt_sdk
+from rhoas_smart_events_mgmt_sdk.api import processors_api
+from rhoas_smart_events_mgmt_sdk.model.errors_list import ErrorsList
+from rhoas_smart_events_mgmt_sdk.model.processor_response import ProcessorResponse
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.stage.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
+configuration = rhoas_smart_events_mgmt_sdk.Configuration(
     host = "https://api.stage.openshift.com"
 )
 
@@ -236,12 +236,12 @@ configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: bearer
-configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
+configuration = rhoas_smart_events_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = processors_api.ProcessorsApi(api_client)
     bridge_id = "bridgeId_example" # str | 
@@ -252,7 +252,7 @@ with dimakis_test_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
         # Get a Processor of a Bridge instance
         api_response = api_instance.processors_api_get_processor(bridge_id, processor_id)
         pprint(api_response)
-    except dimakis_test_smart_events_mgmt_sdk.ApiException as e:
+    except rhoas_smart_events_mgmt_sdk.ApiException as e:
         print("Exception when calling ProcessorsApi->processors_api_get_processor: %s\n" % e)
 ```
 
@@ -304,16 +304,16 @@ Get the list of Processors of a Bridge instance for the authenticated user.
 
 ```python
 import time
-import dimakis_test_smart_events_mgmt_sdk
-from dimakis_test_smart_events_mgmt_sdk.api import processors_api
-from dimakis_test_smart_events_mgmt_sdk.model.processor_type import ProcessorType
-from dimakis_test_smart_events_mgmt_sdk.model.errors_list import ErrorsList
-from dimakis_test_smart_events_mgmt_sdk.model.managed_resource_status import ManagedResourceStatus
-from dimakis_test_smart_events_mgmt_sdk.model.processor_list_response import ProcessorListResponse
+import rhoas_smart_events_mgmt_sdk
+from rhoas_smart_events_mgmt_sdk.api import processors_api
+from rhoas_smart_events_mgmt_sdk.model.processor_type import ProcessorType
+from rhoas_smart_events_mgmt_sdk.model.managed_resource_status import ManagedResourceStatus
+from rhoas_smart_events_mgmt_sdk.model.processor_list_response import ProcessorListResponse
+from rhoas_smart_events_mgmt_sdk.model.errors_list import ErrorsList
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.stage.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
+configuration = rhoas_smart_events_mgmt_sdk.Configuration(
     host = "https://api.stage.openshift.com"
 )
 
@@ -323,12 +323,12 @@ configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: bearer
-configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
+configuration = rhoas_smart_events_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = processors_api.ProcessorsApi(api_client)
     bridge_id = "bridgeId_example" # str | 
@@ -345,7 +345,7 @@ with dimakis_test_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
         # Get the list of Processors of a Bridge instance
         api_response = api_instance.processors_api_list_processors(bridge_id)
         pprint(api_response)
-    except dimakis_test_smart_events_mgmt_sdk.ApiException as e:
+    except rhoas_smart_events_mgmt_sdk.ApiException as e:
         print("Exception when calling ProcessorsApi->processors_api_list_processors: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -354,7 +354,7 @@ with dimakis_test_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
         # Get the list of Processors of a Bridge instance
         api_response = api_instance.processors_api_list_processors(bridge_id, name=name, page=page, size=size, status=status, type=type)
         pprint(api_response)
-    except dimakis_test_smart_events_mgmt_sdk.ApiException as e:
+    except rhoas_smart_events_mgmt_sdk.ApiException as e:
         print("Exception when calling ProcessorsApi->processors_api_list_processors: %s\n" % e)
 ```
 
@@ -410,15 +410,15 @@ Update a Processor instance Filter definition or Transformation template for the
 
 ```python
 import time
-import dimakis_test_smart_events_mgmt_sdk
-from dimakis_test_smart_events_mgmt_sdk.api import processors_api
-from dimakis_test_smart_events_mgmt_sdk.model.processor_response import ProcessorResponse
-from dimakis_test_smart_events_mgmt_sdk.model.errors_list import ErrorsList
-from dimakis_test_smart_events_mgmt_sdk.model.processor_request import ProcessorRequest
+import rhoas_smart_events_mgmt_sdk
+from rhoas_smart_events_mgmt_sdk.api import processors_api
+from rhoas_smart_events_mgmt_sdk.model.errors_list import ErrorsList
+from rhoas_smart_events_mgmt_sdk.model.processor_request import ProcessorRequest
+from rhoas_smart_events_mgmt_sdk.model.processor_response import ProcessorResponse
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.stage.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
+configuration = rhoas_smart_events_mgmt_sdk.Configuration(
     host = "https://api.stage.openshift.com"
 )
 
@@ -428,12 +428,12 @@ configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: bearer
-configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
+configuration = rhoas_smart_events_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = processors_api.ProcessorsApi(api_client)
     bridge_id = "bridgeId_example" # str | 
@@ -462,7 +462,7 @@ with dimakis_test_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
         # Update a Processor instance Filter definition or Transformation template.
         api_response = api_instance.processors_api_update_processor(bridge_id, processor_id)
         pprint(api_response)
-    except dimakis_test_smart_events_mgmt_sdk.ApiException as e:
+    except rhoas_smart_events_mgmt_sdk.ApiException as e:
         print("Exception when calling ProcessorsApi->processors_api_update_processor: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -471,7 +471,7 @@ with dimakis_test_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
         # Update a Processor instance Filter definition or Transformation template.
         api_response = api_instance.processors_api_update_processor(bridge_id, processor_id, processor_request=processor_request)
         pprint(api_response)
-    except dimakis_test_smart_events_mgmt_sdk.ApiException as e:
+    except rhoas_smart_events_mgmt_sdk.ApiException as e:
         print("Exception when calling ProcessorsApi->processors_api_update_processor: %s\n" % e)
 ```
 

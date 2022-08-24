@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_instance_sdk
-from dimakis_test_kafka_instance_sdk.model.acl_pattern_type_filter import AclPatternTypeFilter
+import rhoas_kafka_instance_sdk
+from rhoas_kafka_instance_sdk.model.acl_pattern_type_filter import AclPatternTypeFilter
 
 
 class TestAclPatternTypeFilter(unittest.TestCase):

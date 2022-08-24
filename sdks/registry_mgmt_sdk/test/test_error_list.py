@@ -12,14 +12,14 @@
 import sys
 import unittest
 
-import dimakis_test_service_registry_mgmt_sdk
-from dimakis_test_service_registry_mgmt_sdk.model.error import Error
-from dimakis_test_service_registry_mgmt_sdk.model.error_list_all_of import ErrorListAllOf
-from dimakis_test_service_registry_mgmt_sdk.model.list import List
+import rhoas_service_registry_mgmt_sdk
+from rhoas_service_registry_mgmt_sdk.model.error import Error
+from rhoas_service_registry_mgmt_sdk.model.error_list_all_of import ErrorListAllOf
+from rhoas_service_registry_mgmt_sdk.model.list import List
 globals()['Error'] = Error
 globals()['ErrorListAllOf'] = ErrorListAllOf
 globals()['List'] = List
-from dimakis_test_service_registry_mgmt_sdk.model.error_list import ErrorList
+from rhoas_service_registry_mgmt_sdk.model.error_list import ErrorList
 
 
 class TestErrorList(unittest.TestCase):

@@ -12,12 +12,12 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_mgmt_sdk
-from dimakis_test_kafka_mgmt_sdk.model.object_reference import ObjectReference
-from dimakis_test_kafka_mgmt_sdk.model.sso_provider_all_of import SsoProviderAllOf
+import rhoas_kafka_mgmt_sdk
+from rhoas_kafka_mgmt_sdk.model.object_reference import ObjectReference
+from rhoas_kafka_mgmt_sdk.model.sso_provider_all_of import SsoProviderAllOf
 globals()['ObjectReference'] = ObjectReference
 globals()['SsoProviderAllOf'] = SsoProviderAllOf
-from dimakis_test_kafka_mgmt_sdk.model.sso_provider import SsoProvider
+from rhoas_kafka_mgmt_sdk.model.sso_provider import SsoProvider
 
 
 class TestSsoProvider(unittest.TestCase):

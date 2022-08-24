@@ -12,8 +12,8 @@
 import sys
 import unittest
 
-import dimakis_test_smart_events_mgmt_sdk
-from dimakis_test_smart_events_mgmt_sdk.model.list_response import ListResponse
+import rhoas_smart_events_mgmt_sdk
+from rhoas_smart_events_mgmt_sdk.model.list_response import ListResponse
 
 
 class TestListResponse(unittest.TestCase):

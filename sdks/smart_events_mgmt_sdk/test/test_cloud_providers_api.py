@@ -11,8 +11,8 @@
 
 import unittest
 
-import dimakis_test_smart_events_mgmt_sdk
-from dimakis_test_smart_events_mgmt_sdk.api.cloud_providers_api import CloudProvidersApi  # noqa: E501
+import rhoas_smart_events_mgmt_sdk
+from rhoas_smart_events_mgmt_sdk.api.cloud_providers_api import CloudProvidersApi  # noqa: E501
 
 
 class TestCloudProvidersApi(unittest.TestCase):

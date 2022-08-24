@@ -12,12 +12,12 @@
 import sys
 import unittest
 
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.model.cpu_quota import CpuQuota
-from dimakis_test_connector_mgmt_sdk.model.memory_quota import MemoryQuota
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.model.cpu_quota import CpuQuota
+from rhoas_connector_mgmt_sdk.model.memory_quota import MemoryQuota
 globals()['CpuQuota'] = CpuQuota
 globals()['MemoryQuota'] = MemoryQuota
-from dimakis_test_connector_mgmt_sdk.model.connector_namespace_quota import ConnectorNamespaceQuota
+from rhoas_connector_mgmt_sdk.model.connector_namespace_quota import ConnectorNamespaceQuota
 
 
 class TestConnectorNamespaceQuota(unittest.TestCase):

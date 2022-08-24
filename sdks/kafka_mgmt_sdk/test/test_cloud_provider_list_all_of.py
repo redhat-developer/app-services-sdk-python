@@ -12,10 +12,10 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_mgmt_sdk
-from dimakis_test_kafka_mgmt_sdk.model.cloud_provider import CloudProvider
+import rhoas_kafka_mgmt_sdk
+from rhoas_kafka_mgmt_sdk.model.cloud_provider import CloudProvider
 globals()['CloudProvider'] = CloudProvider
-from dimakis_test_kafka_mgmt_sdk.model.cloud_provider_list_all_of import CloudProviderListAllOf
+from rhoas_kafka_mgmt_sdk.model.cloud_provider_list_all_of import CloudProviderListAllOf
 
 
 class TestCloudProviderListAllOf(unittest.TestCase):

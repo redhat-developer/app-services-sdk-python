@@ -12,12 +12,12 @@
 import sys
 import unittest
 
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.model.artifact_state import ArtifactState
-from dimakis_test_registry_instance_sdk.model.artifact_type import ArtifactType
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.model.artifact_state import ArtifactState
+from rhoas_registry_instance_sdk.model.artifact_type import ArtifactType
 globals()['ArtifactState'] = ArtifactState
 globals()['ArtifactType'] = ArtifactType
-from dimakis_test_registry_instance_sdk.model.searched_artifact import SearchedArtifact
+from rhoas_registry_instance_sdk.model.searched_artifact import SearchedArtifact
 
 
 class TestSearchedArtifact(unittest.TestCase):

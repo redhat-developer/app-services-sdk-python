@@ -1,4 +1,4 @@
-# dimakis_test_registry_instance_sdk.SearchApi
+# rhoas_registry_instance_sdk.SearchApi
 
 All URIs are relative to *http://localhost*
 
@@ -20,22 +20,22 @@ Returns a paginated list of all artifacts that match the provided filter criteri
 
 ```python
 import time
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.api import search_api
-from dimakis_test_registry_instance_sdk.model.sort_by import SortBy
-from dimakis_test_registry_instance_sdk.model.sort_order import SortOrder
-from dimakis_test_registry_instance_sdk.model.artifact_search_results import ArtifactSearchResults
-from dimakis_test_registry_instance_sdk.model.error import Error
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.api import search_api
+from rhoas_registry_instance_sdk.model.sort_order import SortOrder
+from rhoas_registry_instance_sdk.model.artifact_search_results import ArtifactSearchResults
+from rhoas_registry_instance_sdk.model.error import Error
+from rhoas_registry_instance_sdk.model.sort_by import SortBy
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_registry_instance_sdk.Configuration(
+configuration = rhoas_registry_instance_sdk.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
+with rhoas_registry_instance_sdk.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = search_api.SearchApi(api_client)
     name = "name_example" # str | Filter by artifact name. (optional)
@@ -60,7 +60,7 @@ with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
         # Search for artifacts
         api_response = api_instance.search_artifacts(name=name, offset=offset, limit=limit, order=order, orderby=orderby, labels=labels, properties=properties, description=description, group=group, global_id=global_id, content_id=content_id)
         pprint(api_response)
-    except dimakis_test_registry_instance_sdk.ApiException as e:
+    except rhoas_registry_instance_sdk.ApiException as e:
         print("Exception when calling SearchApi->search_artifacts: %s\n" % e)
 ```
 
@@ -116,21 +116,21 @@ Returns a paginated list of all artifacts with at least one version that matches
 
 ```python
 import time
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.api import search_api
-from dimakis_test_registry_instance_sdk.model.artifact_search_results import ArtifactSearchResults
-from dimakis_test_registry_instance_sdk.model.error import Error
-from dimakis_test_registry_instance_sdk.model.artifact_type import ArtifactType
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.api import search_api
+from rhoas_registry_instance_sdk.model.artifact_type import ArtifactType
+from rhoas_registry_instance_sdk.model.artifact_search_results import ArtifactSearchResults
+from rhoas_registry_instance_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_registry_instance_sdk.Configuration(
+configuration = rhoas_registry_instance_sdk.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
+with rhoas_registry_instance_sdk.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = search_api.SearchApi(api_client)
     body = open('/path/to/file', 'rb') # file_type | The content to search for.
@@ -146,7 +146,7 @@ with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
         # Search for artifacts by content
         api_response = api_instance.search_artifacts_by_content(body)
         pprint(api_response)
-    except dimakis_test_registry_instance_sdk.ApiException as e:
+    except rhoas_registry_instance_sdk.ApiException as e:
         print("Exception when calling SearchApi->search_artifacts_by_content: %s\n" % e)
 
     # example passing only required values which don't have defaults set
@@ -155,7 +155,7 @@ with dimakis_test_registry_instance_sdk.ApiClient() as api_client:
         # Search for artifacts by content
         api_response = api_instance.search_artifacts_by_content(body, canonical=canonical, artifact_type=artifact_type, offset=offset, limit=limit, order=order, orderby=orderby)
         pprint(api_response)
-    except dimakis_test_registry_instance_sdk.ApiException as e:
+    except rhoas_registry_instance_sdk.ApiException as e:
         print("Exception when calling SearchApi->search_artifacts_by_content: %s\n" % e)
 ```
 

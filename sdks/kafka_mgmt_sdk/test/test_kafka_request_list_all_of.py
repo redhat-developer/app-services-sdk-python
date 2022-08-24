@@ -12,10 +12,10 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_mgmt_sdk
-from dimakis_test_kafka_mgmt_sdk.model.kafka_request import KafkaRequest
+import rhoas_kafka_mgmt_sdk
+from rhoas_kafka_mgmt_sdk.model.kafka_request import KafkaRequest
 globals()['KafkaRequest'] = KafkaRequest
-from dimakis_test_kafka_mgmt_sdk.model.kafka_request_list_all_of import KafkaRequestListAllOf
+from rhoas_kafka_mgmt_sdk.model.kafka_request_list_all_of import KafkaRequestListAllOf
 
 
 class TestKafkaRequestListAllOf(unittest.TestCase):

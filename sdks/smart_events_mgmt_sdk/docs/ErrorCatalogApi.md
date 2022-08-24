@@ -1,4 +1,4 @@
-# dimakis_test_smart_events_mgmt_sdk.ErrorCatalogApi
+# rhoas_smart_events_mgmt_sdk.ErrorCatalogApi
 
 All URIs are relative to *https://api.stage.openshift.com*
 
@@ -20,20 +20,20 @@ Get an error from the error catalog.
 
 ```python
 import time
-import dimakis_test_smart_events_mgmt_sdk
-from dimakis_test_smart_events_mgmt_sdk.api import error_catalog_api
-from dimakis_test_smart_events_mgmt_sdk.model.errors_list import ErrorsList
-from dimakis_test_smart_events_mgmt_sdk.model.bridge_error import BridgeError
+import rhoas_smart_events_mgmt_sdk
+from rhoas_smart_events_mgmt_sdk.api import error_catalog_api
+from rhoas_smart_events_mgmt_sdk.model.bridge_error import BridgeError
+from rhoas_smart_events_mgmt_sdk.model.errors_list import ErrorsList
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.stage.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
+configuration = rhoas_smart_events_mgmt_sdk.Configuration(
     host = "https://api.stage.openshift.com"
 )
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_smart_events_mgmt_sdk.ApiClient() as api_client:
+with rhoas_smart_events_mgmt_sdk.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = error_catalog_api.ErrorCatalogApi(api_client)
     id = 1 # int | 
@@ -43,7 +43,7 @@ with dimakis_test_smart_events_mgmt_sdk.ApiClient() as api_client:
         # Get an error from the error catalog.
         api_response = api_instance.errors_api_get_error(id)
         pprint(api_response)
-    except dimakis_test_smart_events_mgmt_sdk.ApiException as e:
+    except rhoas_smart_events_mgmt_sdk.ApiException as e:
         print("Exception when calling ErrorCatalogApi->errors_api_get_error: %s\n" % e)
 ```
 
@@ -91,20 +91,20 @@ Get the list of errors from the error catalog.
 
 ```python
 import time
-import dimakis_test_smart_events_mgmt_sdk
-from dimakis_test_smart_events_mgmt_sdk.api import error_catalog_api
-from dimakis_test_smart_events_mgmt_sdk.model.errors_list import ErrorsList
-from dimakis_test_smart_events_mgmt_sdk.model.error_list_response import ErrorListResponse
+import rhoas_smart_events_mgmt_sdk
+from rhoas_smart_events_mgmt_sdk.api import error_catalog_api
+from rhoas_smart_events_mgmt_sdk.model.error_list_response import ErrorListResponse
+from rhoas_smart_events_mgmt_sdk.model.errors_list import ErrorsList
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.stage.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
+configuration = rhoas_smart_events_mgmt_sdk.Configuration(
     host = "https://api.stage.openshift.com"
 )
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_smart_events_mgmt_sdk.ApiClient() as api_client:
+with rhoas_smart_events_mgmt_sdk.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = error_catalog_api.ErrorCatalogApi(api_client)
     page = 0 # int |  (optional) if omitted the server will use the default value of 0
@@ -116,7 +116,7 @@ with dimakis_test_smart_events_mgmt_sdk.ApiClient() as api_client:
         # Get the list of errors.
         api_response = api_instance.errors_api_get_errors(page=page, size=size)
         pprint(api_response)
-    except dimakis_test_smart_events_mgmt_sdk.ApiException as e:
+    except rhoas_smart_events_mgmt_sdk.ApiException as e:
         print("Exception when calling ErrorCatalogApi->errors_api_get_errors: %s\n" % e)
 ```
 

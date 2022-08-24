@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_instance_sdk
-from dimakis_test_kafka_instance_sdk.model.config_entry import ConfigEntry
+import rhoas_kafka_instance_sdk
+from rhoas_kafka_instance_sdk.model.config_entry import ConfigEntry
 
 
 class TestConfigEntry(unittest.TestCase):

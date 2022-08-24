@@ -12,16 +12,16 @@
 import sys
 import unittest
 
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.model.connector_cluster_meta import ConnectorClusterMeta
-from dimakis_test_connector_mgmt_sdk.model.connector_cluster_status import ConnectorClusterStatus
-from dimakis_test_connector_mgmt_sdk.model.connector_cluster_status_status import ConnectorClusterStatusStatus
-from dimakis_test_connector_mgmt_sdk.model.object_reference import ObjectReference
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.model.connector_cluster_meta import ConnectorClusterMeta
+from rhoas_connector_mgmt_sdk.model.connector_cluster_status import ConnectorClusterStatus
+from rhoas_connector_mgmt_sdk.model.connector_cluster_status_status import ConnectorClusterStatusStatus
+from rhoas_connector_mgmt_sdk.model.object_reference import ObjectReference
 globals()['ConnectorClusterMeta'] = ConnectorClusterMeta
 globals()['ConnectorClusterStatus'] = ConnectorClusterStatus
 globals()['ConnectorClusterStatusStatus'] = ConnectorClusterStatusStatus
 globals()['ObjectReference'] = ObjectReference
-from dimakis_test_connector_mgmt_sdk.model.connector_cluster import ConnectorCluster
+from rhoas_connector_mgmt_sdk.model.connector_cluster import ConnectorCluster
 
 
 class TestConnectorCluster(unittest.TestCase):

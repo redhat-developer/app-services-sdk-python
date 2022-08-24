@@ -12,14 +12,14 @@
 import sys
 import unittest
 
-import dimakis_test_registry_instance_sdk
-from dimakis_test_registry_instance_sdk.model.error import Error
-from dimakis_test_registry_instance_sdk.model.rule_violation_cause import RuleViolationCause
-from dimakis_test_registry_instance_sdk.model.rule_violation_error_all_of import RuleViolationErrorAllOf
+import rhoas_registry_instance_sdk
+from rhoas_registry_instance_sdk.model.error import Error
+from rhoas_registry_instance_sdk.model.rule_violation_cause import RuleViolationCause
+from rhoas_registry_instance_sdk.model.rule_violation_error_all_of import RuleViolationErrorAllOf
 globals()['Error'] = Error
 globals()['RuleViolationCause'] = RuleViolationCause
 globals()['RuleViolationErrorAllOf'] = RuleViolationErrorAllOf
-from dimakis_test_registry_instance_sdk.model.rule_violation_error import RuleViolationError
+from rhoas_registry_instance_sdk.model.rule_violation_error import RuleViolationError
 
 
 class TestRuleViolationError(unittest.TestCase):

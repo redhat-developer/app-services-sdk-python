@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_instance_sdk
-from dimakis_test_kafka_instance_sdk.model.record_included_property import RecordIncludedProperty
+import rhoas_kafka_instance_sdk
+from rhoas_kafka_instance_sdk.model.record_included_property import RecordIncludedProperty
 
 
 class TestRecordIncludedProperty(unittest.TestCase):

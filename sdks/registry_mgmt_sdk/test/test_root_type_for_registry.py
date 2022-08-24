@@ -12,12 +12,12 @@
 import sys
 import unittest
 
-import dimakis_test_service_registry_mgmt_sdk
-from dimakis_test_service_registry_mgmt_sdk.model.registry_instance_type_value import RegistryInstanceTypeValue
-from dimakis_test_service_registry_mgmt_sdk.model.registry_status_value import RegistryStatusValue
+import rhoas_service_registry_mgmt_sdk
+from rhoas_service_registry_mgmt_sdk.model.registry_instance_type_value import RegistryInstanceTypeValue
+from rhoas_service_registry_mgmt_sdk.model.registry_status_value import RegistryStatusValue
 globals()['RegistryInstanceTypeValue'] = RegistryInstanceTypeValue
 globals()['RegistryStatusValue'] = RegistryStatusValue
-from dimakis_test_service_registry_mgmt_sdk.model.root_type_for_registry import RootTypeForRegistry
+from rhoas_service_registry_mgmt_sdk.model.root_type_for_registry import RootTypeForRegistry
 
 
 class TestRootTypeForRegistry(unittest.TestCase):

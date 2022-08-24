@@ -12,14 +12,14 @@
 import sys
 import unittest
 
-import dimakis_test_connector_mgmt_sdk
-from dimakis_test_connector_mgmt_sdk.model.channel import Channel
-from dimakis_test_connector_mgmt_sdk.model.connector_type_all_of import ConnectorTypeAllOf
-from dimakis_test_connector_mgmt_sdk.model.object_reference import ObjectReference
+import rhoas_connector_mgmt_sdk
+from rhoas_connector_mgmt_sdk.model.channel import Channel
+from rhoas_connector_mgmt_sdk.model.connector_type_all_of import ConnectorTypeAllOf
+from rhoas_connector_mgmt_sdk.model.object_reference import ObjectReference
 globals()['Channel'] = Channel
 globals()['ConnectorTypeAllOf'] = ConnectorTypeAllOf
 globals()['ObjectReference'] = ObjectReference
-from dimakis_test_connector_mgmt_sdk.model.connector_type import ConnectorType
+from rhoas_connector_mgmt_sdk.model.connector_type import ConnectorType
 
 
 class TestConnectorType(unittest.TestCase):

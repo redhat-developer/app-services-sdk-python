@@ -1,4 +1,4 @@
-# dimakis_test_smart_events_mgmt_sdk.SchemaCatalogApi
+# rhoas_smart_events_mgmt_sdk.SchemaCatalogApi
 
 All URIs are relative to *https://api.stage.openshift.com*
 
@@ -22,13 +22,13 @@ Get the action processor JSON schema.
 
 ```python
 import time
-import dimakis_test_smart_events_mgmt_sdk
-from dimakis_test_smart_events_mgmt_sdk.api import schema_catalog_api
-from dimakis_test_smart_events_mgmt_sdk.model.errors_list import ErrorsList
+import rhoas_smart_events_mgmt_sdk
+from rhoas_smart_events_mgmt_sdk.api import schema_catalog_api
+from rhoas_smart_events_mgmt_sdk.model.errors_list import ErrorsList
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.stage.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
+configuration = rhoas_smart_events_mgmt_sdk.Configuration(
     host = "https://api.stage.openshift.com"
 )
 
@@ -38,12 +38,12 @@ configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: bearer
-configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
+configuration = rhoas_smart_events_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = schema_catalog_api.SchemaCatalogApi(api_client)
     id = "id_example" # str | 
@@ -53,7 +53,7 @@ with dimakis_test_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
         # Get action processor schema
         api_response = api_instance.schema_api_get_action_processor_schema(id)
         pprint(api_response)
-    except dimakis_test_smart_events_mgmt_sdk.ApiException as e:
+    except rhoas_smart_events_mgmt_sdk.ApiException as e:
         print("Exception when calling SchemaCatalogApi->schema_api_get_action_processor_schema: %s\n" % e)
 ```
 
@@ -103,14 +103,14 @@ Get the processor catalog with all the available sources and actions.
 
 ```python
 import time
-import dimakis_test_smart_events_mgmt_sdk
-from dimakis_test_smart_events_mgmt_sdk.api import schema_catalog_api
-from dimakis_test_smart_events_mgmt_sdk.model.errors_list import ErrorsList
-from dimakis_test_smart_events_mgmt_sdk.model.processor_catalog_response import ProcessorCatalogResponse
+import rhoas_smart_events_mgmt_sdk
+from rhoas_smart_events_mgmt_sdk.api import schema_catalog_api
+from rhoas_smart_events_mgmt_sdk.model.processor_catalog_response import ProcessorCatalogResponse
+from rhoas_smart_events_mgmt_sdk.model.errors_list import ErrorsList
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.stage.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
+configuration = rhoas_smart_events_mgmt_sdk.Configuration(
     host = "https://api.stage.openshift.com"
 )
 
@@ -120,12 +120,12 @@ configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: bearer
-configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
+configuration = rhoas_smart_events_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = schema_catalog_api.SchemaCatalogApi(api_client)
 
@@ -134,7 +134,7 @@ with dimakis_test_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
         # Get processor catalog
         api_response = api_instance.schema_api_get_catalog()
         pprint(api_response)
-    except dimakis_test_smart_events_mgmt_sdk.ApiException as e:
+    except rhoas_smart_events_mgmt_sdk.ApiException as e:
         print("Exception when calling SchemaCatalogApi->schema_api_get_catalog: %s\n" % e)
 ```
 
@@ -181,13 +181,13 @@ Get the source processor JSON schema.
 
 ```python
 import time
-import dimakis_test_smart_events_mgmt_sdk
-from dimakis_test_smart_events_mgmt_sdk.api import schema_catalog_api
-from dimakis_test_smart_events_mgmt_sdk.model.errors_list import ErrorsList
+import rhoas_smart_events_mgmt_sdk
+from rhoas_smart_events_mgmt_sdk.api import schema_catalog_api
+from rhoas_smart_events_mgmt_sdk.model.errors_list import ErrorsList
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.stage.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
+configuration = rhoas_smart_events_mgmt_sdk.Configuration(
     host = "https://api.stage.openshift.com"
 )
 
@@ -197,12 +197,12 @@ configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: bearer
-configuration = dimakis_test_smart_events_mgmt_sdk.Configuration(
+configuration = rhoas_smart_events_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = schema_catalog_api.SchemaCatalogApi(api_client)
     id = "id_example" # str | 
@@ -212,7 +212,7 @@ with dimakis_test_smart_events_mgmt_sdk.ApiClient(configuration) as api_client:
         # Get source processor schema
         api_response = api_instance.schema_api_get_source_processor_schema(id)
         pprint(api_response)
-    except dimakis_test_smart_events_mgmt_sdk.ApiException as e:
+    except rhoas_smart_events_mgmt_sdk.ApiException as e:
         print("Exception when calling SchemaCatalogApi->schema_api_get_source_processor_schema: %s\n" % e)
 ```
 

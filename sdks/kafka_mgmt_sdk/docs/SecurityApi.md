@@ -1,4 +1,4 @@
-# dimakis_test_kafka_mgmt_sdk.SecurityApi
+# rhoas_kafka_mgmt_sdk.SecurityApi
 
 All URIs are relative to *https://api.openshift.com*
 
@@ -25,15 +25,15 @@ Creates a service account
 
 ```python
 import time
-import dimakis_test_kafka_mgmt_sdk
-from dimakis_test_kafka_mgmt_sdk.api import security_api
-from dimakis_test_kafka_mgmt_sdk.model.error import Error
-from dimakis_test_kafka_mgmt_sdk.model.service_account_request import ServiceAccountRequest
-from dimakis_test_kafka_mgmt_sdk.model.service_account import ServiceAccount
+import rhoas_kafka_mgmt_sdk
+from rhoas_kafka_mgmt_sdk.api import security_api
+from rhoas_kafka_mgmt_sdk.model.error import Error
+from rhoas_kafka_mgmt_sdk.model.service_account import ServiceAccount
+from rhoas_kafka_mgmt_sdk.model.service_account_request import ServiceAccountRequest
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
+configuration = rhoas_kafka_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -43,12 +43,12 @@ configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
+configuration = rhoas_kafka_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = security_api.SecurityApi(api_client)
     service_account_request = ServiceAccountRequest(
@@ -60,7 +60,7 @@ with dimakis_test_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.create_service_account(service_account_request)
         pprint(api_response)
-    except dimakis_test_kafka_mgmt_sdk.ApiException as e:
+    except rhoas_kafka_mgmt_sdk.ApiException as e:
         print("Exception when calling SecurityApi->create_service_account: %s\n" % e)
 ```
 
@@ -109,13 +109,13 @@ Deletes a service account by ID
 
 ```python
 import time
-import dimakis_test_kafka_mgmt_sdk
-from dimakis_test_kafka_mgmt_sdk.api import security_api
-from dimakis_test_kafka_mgmt_sdk.model.error import Error
+import rhoas_kafka_mgmt_sdk
+from rhoas_kafka_mgmt_sdk.api import security_api
+from rhoas_kafka_mgmt_sdk.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
+configuration = rhoas_kafka_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -125,12 +125,12 @@ configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
+configuration = rhoas_kafka_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = security_api.SecurityApi(api_client)
     id = "id_example" # str | The ID of record
@@ -139,7 +139,7 @@ with dimakis_test_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.delete_service_account_by_id(id)
         pprint(api_response)
-    except dimakis_test_kafka_mgmt_sdk.ApiException as e:
+    except rhoas_kafka_mgmt_sdk.ApiException as e:
         print("Exception when calling SecurityApi->delete_service_account_by_id: %s\n" % e)
 ```
 
@@ -188,13 +188,13 @@ Returned service account by ID
 
 ```python
 import time
-import dimakis_test_kafka_mgmt_sdk
-from dimakis_test_kafka_mgmt_sdk.api import security_api
-from dimakis_test_kafka_mgmt_sdk.model.service_account import ServiceAccount
+import rhoas_kafka_mgmt_sdk
+from rhoas_kafka_mgmt_sdk.api import security_api
+from rhoas_kafka_mgmt_sdk.model.service_account import ServiceAccount
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
+configuration = rhoas_kafka_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -204,12 +204,12 @@ configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
+configuration = rhoas_kafka_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = security_api.SecurityApi(api_client)
     id = "id_example" # str | The ID of record
@@ -218,7 +218,7 @@ with dimakis_test_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.get_service_account_by_id(id)
         pprint(api_response)
-    except dimakis_test_kafka_mgmt_sdk.ApiException as e:
+    except rhoas_kafka_mgmt_sdk.ApiException as e:
         print("Exception when calling SecurityApi->get_service_account_by_id: %s\n" % e)
 ```
 
@@ -264,14 +264,14 @@ Returns a list of service accounts
 
 ```python
 import time
-import dimakis_test_kafka_mgmt_sdk
-from dimakis_test_kafka_mgmt_sdk.api import security_api
-from dimakis_test_kafka_mgmt_sdk.model.error import Error
-from dimakis_test_kafka_mgmt_sdk.model.service_account_list import ServiceAccountList
+import rhoas_kafka_mgmt_sdk
+from rhoas_kafka_mgmt_sdk.api import security_api
+from rhoas_kafka_mgmt_sdk.model.error import Error
+from rhoas_kafka_mgmt_sdk.model.service_account_list import ServiceAccountList
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
+configuration = rhoas_kafka_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -281,12 +281,12 @@ configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
+configuration = rhoas_kafka_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = security_api.SecurityApi(api_client)
     client_id = "client_id_example" # str | client_id of the service account to be retrieved (optional)
@@ -296,7 +296,7 @@ with dimakis_test_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.get_service_accounts(client_id=client_id)
         pprint(api_response)
-    except dimakis_test_kafka_mgmt_sdk.ApiException as e:
+    except rhoas_kafka_mgmt_sdk.ApiException as e:
         print("Exception when calling SecurityApi->get_service_accounts: %s\n" % e)
 ```
 
@@ -344,20 +344,20 @@ Return sso provider info
 
 ```python
 import time
-import dimakis_test_kafka_mgmt_sdk
-from dimakis_test_kafka_mgmt_sdk.api import security_api
-from dimakis_test_kafka_mgmt_sdk.model.error import Error
-from dimakis_test_kafka_mgmt_sdk.model.sso_provider import SsoProvider
+import rhoas_kafka_mgmt_sdk
+from rhoas_kafka_mgmt_sdk.api import security_api
+from rhoas_kafka_mgmt_sdk.model.error import Error
+from rhoas_kafka_mgmt_sdk.model.sso_provider import SsoProvider
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
+configuration = rhoas_kafka_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
 
 # Enter a context with an instance of the API client
-with dimakis_test_kafka_mgmt_sdk.ApiClient() as api_client:
+with rhoas_kafka_mgmt_sdk.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = security_api.SecurityApi(api_client)
 
@@ -365,7 +365,7 @@ with dimakis_test_kafka_mgmt_sdk.ApiClient() as api_client:
     try:
         api_response = api_instance.get_sso_providers()
         pprint(api_response)
-    except dimakis_test_kafka_mgmt_sdk.ApiException as e:
+    except rhoas_kafka_mgmt_sdk.ApiException as e:
         print("Exception when calling SecurityApi->get_sso_providers: %s\n" % e)
 ```
 
@@ -410,14 +410,14 @@ Resets the credentials for a service account by ID
 
 ```python
 import time
-import dimakis_test_kafka_mgmt_sdk
-from dimakis_test_kafka_mgmt_sdk.api import security_api
-from dimakis_test_kafka_mgmt_sdk.model.error import Error
-from dimakis_test_kafka_mgmt_sdk.model.service_account import ServiceAccount
+import rhoas_kafka_mgmt_sdk
+from rhoas_kafka_mgmt_sdk.api import security_api
+from rhoas_kafka_mgmt_sdk.model.error import Error
+from rhoas_kafka_mgmt_sdk.model.service_account import ServiceAccount
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.openshift.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
+configuration = rhoas_kafka_mgmt_sdk.Configuration(
     host = "https://api.openshift.com"
 )
 
@@ -427,12 +427,12 @@ configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization (JWT): Bearer
-configuration = dimakis_test_kafka_mgmt_sdk.Configuration(
+configuration = rhoas_kafka_mgmt_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with dimakis_test_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
+with rhoas_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = security_api.SecurityApi(api_client)
     id = "id_example" # str | The ID of record
@@ -441,7 +441,7 @@ with dimakis_test_kafka_mgmt_sdk.ApiClient(configuration) as api_client:
     try:
         api_response = api_instance.reset_service_account_creds(id)
         pprint(api_response)
-    except dimakis_test_kafka_mgmt_sdk.ApiException as e:
+    except rhoas_kafka_mgmt_sdk.ApiException as e:
         print("Exception when calling SecurityApi->reset_service_account_creds: %s\n" % e)
 ```
 

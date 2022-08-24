@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_instance_sdk
-from dimakis_test_kafka_instance_sdk.model.record_all_of import RecordAllOf
+import rhoas_kafka_instance_sdk
+from rhoas_kafka_instance_sdk.model.record_all_of import RecordAllOf
 
 
 class TestRecordAllOf(unittest.TestCase):

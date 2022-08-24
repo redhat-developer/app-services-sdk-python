@@ -12,8 +12,8 @@
 import sys
 import unittest
 
-import dimakis_test_service_registry_mgmt_sdk
-from dimakis_test_service_registry_mgmt_sdk.model.object_reference import ObjectReference
+import rhoas_service_registry_mgmt_sdk
+from rhoas_service_registry_mgmt_sdk.model.object_reference import ObjectReference
 
 
 class TestObjectReference(unittest.TestCase):

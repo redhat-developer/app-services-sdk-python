@@ -11,12 +11,12 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_instance_sdk
-from dimakis_test_kafka_instance_sdk.model.list import List
-from dimakis_test_kafka_instance_sdk.model.list_deprecated_all_of import ListDeprecatedAllOf
+import rhoas_kafka_instance_sdk
+from rhoas_kafka_instance_sdk.model.list import List
+from rhoas_kafka_instance_sdk.model.list_deprecated_all_of import ListDeprecatedAllOf
 globals()['List'] = List
 globals()['ListDeprecatedAllOf'] = ListDeprecatedAllOf
-from dimakis_test_kafka_instance_sdk.model.list_deprecated import ListDeprecated
+from rhoas_kafka_instance_sdk.model.list_deprecated import ListDeprecated
 
 
 class TestListDeprecated(unittest.TestCase):

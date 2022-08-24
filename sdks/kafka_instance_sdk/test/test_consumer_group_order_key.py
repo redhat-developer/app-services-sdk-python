@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_instance_sdk
-from dimakis_test_kafka_instance_sdk.model.consumer_group_order_key import ConsumerGroupOrderKey
+import rhoas_kafka_instance_sdk
+from rhoas_kafka_instance_sdk.model.consumer_group_order_key import ConsumerGroupOrderKey
 
 
 class TestConsumerGroupOrderKey(unittest.TestCase):

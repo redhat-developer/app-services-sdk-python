@@ -12,8 +12,8 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_mgmt_sdk
-from dimakis_test_kafka_mgmt_sdk.model.instant_query import InstantQuery
+import rhoas_kafka_mgmt_sdk
+from rhoas_kafka_mgmt_sdk.model.instant_query import InstantQuery
 
 
 class TestInstantQuery(unittest.TestCase):

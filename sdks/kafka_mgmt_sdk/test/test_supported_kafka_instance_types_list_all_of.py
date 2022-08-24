@@ -12,10 +12,10 @@
 import sys
 import unittest
 
-import dimakis_test_kafka_mgmt_sdk
-from dimakis_test_kafka_mgmt_sdk.model.supported_kafka_instance_type import SupportedKafkaInstanceType
+import rhoas_kafka_mgmt_sdk
+from rhoas_kafka_mgmt_sdk.model.supported_kafka_instance_type import SupportedKafkaInstanceType
 globals()['SupportedKafkaInstanceType'] = SupportedKafkaInstanceType
-from dimakis_test_kafka_mgmt_sdk.model.supported_kafka_instance_types_list_all_of import SupportedKafkaInstanceTypesListAllOf
+from rhoas_kafka_mgmt_sdk.model.supported_kafka_instance_types_list_all_of import SupportedKafkaInstanceTypesListAllOf
 
 
 class TestSupportedKafkaInstanceTypesListAllOf(unittest.TestCase):
