@@ -13,7 +13,8 @@ ifeq (, $(shell which python3 2> /dev/null))
 	exit 1
 endif
 ifeq (, $(shell which poetry 2> /dev/null))
-	@curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
+	@curl -sSL https://install.python-poetry.org | python -
+	@$HOME/.local/bin
 endif
 
 .PHONY: build 
