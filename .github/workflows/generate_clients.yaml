@@ -2,7 +2,7 @@ name: SDK Client Generator
 
 on:
   repository_dispatch:
-    types: openapi-spec-change
+    types: openapi-spec-test
   workflow_dispatch:
     inputs:
       url: 
@@ -26,8 +26,6 @@ jobs:
       with:
         node-version: '14'        
     - name: Generate SDKs
-      if: github.event.client_payload.download_url != ''
-
       run: |
         ./scripts/fetch_api.sh ${{ github.event.inputs.url }}
         rm -rf ./sdks
