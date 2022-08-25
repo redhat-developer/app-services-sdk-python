@@ -1,0 +1,29 @@
+name: Build
+on:
+  push:
+    branches: [main]
+    paths:
+      - "**.py"
+      - '.openapi/**'
+  pull_request:
+    branches: [main]
+    paths:
+      - "**.py"
+      - 'openapi/**'
+      - '.github/**'
+
+jobs:
+  build:
+    name: Poetry Build 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Use python
+        uses: actions/setup-python@v1
+        with:
+          python-version: '3.x'
+      - name: Install Python Poetry
+        run: make install-setup
+      - name: Build Python modules
+        run: make build
