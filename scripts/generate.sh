@@ -26,6 +26,8 @@ generate_sdk() {
         --package-name=$package_name
 }
 
+npx @openapitools/openapi-generator-cli version-manager set 6.0.1
+
 OPENAPI_FILENAME="openapi/kas-fleet-manager.yaml"
 PACKAGE_NAME="rhoas_kafka_mgmt_sdk"
 OUTPUT_PATH="sdks/kafka_mgmt_sdk"
