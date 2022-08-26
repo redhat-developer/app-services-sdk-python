@@ -15,7 +15,7 @@ To run examples execute the python modules using the newly aquired ACCESS_TOKEN 
 ### For kafkamgmt: 
 
 ```bash
-ACCESS_TOKEN=`rhoas authtoken`python3 examples/kafka_mgmt/get_kafkas_example.py
+ACCESS_TOKEN=`rhoas authtoken` python3 examples/kafka_mgmt/get_kafkas_example.py
 ```
 This should return a list of kafkas.
 
