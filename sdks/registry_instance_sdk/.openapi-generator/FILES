@@ -44,7 +44,6 @@ docs/UsersApi.md
 docs/VersionMetaData.md
 docs/VersionSearchResults.md
 docs/VersionsApi.md
-requirements.txt
 rhoas_registry_instance_sdk/__init__.py
 rhoas_registry_instance_sdk/api/__init__.py
 rhoas_registry_instance_sdk/api/admin_api.py
@@ -99,8 +98,6 @@ rhoas_registry_instance_sdk/model/version_search_results.py
 rhoas_registry_instance_sdk/model_utils.py
 rhoas_registry_instance_sdk/models/__init__.py
 rhoas_registry_instance_sdk/rest.py
-setup.cfg
-setup.py
 test-requirements.txt
 test/__init__.py
 test/test_admin_api.py

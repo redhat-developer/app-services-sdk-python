@@ -61,7 +61,6 @@ docs/ServiceAccount.md
 docs/ServiceConnectionSettings.md
 docs/VersionMetadata.md
 docs/VersionMetadataAllOf.md
-requirements.txt
 rhoas_connector_mgmt_sdk/__init__.py
 rhoas_connector_mgmt_sdk/api/__init__.py
 rhoas_connector_mgmt_sdk/api/connector_clusters_api.py
@@ -133,8 +132,6 @@ rhoas_connector_mgmt_sdk/model/version_metadata_all_of.py
 rhoas_connector_mgmt_sdk/model_utils.py
 rhoas_connector_mgmt_sdk/models/__init__.py
 rhoas_connector_mgmt_sdk/rest.py
-setup.cfg
-setup.py
 test-requirements.txt
 test/__init__.py
 test/test_addon_parameter.py

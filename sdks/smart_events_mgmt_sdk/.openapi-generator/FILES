@@ -31,7 +31,6 @@ docs/ProcessorType.md
 docs/ProcessorsApi.md
 docs/SchemaCatalogApi.md
 docs/Source.md
-requirements.txt
 rhoas_smart_events_mgmt_sdk/__init__.py
 rhoas_smart_events_mgmt_sdk/api/__init__.py
 rhoas_smart_events_mgmt_sdk/api/bridges_api.py
@@ -73,8 +72,6 @@ rhoas_smart_events_mgmt_sdk/model/source.py
 rhoas_smart_events_mgmt_sdk/model_utils.py
 rhoas_smart_events_mgmt_sdk/models/__init__.py
 rhoas_smart_events_mgmt_sdk/rest.py
-setup.cfg
-setup.py
 test-requirements.txt
 test/__init__.py
 test/test_action.py

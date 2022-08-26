@@ -18,7 +18,7 @@ Python >=3.6
 The package is hosted on [PyPI](https://pypi.org/project/rhoas-sdks/), you can install directly using:
 
 ```sh
-pip install rhoas_service_registry_mgmt_sdk
+pip install rhoas-sdk
 ```
 
 Then import the package:
@@ -122,3 +122,4 @@ import rhoas_service_registry_mgmt_sdk
 from rhoas_service_registry_mgmt_sdk.apis import *
 from rhoas_service_registry_mgmt_sdk.models import *
 ```
+

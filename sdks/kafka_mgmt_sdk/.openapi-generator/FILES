@@ -45,7 +45,6 @@ docs/SupportedKafkaSizeBytesValueItem.md
 docs/Values.md
 docs/VersionMetadata.md
 docs/VersionMetadataAllOf.md
-requirements.txt
 rhoas_kafka_mgmt_sdk/__init__.py
 rhoas_kafka_mgmt_sdk/api/__init__.py
 rhoas_kafka_mgmt_sdk/api/default_api.py
@@ -101,8 +100,6 @@ rhoas_kafka_mgmt_sdk/model/version_metadata_all_of.py
 rhoas_kafka_mgmt_sdk/model_utils.py
 rhoas_kafka_mgmt_sdk/models/__init__.py
 rhoas_kafka_mgmt_sdk/rest.py
-setup.cfg
-setup.py
 test-requirements.txt
 test/__init__.py
 test/test_cloud_provider.py
