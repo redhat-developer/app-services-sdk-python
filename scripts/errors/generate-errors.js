@@ -14,29 +14,19 @@ for (api in apis) {
     exit(1);
   }
 
-  stringBuffer = `
-/**
-   ${api} error codes
+  stringBuffer = 
+`from enum import Enum 
 
-    \`\`\`ts
-    apiCall.then((data) => {
-        console.log(data?.data.items)
-    }).catch((err) => {
-      if(APIErrorCodes.ERROR_5 == err.response?.data.code) {
-        // Handle error
-      }
-    })
-    \`\`\`
-*/
-export const APIErrorCodes = {
+#   ${api} error codes
+
+class APIErrorCodes(Enum):
 `;
 
   apiJson.items.forEach(function (errorType) {
-    stringBuffer += `  /** ${errorType.reason}*/\n`;
-    stringBuffer += `  ERROR_${errorType.id} : "${errorType.code}", \n\n`;
+    stringBuffer += `  # ${errorType.reason} \n`;
+    stringBuffer += `  ERROR_${errorType.id} = "${errorType.code}" \n\n`;
   });
 
-  stringBuffer += `}`;
 
   fs.writeFileSync(
     cwd() + "/" + apiFileLocation, stringBuffer, { encoding: "utf8" });
