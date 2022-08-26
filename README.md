@@ -2,6 +2,8 @@
 
 Python packages and API clients for Red Had OpenShift Application Services (RHOAS) 
 
+[Check us out on GitHub](https://github.com/redhat-developer/app-services-sdk-python)
+
 ## Prequisites
 
 - [Python 3.9](https://docs.python.org/3/) or above
@@ -17,17 +19,25 @@ $ python3 -m pip install rhoas-sdks
 
 ## RHOAS App Services SDK for Python
 
- ### Management SDKs documentation
+> NOTE: Some of these APIs are under development and may sometimes cause backwards-incompatible changes.
 
- - [Kafka Management](https://github.com/redhat-developer/app-services-sdk-python/tree/main/sdks/kafka_mgmt_sdk)
- - [Connector Management](https://github.com/redhat-developer/app-services-sdk-python/tree/main/sdks/connector_mgmt_sdk)
- - [Service Registry Management](https://github.com/redhat-developer/app-services-sdk-python/tree/main/sdks/registry_mgmt_sdk)
- - [Smart Events Management](https://github.com/redhat-developer/app-services-sdk-python/tree/main/sdks/smart_events_mgmt_sdk)
+All packages are now available and can be accessed by just importing them as shown below:
 
- ###  Service SDKs
 
- - [Kafka Instance Admin](https://github.com/redhat-developer/app-services-sdk-python/tree/main/sdks/kafka_instance_sdk)
- - [Service Registry Instance](https://github.com/redhat-developer/app-services-sdk-python/tree/main/sdks/registry_instance_sdk)
+| API                       | Status | Package                                                                                                                                                         |
+| :------------------------ | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| KafkaManagement           | beta   | `import python rhoas_kafka_mgmt_sdk`          |
+| ServiceRegistryManagement  | alpha   | `import rhoas_service_registry_mgmt_sdk`         |
+| ConnectorManagement       | alpha  | `import rhoas_connector_mgmt_sdk`  |
+
+ 
+ ## Instances SDKs
+
+| API              | Status | Package                                                                                                                                                                               |
+| ---------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| KafkaInstance    | beta   | `import rhoas_kafka_instance_sdk`|
+| RegistryInstance | beta   | `import rhoas_registry_instance_sdk` |
+
 
 ## Documentation
 
@@ -40,4 +50,3 @@ $ python3 -m pip install rhoas-sdks
 ## Contributing
 
 Contributions are welcome. See [CONTRIBUTING](CONTRIBUTING.md) for details.
-
