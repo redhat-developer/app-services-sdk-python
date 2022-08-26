@@ -26,9 +26,9 @@ All packages are now available and can be accessed by just importing them as sho
 
 | API                       | Status | Package                                                                                                                                                         |
 | :------------------------ | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| KafkaManagement           | beta   | `import python rhoas_kafka_mgmt_sdk`          |
-| ServiceRegistryManagement  | alpha   | `import rhoas_service_registry_mgmt_sdk`         |
-| ConnectorManagement       | alpha  | `import rhoas_connector_mgmt_sdk`  |
+| [KafkaManagement](sdks/kafka_mgmt_sdk/README.md)           | beta   | `import python rhoas_kafka_mgmt_sdk`          |
+| [ServiceRegistryManagement](sdks/registry_mgmt_sdk/README.md)  | alpha   | `import rhoas_service_registry_mgmt_sdk`         |
+| [ConnectorManagement](sdks/connector_mgmt_sdk/README.md)       | alpha  | `import rhoas_connector_mgmt_sdk`  |
 
  
  ## Instances SDKs
@@ -36,7 +36,7 @@ All packages are now available and can be accessed by just importing them as sho
 | API              | Status | Package                                                                                                                                                                               |
 | ---------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | KafkaInstance    | beta   | `import rhoas_kafka_instance_sdk`|
-| RegistryInstance | beta   | `import rhoas_registry_instance_sdk` |
+| [RegistryInstance](sdks/registry_instance_sdk/README.md) | beta   | `import rhoas_registry_instance_sdk` |
 
 
 ## Documentation
