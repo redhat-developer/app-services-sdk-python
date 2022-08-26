@@ -11,13 +11,13 @@ Python packages and API clients for Red Had OpenShift Application Services (RHOA
 
 ## Installation
 
-Install the RHOAS SDK with the pip package installer:
+Currently all RHOAS SDKs are bundled together. To install the RHOAS SDK with the pip package installer:
 
 ```shell
 $ python3 -m pip install rhoas-sdks
 ```
 
-## Management SDKs
+## RHOAS App Services SDK for Python
 
 > NOTE: Some of these APIs are under development and may sometimes cause backwards-incompatible changes.
 
