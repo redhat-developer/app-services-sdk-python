@@ -25,11 +25,12 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: '14'        
-    - name: Generate SDKs
+    - name: Generate SDKs and Errors
       run: |
         ./scripts/fetch_api.sh ${{ github.event.inputs.url }}
         rm -rf ./sdks
         make generate
+        make generate-errors
     - name: Add & Commit
       uses: EndBug/add-and-commit@v9.0.1
       with:
