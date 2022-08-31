@@ -12,12 +12,14 @@ packages = [
     { include = "rhoas_kafka_mgmt_sdk", from = "sdks/kafka_mgmt_sdk/"},
     { include = "rhoas_registry_instance_sdk", from = "sdks/registry_instance_sdk/"},
     { include = "rhoas_smart_events_mgmt_sdk", from = "sdks/smart_events_mgmt_sdk/"},
+    { include = "auth"}
 ]
 
 [tool.poetry.dependencies]
 python = "^3.9"
-urllib3 = "1.25.3"
+urllib3 = "^1.25.3"
 python-dateutil = "*"
+python-keycloak = "^2.5.0"
 
 [tool.poetry.dev-dependencies]
 poetry = "^1.0"
