@@ -76,12 +76,12 @@ OUTPUT_PATH="sdks/registry_instance_sdk"
 
 generate_sdk $OPENAPI_FILENAME $OUTPUT_PATH $PACKAGE_NAME
 
-OPENAPI_FILENAME="openapi/smartevents_mgmt.yaml"
-PACKAGE_NAME="rhoas_smart_events_mgmt_sdk"
-OUTPUT_PATH="sdks/smart_events_mgmt_sdk"
+# OPENAPI_FILENAME="openapi/smartevents_mgmt.yaml"
+# PACKAGE_NAME="rhoas_smart_events_mgmt_sdk"
+# OUTPUT_PATH="sdks/smart_events_mgmt_sdk"
 
-rm -rf $OUTPUT_PATH/model $OUTPUT_PATH/api
-generate_sdk $OPENAPI_FILENAME $OUTPUT_PATH $PACKAGE_NAME
+# rm -rf $OUTPUT_PATH/model $OUTPUT_PATH/api
+# generate_sdk $OPENAPI_FILENAME $OUTPUT_PATH $PACKAGE_NAME
 
 OPENAPI_FILENAME="openapi/service-accounts.yaml"
 PACKAGE_NAME="rhoas_service_accounts_mgmt_sdk"
