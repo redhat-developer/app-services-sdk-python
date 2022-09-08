@@ -35,7 +35,7 @@ Python >=3.6
 The package is hosted on [PyPI](https://pypi.org/project/rhoas-sdks/), you can install directly using:
 
 ```sh
-pip install rhoas-sdk
+pip install rhoas-sdks
 ```
 
 Then import the package:
