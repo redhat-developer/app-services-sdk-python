@@ -21,12 +21,15 @@ generate_sdk() {
     npx @openapitools/openapi-generator-cli generate -g python -i\
         $oas_file_name -o $output_path \
         --package-name="$package_name" \
-        --ignore-file-override=.openapi-generator-ignore \
+        --additional-properties=$additional_properties \
+        --ignore-file-override='.openapi-generator-ignore' \
         --template-dir './scripts/templates' \
-        --package-name=$package_name
-}
+        --package-name=$package_name \
+        --global-property debugModel 
 
-npx @openapitools/openapi-generator-cli version-manager set 6.0.1
+}
+npx @openapitools/openapi-generator-cli version-manager set 6.1.0
+additional_properties="generateInterfaces=true, enumClassPrefix=true"
 
 OPENAPI_FILENAME="openapi/kas-fleet-manager.yaml"
 PACKAGE_NAME="rhoas_kafka_mgmt_sdk"
@@ -46,7 +49,7 @@ OUTPUT_PATH="sdks/connector_mgmt_sdk"
 
 generate_sdk $OPENAPI_FILENAME $OUTPUT_PATH $PACKAGE_NAME
 
-OPENAPI_FILENAME="openapi/kafka-admin-rest.yaml"
+OPENAPI_FILENAME="openapi/kafka-admin-rest.json"
 PACKAGE_NAME="rhoas_kafka_instance_sdk"
 OUTPUT_PATH="sdks/kafka_instance_sdk"
 
@@ -76,12 +79,12 @@ OUTPUT_PATH="sdks/registry_instance_sdk"
 
 generate_sdk $OPENAPI_FILENAME $OUTPUT_PATH $PACKAGE_NAME
 
-# OPENAPI_FILENAME="openapi/smartevents_mgmt.yaml"
-# PACKAGE_NAME="rhoas_smart_events_mgmt_sdk"
-# OUTPUT_PATH="sdks/smart_events_mgmt_sdk"
+OPENAPI_FILENAME="openapi/smartevents_mgmt.yaml"
+PACKAGE_NAME="rhoas_smart_events_mgmt_sdk"
+OUTPUT_PATH="sdks/smart_events_mgmt_sdk"
 
-# rm -rf $OUTPUT_PATH/model $OUTPUT_PATH/api
-# generate_sdk $OPENAPI_FILENAME $OUTPUT_PATH $PACKAGE_NAME
+rm -rf $OUTPUT_PATH/model $OUTPUT_PATH/api
+generate_sdk $OPENAPI_FILENAME $OUTPUT_PATH $PACKAGE_NAME
 
 OPENAPI_FILENAME="openapi/service-accounts.yaml"
 PACKAGE_NAME="rhoas_service_accounts_mgmt_sdk"
