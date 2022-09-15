@@ -14,9 +14,7 @@ import unittest
 
 import rhoas_kafka_mgmt_sdk
 from rhoas_kafka_mgmt_sdk.model.service_account_list_all_of import ServiceAccountListAllOf
-from rhoas_kafka_mgmt_sdk.model.service_account_list_item import ServiceAccountListItem
 globals()['ServiceAccountListAllOf'] = ServiceAccountListAllOf
-globals()['ServiceAccountListItem'] = ServiceAccountListItem
 from rhoas_kafka_mgmt_sdk.model.service_account_list import ServiceAccountList
 
 

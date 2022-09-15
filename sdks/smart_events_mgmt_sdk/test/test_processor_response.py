@@ -15,13 +15,9 @@ import unittest
 import rhoas_smart_events_mgmt_sdk
 from rhoas_smart_events_mgmt_sdk.model.action import Action
 from rhoas_smart_events_mgmt_sdk.model.base_filter import BaseFilter
-from rhoas_smart_events_mgmt_sdk.model.managed_resource_status import ManagedResourceStatus
-from rhoas_smart_events_mgmt_sdk.model.processor_type import ProcessorType
 from rhoas_smart_events_mgmt_sdk.model.source import Source
 globals()['Action'] = Action
 globals()['BaseFilter'] = BaseFilter
-globals()['ManagedResourceStatus'] = ManagedResourceStatus
-globals()['ProcessorType'] = ProcessorType
 globals()['Source'] = Source
 from rhoas_smart_events_mgmt_sdk.model.processor_response import ProcessorResponse
 

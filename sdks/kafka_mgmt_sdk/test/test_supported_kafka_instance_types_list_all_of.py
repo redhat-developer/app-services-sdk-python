@@ -13,8 +13,6 @@ import sys
 import unittest
 
 import rhoas_kafka_mgmt_sdk
-from rhoas_kafka_mgmt_sdk.model.supported_kafka_instance_type import SupportedKafkaInstanceType
-globals()['SupportedKafkaInstanceType'] = SupportedKafkaInstanceType
 from rhoas_kafka_mgmt_sdk.model.supported_kafka_instance_types_list_all_of import SupportedKafkaInstanceTypesListAllOf
 
 

@@ -14,9 +14,7 @@ import unittest
 
 import rhoas_smart_events_mgmt_sdk
 from rhoas_smart_events_mgmt_sdk.model.action import Action
-from rhoas_smart_events_mgmt_sdk.model.managed_resource_status import ManagedResourceStatus
 globals()['Action'] = Action
-globals()['ManagedResourceStatus'] = ManagedResourceStatus
 from rhoas_smart_events_mgmt_sdk.model.bridge_response import BridgeResponse
 
 

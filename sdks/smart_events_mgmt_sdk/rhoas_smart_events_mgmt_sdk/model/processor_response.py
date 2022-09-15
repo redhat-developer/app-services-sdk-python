@@ -33,13 +33,9 @@ from rhoas_smart_events_mgmt_sdk.exceptions import ApiAttributeError
 def lazy_import():
     from rhoas_smart_events_mgmt_sdk.model.action import Action
     from rhoas_smart_events_mgmt_sdk.model.base_filter import BaseFilter
-    from rhoas_smart_events_mgmt_sdk.model.managed_resource_status import ManagedResourceStatus
-    from rhoas_smart_events_mgmt_sdk.model.processor_type import ProcessorType
     from rhoas_smart_events_mgmt_sdk.model.source import Source
     globals()['Action'] = Action
     globals()['BaseFilter'] = BaseFilter
-    globals()['ManagedResourceStatus'] = ManagedResourceStatus
-    globals()['ProcessorType'] = ProcessorType
     globals()['Source'] = Source
 
 
@@ -112,6 +108,7 @@ class ProcessorResponse(ModelNormal):
             'transformation_template': (str,),  # noqa: E501
             'action': (Action,),  # noqa: E501
             'source': (Source,),  # noqa: E501
+            'status_message': (str,),  # noqa: E501
         }
 
     @cached_property
@@ -134,6 +131,7 @@ class ProcessorResponse(ModelNormal):
         'transformation_template': 'transformationTemplate',  # noqa: E501
         'action': 'action',  # noqa: E501
         'source': 'source',  # noqa: E501
+        'status_message': 'status_message',  # noqa: E501
     }
 
     read_only_vars = {
@@ -193,6 +191,7 @@ class ProcessorResponse(ModelNormal):
             transformation_template (str): [optional]  # noqa: E501
             action (Action): [optional]  # noqa: E501
             source (Source): [optional]  # noqa: E501
+            status_message (str): [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)
@@ -301,6 +300,7 @@ class ProcessorResponse(ModelNormal):
             transformation_template (str): [optional]  # noqa: E501
             action (Action): [optional]  # noqa: E501
             source (Source): [optional]  # noqa: E501
+            status_message (str): [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)

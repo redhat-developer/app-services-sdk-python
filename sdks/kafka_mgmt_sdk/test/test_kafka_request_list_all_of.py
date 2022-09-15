@@ -13,8 +13,6 @@ import sys
 import unittest
 
 import rhoas_kafka_mgmt_sdk
-from rhoas_kafka_mgmt_sdk.model.kafka_request import KafkaRequest
-globals()['KafkaRequest'] = KafkaRequest
 from rhoas_kafka_mgmt_sdk.model.kafka_request_list_all_of import KafkaRequestListAllOf
 
 

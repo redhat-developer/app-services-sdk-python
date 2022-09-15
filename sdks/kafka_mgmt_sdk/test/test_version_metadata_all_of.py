@@ -13,8 +13,6 @@ import sys
 import unittest
 
 import rhoas_kafka_mgmt_sdk
-from rhoas_kafka_mgmt_sdk.model.object_reference import ObjectReference
-globals()['ObjectReference'] = ObjectReference
 from rhoas_kafka_mgmt_sdk.model.version_metadata_all_of import VersionMetadataAllOf
 
 

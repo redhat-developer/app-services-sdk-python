@@ -32,9 +32,7 @@ from rhoas_kafka_mgmt_sdk.exceptions import ApiAttributeError
 
 def lazy_import():
     from rhoas_kafka_mgmt_sdk.model.metrics_range_query_list_all_of import MetricsRangeQueryListAllOf
-    from rhoas_kafka_mgmt_sdk.model.range_query import RangeQuery
     globals()['MetricsRangeQueryListAllOf'] = MetricsRangeQueryListAllOf
-    globals()['RangeQuery'] = RangeQuery
 
 
 class MetricsRangeQueryList(ModelComposed):

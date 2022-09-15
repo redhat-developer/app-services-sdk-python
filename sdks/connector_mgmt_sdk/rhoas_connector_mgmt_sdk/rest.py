@@ -147,7 +147,7 @@ class RESTClientObject(object):
                 # Only set a default Content-Type for POST, PUT, PATCH and OPTIONS requests
                 if (method != 'DELETE') and ('Content-Type' not in headers):
                     headers['Content-Type'] = 'application/json'
-                if query_params[0] == ('async', True):
+                if (method != 'POST') and query_params and query_params[0] == ('async', True):
                     url += '?async=true'
                 elif query_params:
                     url += '?' + urlencode(query_params)

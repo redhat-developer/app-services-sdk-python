@@ -13,9 +13,7 @@ import sys
 import unittest
 
 import rhoas_kafka_mgmt_sdk
-from rhoas_kafka_mgmt_sdk.model.instant_query import InstantQuery
 from rhoas_kafka_mgmt_sdk.model.metrics_instant_query_list_all_of import MetricsInstantQueryListAllOf
-globals()['InstantQuery'] = InstantQuery
 globals()['MetricsInstantQueryListAllOf'] = MetricsInstantQueryListAllOf
 from rhoas_kafka_mgmt_sdk.model.metrics_instant_query_list import MetricsInstantQueryList
 

@@ -31,10 +31,8 @@ from rhoas_kafka_mgmt_sdk.exceptions import ApiAttributeError
 
 
 def lazy_import():
-    from rhoas_kafka_mgmt_sdk.model.kafka_request import KafkaRequest
     from rhoas_kafka_mgmt_sdk.model.kafka_request_list_all_of import KafkaRequestListAllOf
     from rhoas_kafka_mgmt_sdk.model.list import List
-    globals()['KafkaRequest'] = KafkaRequest
     globals()['KafkaRequestListAllOf'] = KafkaRequestListAllOf
     globals()['List'] = List
 

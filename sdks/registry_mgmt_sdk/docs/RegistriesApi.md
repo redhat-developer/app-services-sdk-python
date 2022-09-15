@@ -50,7 +50,7 @@ with rhoas_service_registry_mgmt_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = registries_api.RegistriesApi(api_client)
     registry_create = RegistryCreate(
-        name="ar1c2v7s6djuy1zmetozkhdomha1b0",
+        name="a1c2v7s6djuy1zmetozkhdomha1bae37b8ocvx8o53ow2eg7p6qw9qklp6l4y010fogx",
         description="description_example",
     ) # RegistryCreate | A new `Registry` instance to be created.
 

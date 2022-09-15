@@ -18,6 +18,7 @@ Name | Type | Description | Notes
 **transformation_template** | **str** |  | [optional] 
 **action** | [**Action**](Action.md) |  | [optional] 
 **source** | [**Source**](Source.md) |  | [optional] 
+**status_message** | **str** |  | [optional] 
 **any string name** | **bool, date, datetime, dict, float, int, list, str, none_type** | any string name can be used but the value must be the correct type | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

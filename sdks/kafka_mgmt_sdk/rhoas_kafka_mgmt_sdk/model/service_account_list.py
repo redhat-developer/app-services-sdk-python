@@ -32,9 +32,7 @@ from rhoas_kafka_mgmt_sdk.exceptions import ApiAttributeError
 
 def lazy_import():
     from rhoas_kafka_mgmt_sdk.model.service_account_list_all_of import ServiceAccountListAllOf
-    from rhoas_kafka_mgmt_sdk.model.service_account_list_item import ServiceAccountListItem
     globals()['ServiceAccountListAllOf'] = ServiceAccountListAllOf
-    globals()['ServiceAccountListItem'] = ServiceAccountListItem
 
 
 class ServiceAccountList(ModelComposed):
