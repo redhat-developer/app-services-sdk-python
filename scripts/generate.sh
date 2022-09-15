@@ -21,7 +21,6 @@ generate_sdk() {
     npx @openapitools/openapi-generator-cli generate -g python -i\
         $oas_file_name -o $output_path \
         --package-name="$package_name" \
-        --additional-properties=$additional_properties \
         --ignore-file-override='.openapi-generator-ignore' \
         --template-dir './scripts/templates' \
         --package-name=$package_name \
@@ -29,7 +28,6 @@ generate_sdk() {
 
 }
 npx @openapitools/openapi-generator-cli version-manager set 6.1.0
-additional_properties="generateInterfaces=true, enumClassPrefix=true"
 
 OPENAPI_FILENAME="openapi/kas-fleet-manager.yaml"
 PACKAGE_NAME="rhoas_kafka_mgmt_sdk"
