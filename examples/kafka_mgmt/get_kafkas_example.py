@@ -1,6 +1,7 @@
 import rhoas_kafka_mgmt_sdk
 from pprint import pprint
 from rhoas_kafka_mgmt_sdk.api import default_api
+
 import os
 
 ACCESS_TOKEN = os.environ['ACCESS_TOKEN'] 
@@ -12,6 +13,7 @@ ACCESS_TOKEN = os.environ['ACCESS_TOKEN']
 # in accordance with the API server security policy.
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
+
 configuration = rhoas_kafka_mgmt_sdk.Configuration(
     host = "https://api.openshift.com",
     access_token = ACCESS_TOKEN

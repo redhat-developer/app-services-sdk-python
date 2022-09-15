@@ -1,4 +1,3 @@
 templateDir: ./scripts/templates
 files:
   README.md: {}
-  setup.py: {}
