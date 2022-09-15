@@ -44,7 +44,7 @@ OUTPUT_PATH="sdks/connector_mgmt_sdk"
 
 generate_sdk $OPENAPI_FILENAME $OUTPUT_PATH $PACKAGE_NAME
 
-OPENAPI_FILENAME="openapi/kafka-admin-rest.json"
+OPENAPI_FILENAME="openapi/kafka-admin-rest.yaml"
 PACKAGE_NAME="rhoas_kafka_instance_sdk"
 OUTPUT_PATH="sdks/kafka_instance_sdk"
 
