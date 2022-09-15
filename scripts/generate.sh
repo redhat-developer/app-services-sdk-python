@@ -23,6 +23,7 @@ generate_sdk() {
         --package-name="$package_name" \
         --ignore-file-override='.openapi-generator-ignore' \
         --template-dir './scripts/templates' \
+
 }
 npx @openapitools/openapi-generator-cli version-manager set 6.1.0
 
