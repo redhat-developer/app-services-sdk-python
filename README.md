@@ -29,13 +29,14 @@ All packages are now available and can be accessed by just importing them as sho
 | [KafkaManagement](sdks/kafka_mgmt_sdk/README.md)           | beta   | `import python rhoas_kafka_mgmt_sdk`          |
 | [ServiceRegistryManagement](sdks/registry_mgmt_sdk/README.md)  | alpha   | `import rhoas_service_registry_mgmt_sdk`         |
 | [ConnectorManagement](sdks/connector_mgmt_sdk/README.md)       | alpha  | `import rhoas_connector_mgmt_sdk`  |
+| [ServiceAccounts](sdks/service_accounts_mgmt_sdk/README.md) | alpha | `import rhoas_service_accounts_mgmt_sdk` |
 
  
  ## Instances SDKs
 
 | API              | Status | Package                                                                                                                                                                               |
 | ---------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| KafkaInstance    | beta   | `import rhoas_kafka_instance_sdk`|
+| [KafkaInstance](sdks/kafka_instance_sdk/README.md)    | beta   | `import rhoas_kafka_instance_sdk`|
 | [RegistryInstance](sdks/registry_instance_sdk/README.md) | beta   | `import rhoas_registry_instance_sdk` |
 
 
