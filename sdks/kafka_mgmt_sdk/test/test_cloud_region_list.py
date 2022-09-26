@@ -13,10 +13,8 @@ import sys
 import unittest
 
 import rhoas_kafka_mgmt_sdk
-from rhoas_kafka_mgmt_sdk.model.cloud_region import CloudRegion
 from rhoas_kafka_mgmt_sdk.model.cloud_region_list_all_of import CloudRegionListAllOf
 from rhoas_kafka_mgmt_sdk.model.list import List
-globals()['CloudRegion'] = CloudRegion
 globals()['CloudRegionListAllOf'] = CloudRegionListAllOf
 globals()['List'] = List
 from rhoas_kafka_mgmt_sdk.model.cloud_region_list import CloudRegionList

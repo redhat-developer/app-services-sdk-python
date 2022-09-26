@@ -31,10 +31,8 @@ from rhoas_kafka_mgmt_sdk.exceptions import ApiAttributeError
 
 
 def lazy_import():
-    from rhoas_kafka_mgmt_sdk.model.cloud_provider import CloudProvider
     from rhoas_kafka_mgmt_sdk.model.cloud_provider_list_all_of import CloudProviderListAllOf
     from rhoas_kafka_mgmt_sdk.model.list import List
-    globals()['CloudProvider'] = CloudProvider
     globals()['CloudProviderListAllOf'] = CloudProviderListAllOf
     globals()['List'] = List
 

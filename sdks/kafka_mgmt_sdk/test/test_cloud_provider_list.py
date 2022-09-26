@@ -13,10 +13,8 @@ import sys
 import unittest
 
 import rhoas_kafka_mgmt_sdk
-from rhoas_kafka_mgmt_sdk.model.cloud_provider import CloudProvider
 from rhoas_kafka_mgmt_sdk.model.cloud_provider_list_all_of import CloudProviderListAllOf
 from rhoas_kafka_mgmt_sdk.model.list import List
-globals()['CloudProvider'] = CloudProvider
 globals()['CloudProviderListAllOf'] = CloudProviderListAllOf
 globals()['List'] = List
 from rhoas_kafka_mgmt_sdk.model.cloud_provider_list import CloudProviderList

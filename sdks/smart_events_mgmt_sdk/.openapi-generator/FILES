@@ -3,6 +3,7 @@ README.md
 docs/Action.md
 docs/BaseFilter.md
 docs/BridgeError.md
+docs/BridgeErrorInstance.md
 docs/BridgeErrorType.md
 docs/BridgeListResponse.md
 docs/BridgeRequest.md
@@ -22,6 +23,8 @@ docs/ListAllOf.md
 docs/ListResponse.md
 docs/ManagedResourceStatus.md
 docs/ObjectReference.md
+docs/ProcessingErrorListResponse.md
+docs/ProcessingErrorResponse.md
 docs/ProcessorCatalogResponse.md
 docs/ProcessorListResponse.md
 docs/ProcessorRequest.md
@@ -46,6 +49,7 @@ rhoas_smart_events_mgmt_sdk/model/__init__.py
 rhoas_smart_events_mgmt_sdk/model/action.py
 rhoas_smart_events_mgmt_sdk/model/base_filter.py
 rhoas_smart_events_mgmt_sdk/model/bridge_error.py
+rhoas_smart_events_mgmt_sdk/model/bridge_error_instance.py
 rhoas_smart_events_mgmt_sdk/model/bridge_error_type.py
 rhoas_smart_events_mgmt_sdk/model/bridge_list_response.py
 rhoas_smart_events_mgmt_sdk/model/bridge_request.py
@@ -62,6 +66,8 @@ rhoas_smart_events_mgmt_sdk/model/list_all_of.py
 rhoas_smart_events_mgmt_sdk/model/list_response.py
 rhoas_smart_events_mgmt_sdk/model/managed_resource_status.py
 rhoas_smart_events_mgmt_sdk/model/object_reference.py
+rhoas_smart_events_mgmt_sdk/model/processing_error_list_response.py
+rhoas_smart_events_mgmt_sdk/model/processing_error_response.py
 rhoas_smart_events_mgmt_sdk/model/processor_catalog_response.py
 rhoas_smart_events_mgmt_sdk/model/processor_list_response.py
 rhoas_smart_events_mgmt_sdk/model/processor_request.py
@@ -77,6 +83,7 @@ test/__init__.py
 test/test_action.py
 test/test_base_filter.py
 test/test_bridge_error.py
+test/test_bridge_error_instance.py
 test/test_bridge_error_type.py
 test/test_bridge_list_response.py
 test/test_bridge_request.py
@@ -96,6 +103,8 @@ test/test_list_all_of.py
 test/test_list_response.py
 test/test_managed_resource_status.py
 test/test_object_reference.py
+test/test_processing_error_list_response.py
+test/test_processing_error_response.py
 test/test_processor_catalog_response.py
 test/test_processor_list_response.py
 test/test_processor_request.py

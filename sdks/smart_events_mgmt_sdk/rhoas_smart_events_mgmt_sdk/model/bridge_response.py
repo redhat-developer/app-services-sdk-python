@@ -32,9 +32,7 @@ from rhoas_smart_events_mgmt_sdk.exceptions import ApiAttributeError
 
 def lazy_import():
     from rhoas_smart_events_mgmt_sdk.model.action import Action
-    from rhoas_smart_events_mgmt_sdk.model.managed_resource_status import ManagedResourceStatus
     globals()['Action'] = Action
-    globals()['ManagedResourceStatus'] = ManagedResourceStatus
 
 
 class BridgeResponse(ModelNormal):
@@ -103,6 +101,7 @@ class BridgeResponse(ModelNormal):
             'error_handler': (Action,),  # noqa: E501
             'cloud_provider': (str,),  # noqa: E501
             'region': (str,),  # noqa: E501
+            'status_message': (str,),  # noqa: E501
         }
 
     @cached_property
@@ -124,6 +123,7 @@ class BridgeResponse(ModelNormal):
         'error_handler': 'error_handler',  # noqa: E501
         'cloud_provider': 'cloud_provider',  # noqa: E501
         'region': 'region',  # noqa: E501
+        'status_message': 'status_message',  # noqa: E501
     }
 
     read_only_vars = {
@@ -182,6 +182,7 @@ class BridgeResponse(ModelNormal):
             error_handler (Action): [optional]  # noqa: E501
             cloud_provider (str): [optional]  # noqa: E501
             region (str): [optional]  # noqa: E501
+            status_message (str): [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)
@@ -288,6 +289,7 @@ class BridgeResponse(ModelNormal):
             error_handler (Action): [optional]  # noqa: E501
             cloud_provider (str): [optional]  # noqa: E501
             region (str): [optional]  # noqa: E501
+            status_message (str): [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)

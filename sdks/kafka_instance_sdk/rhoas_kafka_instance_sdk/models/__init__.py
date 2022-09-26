@@ -1,0 +1,64 @@
+# flake8: noqa
+
+# import all models into this package
+# if you have many models here with many references from one model to another this may
+# raise a RecursionError
+# to avoid this, import only the models that you directly need like:
+# from from rhoas_kafka_instance_sdk.model.pet import Pet
+# or import this package, but before doing it, use:
+# import sys
+# sys.setrecursionlimit(n)
+
+from rhoas_kafka_instance_sdk.model.acl_binding import AclBinding
+from rhoas_kafka_instance_sdk.model.acl_binding_all_of import AclBindingAllOf
+from rhoas_kafka_instance_sdk.model.acl_binding_list_page import AclBindingListPage
+from rhoas_kafka_instance_sdk.model.acl_binding_list_page_all_of import AclBindingListPageAllOf
+from rhoas_kafka_instance_sdk.model.acl_binding_order_key import AclBindingOrderKey
+from rhoas_kafka_instance_sdk.model.acl_operation import AclOperation
+from rhoas_kafka_instance_sdk.model.acl_operation_filter import AclOperationFilter
+from rhoas_kafka_instance_sdk.model.acl_pattern_type import AclPatternType
+from rhoas_kafka_instance_sdk.model.acl_pattern_type_filter import AclPatternTypeFilter
+from rhoas_kafka_instance_sdk.model.acl_permission_type import AclPermissionType
+from rhoas_kafka_instance_sdk.model.acl_permission_type_filter import AclPermissionTypeFilter
+from rhoas_kafka_instance_sdk.model.acl_resource_type import AclResourceType
+from rhoas_kafka_instance_sdk.model.acl_resource_type_filter import AclResourceTypeFilter
+from rhoas_kafka_instance_sdk.model.config_entry import ConfigEntry
+from rhoas_kafka_instance_sdk.model.consumer import Consumer
+from rhoas_kafka_instance_sdk.model.consumer_group import ConsumerGroup
+from rhoas_kafka_instance_sdk.model.consumer_group_all_of import ConsumerGroupAllOf
+from rhoas_kafka_instance_sdk.model.consumer_group_description_order_key import ConsumerGroupDescriptionOrderKey
+from rhoas_kafka_instance_sdk.model.consumer_group_list import ConsumerGroupList
+from rhoas_kafka_instance_sdk.model.consumer_group_list_all_of import ConsumerGroupListAllOf
+from rhoas_kafka_instance_sdk.model.consumer_group_metrics import ConsumerGroupMetrics
+from rhoas_kafka_instance_sdk.model.consumer_group_order_key import ConsumerGroupOrderKey
+from rhoas_kafka_instance_sdk.model.consumer_group_reset_offset_parameters import ConsumerGroupResetOffsetParameters
+from rhoas_kafka_instance_sdk.model.consumer_group_reset_offset_result import ConsumerGroupResetOffsetResult
+from rhoas_kafka_instance_sdk.model.consumer_group_reset_offset_result_all_of import ConsumerGroupResetOffsetResultAllOf
+from rhoas_kafka_instance_sdk.model.consumer_group_reset_offset_result_item import ConsumerGroupResetOffsetResultItem
+from rhoas_kafka_instance_sdk.model.consumer_group_state import ConsumerGroupState
+from rhoas_kafka_instance_sdk.model.error import Error
+from rhoas_kafka_instance_sdk.model.error_all_of import ErrorAllOf
+from rhoas_kafka_instance_sdk.model.error_list import ErrorList
+from rhoas_kafka_instance_sdk.model.error_list_all_of import ErrorListAllOf
+from rhoas_kafka_instance_sdk.model.list import List
+from rhoas_kafka_instance_sdk.model.list_deprecated import ListDeprecated
+from rhoas_kafka_instance_sdk.model.list_deprecated_all_of import ListDeprecatedAllOf
+from rhoas_kafka_instance_sdk.model.new_topic_input import NewTopicInput
+from rhoas_kafka_instance_sdk.model.node import Node
+from rhoas_kafka_instance_sdk.model.object_reference import ObjectReference
+from rhoas_kafka_instance_sdk.model.offset_type import OffsetType
+from rhoas_kafka_instance_sdk.model.partition import Partition
+from rhoas_kafka_instance_sdk.model.partition_leader import PartitionLeader
+from rhoas_kafka_instance_sdk.model.record import Record
+from rhoas_kafka_instance_sdk.model.record_all_of import RecordAllOf
+from rhoas_kafka_instance_sdk.model.record_included_property import RecordIncludedProperty
+from rhoas_kafka_instance_sdk.model.record_list import RecordList
+from rhoas_kafka_instance_sdk.model.record_list_all_of import RecordListAllOf
+from rhoas_kafka_instance_sdk.model.sort_direction import SortDirection
+from rhoas_kafka_instance_sdk.model.topic import Topic
+from rhoas_kafka_instance_sdk.model.topic_all_of import TopicAllOf
+from rhoas_kafka_instance_sdk.model.topic_order_key import TopicOrderKey
+from rhoas_kafka_instance_sdk.model.topic_settings import TopicSettings
+from rhoas_kafka_instance_sdk.model.topics_list import TopicsList
+from rhoas_kafka_instance_sdk.model.topics_list_all_of import TopicsListAllOf
+from rhoas_kafka_instance_sdk.model.topics_to_reset_offset import TopicsToResetOffset

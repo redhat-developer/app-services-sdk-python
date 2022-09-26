@@ -13,8 +13,6 @@ import sys
 import unittest
 
 import rhoas_kafka_mgmt_sdk
-from rhoas_kafka_mgmt_sdk.model.range_query import RangeQuery
-globals()['RangeQuery'] = RangeQuery
 from rhoas_kafka_mgmt_sdk.model.metrics_range_query_list_all_of import MetricsRangeQueryListAllOf
 
 
