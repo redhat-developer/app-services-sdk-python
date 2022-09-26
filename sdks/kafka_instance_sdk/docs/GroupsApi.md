@@ -19,7 +19,8 @@ Delete a consumer group, along with its consumers.
 
 ### Example
 
-* OAuth Authentication (Bearer):
+* Bearer (JWT) Authentication (Bearer):
+* OAuth Authentication (OAuth2):
 
 ```python
 import time
@@ -38,7 +39,12 @@ configuration = rhoas_kafka_instance_sdk.Configuration(
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
 
-# Configure OAuth2 access token for authorization: Bearer
+# Configure Bearer authorization (JWT): Bearer
+configuration = rhoas_kafka_instance_sdk.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Configure OAuth2 access token for authorization: OAuth2
 configuration = rhoas_kafka_instance_sdk.Configuration(
     host = "http://localhost"
 )
@@ -71,7 +77,7 @@ void (empty response body)
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+[Bearer](../README.md#Bearer), [OAuth2](../README.md#OAuth2)
 
 ### HTTP request headers
 
@@ -100,7 +106,8 @@ Get a single consumer group by its unique ID.
 
 ### Example
 
-* OAuth Authentication (Bearer):
+* Bearer (JWT) Authentication (Bearer):
+* OAuth Authentication (OAuth2):
 
 ```python
 import time
@@ -121,7 +128,12 @@ configuration = rhoas_kafka_instance_sdk.Configuration(
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
 
-# Configure OAuth2 access token for authorization: Bearer
+# Configure Bearer authorization (JWT): Bearer
+configuration = rhoas_kafka_instance_sdk.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Configure OAuth2 access token for authorization: OAuth2
 configuration = rhoas_kafka_instance_sdk.Configuration(
     host = "http://localhost"
 )
@@ -172,7 +184,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+[Bearer](../README.md#Bearer), [OAuth2](../README.md#OAuth2)
 
 ### HTTP request headers
 
@@ -202,7 +214,8 @@ Returns a list of all consumer groups for a particular Kafka instance. The consu
 
 ### Example
 
-* OAuth Authentication (Bearer):
+* Bearer (JWT) Authentication (Bearer):
+* OAuth Authentication (OAuth2):
 
 ```python
 import time
@@ -223,7 +236,12 @@ configuration = rhoas_kafka_instance_sdk.Configuration(
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
 
-# Configure OAuth2 access token for authorization: Bearer
+# Configure Bearer authorization (JWT): Bearer
+configuration = rhoas_kafka_instance_sdk.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Configure OAuth2 access token for authorization: OAuth2
 configuration = rhoas_kafka_instance_sdk.Configuration(
     host = "http://localhost"
 )
@@ -272,7 +290,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+[Bearer](../README.md#Bearer), [OAuth2](../README.md#OAuth2)
 
 ### HTTP request headers
 
@@ -301,7 +319,8 @@ Reset the offset for a particular consumer group.
 
 ### Example
 
-* OAuth Authentication (Bearer):
+* Bearer (JWT) Authentication (Bearer):
+* OAuth Authentication (OAuth2):
 
 ```python
 import time
@@ -322,7 +341,12 @@ configuration = rhoas_kafka_instance_sdk.Configuration(
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
 
-# Configure OAuth2 access token for authorization: Bearer
+# Configure Bearer authorization (JWT): Bearer
+configuration = rhoas_kafka_instance_sdk.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Configure OAuth2 access token for authorization: OAuth2
 configuration = rhoas_kafka_instance_sdk.Configuration(
     host = "http://localhost"
 )
@@ -369,7 +393,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+[Bearer](../README.md#Bearer), [OAuth2](../README.md#OAuth2)
 
 ### HTTP request headers
 

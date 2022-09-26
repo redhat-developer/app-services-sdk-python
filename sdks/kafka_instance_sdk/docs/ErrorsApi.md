@@ -15,7 +15,8 @@ Get an error by its unique ID
 
 ### Example
 
-* OAuth Authentication (Bearer):
+* Bearer (JWT) Authentication (Bearer):
+* OAuth Authentication (OAuth2):
 
 ```python
 import time
@@ -34,7 +35,12 @@ configuration = rhoas_kafka_instance_sdk.Configuration(
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
 
-# Configure OAuth2 access token for authorization: Bearer
+# Configure Bearer authorization (JWT): Bearer
+configuration = rhoas_kafka_instance_sdk.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Configure OAuth2 access token for authorization: OAuth2
 configuration = rhoas_kafka_instance_sdk.Configuration(
     host = "http://localhost"
 )
@@ -68,7 +74,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+[Bearer](../README.md#Bearer), [OAuth2](../README.md#OAuth2)
 
 ### HTTP request headers
 
@@ -93,7 +99,8 @@ Get list of errors
 
 ### Example
 
-* OAuth Authentication (Bearer):
+* Bearer (JWT) Authentication (Bearer):
+* OAuth Authentication (OAuth2):
 
 ```python
 import time
@@ -113,7 +120,12 @@ configuration = rhoas_kafka_instance_sdk.Configuration(
 # Examples for each auth method are provided below, use the example that
 # satisfies your auth use case.
 
-# Configure OAuth2 access token for authorization: Bearer
+# Configure Bearer authorization (JWT): Bearer
+configuration = rhoas_kafka_instance_sdk.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Configure OAuth2 access token for authorization: OAuth2
 configuration = rhoas_kafka_instance_sdk.Configuration(
     host = "http://localhost"
 )
@@ -143,7 +155,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+[Bearer](../README.md#Bearer), [OAuth2](../README.md#OAuth2)
 
 ### HTTP request headers
 
