@@ -91,6 +91,7 @@ Class | Method | HTTP request | Description
 *ConnectorNamespacesApi* | [**list_connector_namespaces**](docs/ConnectorNamespacesApi.md#list_connector_namespaces) | **GET** /api/connector_mgmt/v1/kafka_connector_namespaces | Returns a list of connector namespaces
 *ConnectorServiceApi* | [**get_version_metadata**](docs/ConnectorServiceApi.md#get_version_metadata) | **GET** /api/connector_mgmt/v1 | Returns the version metadata
 *ConnectorTypesApi* | [**get_connector_type_by_id**](docs/ConnectorTypesApi.md#get_connector_type_by_id) | **GET** /api/connector_mgmt/v1/kafka_connector_types/{connector_type_id} | Get a connector type by id
+*ConnectorTypesApi* | [**get_connector_type_labels**](docs/ConnectorTypesApi.md#get_connector_type_labels) | **GET** /api/connector_mgmt/v1/kafka_connector_types/labels | Returns a list of connector type labels
 *ConnectorTypesApi* | [**get_connector_types**](docs/ConnectorTypesApi.md#get_connector_types) | **GET** /api/connector_mgmt/v1/kafka_connector_types | Returns a list of connector types
 *ConnectorsApi* | [**create_connector**](docs/ConnectorsApi.md#create_connector) | **POST** /api/connector_mgmt/v1/kafka_connectors | Create a new connector
 *ConnectorsApi* | [**delete_connector**](docs/ConnectorsApi.md#delete_connector) | **DELETE** /api/connector_mgmt/v1/kafka_connectors/{id} | Delete a connector
@@ -143,6 +144,8 @@ Class | Method | HTTP request | Description
  - [ConnectorStatusStatus](docs/ConnectorStatusStatus.md)
  - [ConnectorType](docs/ConnectorType.md)
  - [ConnectorTypeAllOf](docs/ConnectorTypeAllOf.md)
+ - [ConnectorTypeLabelCount](docs/ConnectorTypeLabelCount.md)
+ - [ConnectorTypeLabelCountList](docs/ConnectorTypeLabelCountList.md)
  - [ConnectorTypeList](docs/ConnectorTypeList.md)
  - [ConnectorTypeListAllOf](docs/ConnectorTypeListAllOf.md)
  - [CpuQuota](docs/CpuQuota.md)

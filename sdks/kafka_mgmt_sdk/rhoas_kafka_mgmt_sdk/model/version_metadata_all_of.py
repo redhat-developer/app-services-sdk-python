@@ -82,6 +82,7 @@ class VersionMetadataAllOf(ModelNormal):
                 and the value is attribute type.
         """
         return {
+            'server_version': (str,),  # noqa: E501
             'collections': ([bool, date, datetime, dict, float, int, list, str, none_type],),  # noqa: E501
         }
 
@@ -91,6 +92,7 @@ class VersionMetadataAllOf(ModelNormal):
 
 
     attribute_map = {
+        'server_version': 'server_version',  # noqa: E501
         'collections': 'collections',  # noqa: E501
     }
 
@@ -135,6 +137,7 @@ class VersionMetadataAllOf(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
+            server_version (str): [optional]  # noqa: E501
             collections ([bool, date, datetime, dict, float, int, list, str, none_type]): [optional]  # noqa: E501
         """
 
@@ -221,6 +224,7 @@ class VersionMetadataAllOf(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
+            server_version (str): [optional]  # noqa: E501
             collections ([bool, date, datetime, dict, float, int, list, str, none_type]): [optional]  # noqa: E501
         """
 

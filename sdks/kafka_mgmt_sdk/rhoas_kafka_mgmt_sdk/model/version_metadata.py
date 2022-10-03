@@ -93,6 +93,7 @@ class VersionMetadata(ModelComposed):
             'id': (str,),  # noqa: E501
             'kind': (str,),  # noqa: E501
             'href': (str,),  # noqa: E501
+            'server_version': (str,),  # noqa: E501
             'collections': ([bool, date, datetime, dict, float, int, list, str, none_type],),  # noqa: E501
         }
 
@@ -105,6 +106,7 @@ class VersionMetadata(ModelComposed):
         'id': 'id',  # noqa: E501
         'kind': 'kind',  # noqa: E501
         'href': 'href',  # noqa: E501
+        'server_version': 'server_version',  # noqa: E501
         'collections': 'collections',  # noqa: E501
     }
 
@@ -150,6 +152,7 @@ class VersionMetadata(ModelComposed):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
+            server_version (str): [optional]  # noqa: E501
             collections ([bool, date, datetime, dict, float, int, list, str, none_type]): [optional]  # noqa: E501
         """
 
@@ -257,6 +260,7 @@ class VersionMetadata(ModelComposed):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
+            server_version (str): [optional]  # noqa: E501
             collections ([bool, date, datetime, dict, float, int, list, str, none_type]): [optional]  # noqa: E501
         """
 

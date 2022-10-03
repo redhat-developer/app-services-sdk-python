@@ -31,6 +31,13 @@ class TestConnectorTypesApi(unittest.TestCase):
         """
         pass
 
+    def test_get_connector_type_labels(self):
+        """Test case for get_connector_type_labels
+
+        Returns a list of connector type labels  # noqa: E501
+        """
+        pass
+
     def test_get_connector_types(self):
         """Test case for get_connector_types
 

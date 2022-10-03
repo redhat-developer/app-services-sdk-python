@@ -15,6 +15,7 @@ Name | Type | Description | Notes
 **description** | **str** | A description of the connector. | [optional] 
 **icon_href** | **str** | URL to an icon of the connector. | [optional] 
 **labels** | **[str]** | Labels used to categorize the connector | [optional] 
+**featured_rank** | **int** | Ranking for featured connectors | [optional] 
 **capabilities** | **[str]** | The capabilities supported by the conenctor | [optional] 
 **any string name** | **bool, date, datetime, dict, float, int, list, str, none_type** | any string name can be used but the value must be the correct type | [optional]
 

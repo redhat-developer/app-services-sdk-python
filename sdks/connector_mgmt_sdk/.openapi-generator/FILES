@@ -45,6 +45,8 @@ docs/ConnectorStatus.md
 docs/ConnectorStatusStatus.md
 docs/ConnectorType.md
 docs/ConnectorTypeAllOf.md
+docs/ConnectorTypeLabelCount.md
+docs/ConnectorTypeLabelCountList.md
 docs/ConnectorTypeList.md
 docs/ConnectorTypeListAllOf.md
 docs/ConnectorTypesApi.md
@@ -115,6 +117,8 @@ rhoas_connector_mgmt_sdk/model/connector_status.py
 rhoas_connector_mgmt_sdk/model/connector_status_status.py
 rhoas_connector_mgmt_sdk/model/connector_type.py
 rhoas_connector_mgmt_sdk/model/connector_type_all_of.py
+rhoas_connector_mgmt_sdk/model/connector_type_label_count.py
+rhoas_connector_mgmt_sdk/model/connector_type_label_count_list.py
 rhoas_connector_mgmt_sdk/model/connector_type_list.py
 rhoas_connector_mgmt_sdk/model/connector_type_list_all_of.py
 rhoas_connector_mgmt_sdk/model/cpu_quota.py
@@ -179,6 +183,8 @@ test/test_connector_status.py
 test/test_connector_status_status.py
 test/test_connector_type.py
 test/test_connector_type_all_of.py
+test/test_connector_type_label_count.py
+test/test_connector_type_label_count_list.py
 test/test_connector_type_list.py
 test/test_connector_type_list_all_of.py
 test/test_connector_types_api.py
