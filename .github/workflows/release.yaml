@@ -11,7 +11,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
       - name: Inject slug/short variables
-        uses: rlespinasse/github-slug-action@v4
+        # v4
+        uses: rlespinasse/github-slug-action@a362e5fb42057a3a23a62218b050838f1bacca5d
       - name: Use python
         uses: actions/setup-python@v1
         with:
